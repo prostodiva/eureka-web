@@ -1,8 +1,8 @@
 function StorePage() {
     return (
-        <div>
-            store Page
-        </div>
+        <>
+            <h1>Store Page. This title should describe the entire page, not just a section</h1>
+        </>
     );
 }
 

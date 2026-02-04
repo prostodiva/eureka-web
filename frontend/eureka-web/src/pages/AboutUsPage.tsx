@@ -1,8 +1,8 @@
 function AboutUsPage() {
     return (
-        <div>
-            About Us
-        </div>
+        <>
+            <h1>About Us. This title should describe the entire page, not just a section</h1>
+        </>
     );
 }
 

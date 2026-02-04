@@ -1,8 +1,8 @@
 function SupportPage() {
     return (
-        <div>
-            Support Page
-        </div>
+        <>
+            <h1>Support Page. This title should describe the entire page, not just a section</h1>
+        </>
     );
 }
 

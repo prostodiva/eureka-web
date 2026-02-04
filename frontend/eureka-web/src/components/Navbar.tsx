@@ -18,7 +18,6 @@ interface NavbarProps {
 
 function Navbar({
                     links,
-                    containerClassName = '',
                     navClassName = 'w-full inline-flex items-center gap-2 h-16',
                     linkClassName = 'mx-8 text-gray-400',
                     activeLinkClassName = 'font-bold text-white',
@@ -55,11 +54,12 @@ function Navbar({
     ));
 
     return (
-        <div>
-            <nav className={`${navClassName} ${variantClasses} ${alignmentClasses[alignment]}`}>
-                {renderedLinks}
-            </nav>
-        </div>
+        <nav
+            aria-label="Primary navigation"
+            className={`${navClassName} ${variantClasses} ${alignmentClasses[alignment]}`}
+        >
+            {renderedLinks}
+        </nav>
     );
 }
 

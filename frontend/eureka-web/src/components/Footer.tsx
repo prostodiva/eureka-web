@@ -1,6 +1,8 @@
 function Footer() {
     return(
-        <div className="overflow-x-auto h-100 bg-gray-100">footer</div>
+        <footer className="overflow-x-auto h-100 bg-gray-100">
+            <p>© 2026 Margarita Kattsyna</p>
+        </footer>
     );
 }
 
