@@ -1,3 +1,5 @@
+import Button from '../components/Button.tsx';
+
 export interface CallToActionProps {
   title: string;
   subtitle?: string;
@@ -18,7 +20,12 @@ function CallToAction({ title, description, ctaLabel, onCtaClick }: CallToAction
         {title}
       </h2>
       <p>{description}</p>
-      <button className="btn btn-primary" onClick={onCtaClick}>{ctaLabel}</button>
+      <Button
+        variant="secondary"
+        rounded
+        onClick={onCtaClick}>
+          {ctaLabel}
+      </Button>
     </section>
   );
 }
