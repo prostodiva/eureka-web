@@ -12,6 +12,7 @@ function StorePage() {
         <Hero
           title="Hero Section Store Page"
           description="hero section Store page description blah-blah"
+          minHeightScreen
         />
         <Value
           title="Value Section Store Page"

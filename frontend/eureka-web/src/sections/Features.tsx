@@ -7,12 +7,13 @@ export interface FeaturesProps {
   backgroundImage?: string;
   ctaLabel?: string;
   onCtaClick?: () => void;
+  minHeightScreen?: boolean;
 }
 
 
-function Features({ title, description }: FeaturesProps) {
+function Features({ title, description, minHeightScreen}: FeaturesProps) {
   return (
-    <Section aria-labelledby="feature-heading" className="bg-gray-50">
+    <Section aria-labelledby="feature-heading" className="bg-gray-50" minHeightScreen={minHeightScreen}>
       <h2
         id="feature-heading"
         className="text-2xl md:text-3xl font-semibold mb-4"

@@ -7,11 +7,12 @@ export interface AboutProps {
   backgroundImage?: string;
   ctaLabel?: string;
   onCtaClick?: () => void;
+  minHeightScreen?: boolean;
 }
 
-function About({ title, description }: AboutProps) {
+function About({ title, description, minHeightScreen }: AboutProps) {
     return (
-        <Section aria-labelledby="about-heading" className="bg-gray-50">
+        <Section aria-labelledby="about-heading" className="bg-gray-50" minHeightScreen={minHeightScreen}>
             <h2 id="about-heading" className="text-2xl md:text-3xl font-semibold mb-4">
                 {title}
             </h2>

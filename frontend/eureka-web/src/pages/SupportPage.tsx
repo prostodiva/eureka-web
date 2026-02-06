@@ -12,6 +12,7 @@ function SupportPage() {
         <Hero
           title="Hero Section Support Page"
           description="hero section support page description blah-blah"
+          minHeightScreen
         />
         <Value
           title="Value Section Support Page"

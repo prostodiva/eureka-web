@@ -7,12 +7,13 @@ export interface ValueProps {
   backgroundImage?: string;
   ctaLabel?: string;
   onCtaClick?: () => void;
+  minHeightScreen?: boolean;
 }
 
 
-function Value({ title, description }: ValueProps) {
+function Value({ title, description, minHeightScreen }: ValueProps) {
     return (
-        <Section aria-labelledby="description-heading" className="bg-gray-100">
+        <Section aria-labelledby="description-heading" className="bg-gray-100" minHeightScreen={minHeightScreen}>
             <h2 id="description-heading" className="text-2xl md:text-3xl font-semibold mb-4">
                 {title}
             </h2>

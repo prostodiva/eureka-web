@@ -9,8 +9,16 @@ function AboutUsPage() {
           section
         </h1>
 
-        <Hero title="Hero Section About Page" description="hero section about page description blah-blah" />
-        <Value title="Value Section About Page" description="Value section about page description blah-blah" />
+        <Hero
+          title="Hero Section About Page"
+          description="hero section about page description blah-blah"
+          minHeightScreen
+        />
+
+        <Value
+          title="Value Section About Page"
+          description="Value section about page description blah-blah"
+        />
       </>
     );
 }

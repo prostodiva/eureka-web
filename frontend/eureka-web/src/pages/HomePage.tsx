@@ -14,30 +14,36 @@ function HomePage() {
         <Hero
           title="Hero Section home page"
           description="hero section decription blah-blah"
+          minHeightScreen
         />
 
         <Value
           title="Value Section home page"
           description="Value section decription blah-blah"
+          minHeightScreen
         />
         <Features
           title="Features Section home page"
           description="Features section decription blah-blah"
-        />
-
-        <SocialProof
-          title="SocialProof Section home page"
-          description="SocialProof section decription blah-blah"
+          minHeightScreen
         />
 
         <About
           title="About Section home page"
           description="About section decription blah-blah"
+          minHeightScreen
+        />
+
+        <SocialProof
+          title="SocialProof Section home page"
+          description="SocialProof section decription blah-blah"
+          className="py-32 md:py-96"
         />
 
         <CallToAction
           title="CallToAction Section home page"
           description="callToAction section decription blah-blah"
+          className="py-32 md:py-96"
           ctaLabel="CallToActionButton"
           onCtaClick={() => alert('CallToAction Clicked')}
         />
