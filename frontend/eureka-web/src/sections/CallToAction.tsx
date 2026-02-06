@@ -1,4 +1,5 @@
 import Button from '../components/Button.tsx';
+import Section from '../components/Section.tsx';
 
 export interface CallToActionProps {
   title: string;
@@ -12,7 +13,7 @@ export interface CallToActionProps {
 
 function CallToAction({ title, description, ctaLabel, onCtaClick }: CallToActionProps) {
   return (
-    <section aria-labelledby="callToAction-heading" className="px-4 py-8 bg-gray-50">
+    <Section aria-labelledby="callToAction-heading" className="bg-gray-50">
       <h2
         id="callToAction-heading"
         className="text-2xl md:text-3xl font-semibold mb-4"
@@ -26,7 +27,7 @@ function CallToAction({ title, description, ctaLabel, onCtaClick }: CallToAction
         onClick={onCtaClick}>
           {ctaLabel}
       </Button>
-    </section>
+    </Section>
   );
 }
 

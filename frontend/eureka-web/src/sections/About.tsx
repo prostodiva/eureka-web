@@ -1,3 +1,5 @@
+import Section from '../components/Section.tsx';
+
 export interface AboutProps {
   title: string;
   subtitle?: string;
@@ -9,14 +11,14 @@ export interface AboutProps {
 
 function About({ title, description }: AboutProps) {
     return (
-        <section aria-labelledby="about-heading" className="px-4 py-8 bg-gray-50">
+        <Section aria-labelledby="about-heading" className="bg-gray-50">
             <h2 id="about-heading" className="text-2xl md:text-3xl font-semibold mb-4">
                 {title}
             </h2>
             <p>
               {description}
             </p>
-        </section>
+        </Section>
     );
 }
 
