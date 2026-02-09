@@ -1,9 +1,9 @@
 import Hero from '../../../components/sections/Hero.tsx';
-import StoreHeroContent from './StoreHeroContent.tsx';
+import GameplayHeroContent from './GameplayHeroContent.tsx';
 import Button from '../../../components/Button.tsx';
 import homeHeroBg from '../../../assets/bg/homeHero.png';
 
-function StoreHero() {
+function GameplayHero() {
   const handleBuyClick = () => {
     console.log('buy clicked');
   };
@@ -13,7 +13,7 @@ function StoreHero() {
       backgroundImage={homeHeroBg}
       minHeightScreen
       content={
-        <StoreHeroContent
+        <GameplayHeroContent
           title="Hero Section Store Page"
           description="hero section Store page description blah-blah"
         />
@@ -27,4 +27,4 @@ function StoreHero() {
   );
 }
 
-export default StoreHero;
+export default GameplayHero;

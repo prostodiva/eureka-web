@@ -1,10 +1,10 @@
-export interface SupportHeroContentProps {
+export interface HeroContentProps {
   title: string;
   subtitle?: string;
   description?: string;
 }
 
-function SupportHeroContent({ title, subtitle, description }: SupportHeroContentProps) {
+function GameplayHeroContent({ title, subtitle, description }: HeroContentProps) {
   return (
     <>
       <h2 id="hero-heading" className="text-2xl md:text-3xl font-semibold mb-4">
@@ -17,4 +17,4 @@ function SupportHeroContent({ title, subtitle, description }: SupportHeroContent
     </>
   );
 }
-export default SupportHeroContent;
+export default GameplayHeroContent;

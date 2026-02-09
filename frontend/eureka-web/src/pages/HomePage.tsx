@@ -8,10 +8,6 @@ import ValuesSection from '../features/homePage/valuesSection/ValuesSection.tsx'
 function HomePage() {
     return (
       <>
-        <h1 className="text-3xl md:text-5xl font-bold text-center mt-6">
-          This title should describe the entire page, not just a section
-        </h1>
-
         <HomeHero />
         <ValuesSection />
         <FeaturesSection />

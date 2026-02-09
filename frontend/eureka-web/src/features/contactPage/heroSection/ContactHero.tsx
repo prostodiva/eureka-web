@@ -1,9 +1,9 @@
 import Hero from '../../../components/sections/Hero.tsx';
 import Button from '../../../components/Button.tsx';
 import homeHeroBg from '../../../assets/bg/homeHero.png';
-import SupportHeroContent from './SupportHeroContent.tsx';
+import ContactHeroContent from './ContactHeroContent.tsx';
 
-function SupportHero() {
+function ContactHero() {
   const handleGameplayClick = () => {
     console.log('gameplay clicked');
   };
@@ -13,7 +13,7 @@ function SupportHero() {
       backgroundImage={homeHeroBg}
       minHeightScreen
       content={
-        <SupportHeroContent
+        <ContactHeroContent
           title="hero section on support page"
           description="hero description blah-blah"
         />
@@ -27,4 +27,4 @@ function SupportHero() {
   );
 }
 
-export default SupportHero;
+export default ContactHero;
