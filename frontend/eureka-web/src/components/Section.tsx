@@ -14,9 +14,9 @@ const Section = ({ children, className = '', minHeightScreen = false, style
       className={classNames(
         `py-24 md:py-40 px-8 md:px-16 w-full`,
         minHeightScreen && `min-h-screen`,
-        className,
-        style
+        className
       )}
+      style={style}
     >
       {children}
     </section>
