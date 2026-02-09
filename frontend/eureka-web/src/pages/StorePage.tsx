@@ -1,5 +1,5 @@
-import Hero from '../sections/Hero.tsx';
-import Value from '../sections/Value.tsx';
+
+import StoreHero from '../features/storePage/hero/StoreHero.tsx';
 
 function StorePage() {
     return (
@@ -9,15 +9,8 @@ function StorePage() {
           section
         </h1>
 
-        <Hero
-          title="Hero Section Store Page"
-          description="hero section Store page description blah-blah"
-          minHeightScreen
-        />
-        <Value
-          title="Value Section Store Page"
-          description="Value section store page description blah-blah"
-        />
+        <StoreHero />
+
       </>
     );
 }

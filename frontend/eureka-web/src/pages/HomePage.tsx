@@ -1,9 +1,10 @@
-import Hero from "../sections/Hero"
-import Value from "../sections/Value.tsx";
-import About from "../sections/About.tsx";
-import Features from '../sections/Features.tsx';
-import SocialProof from '../sections/SocialProof.tsx';
-import CallToAction from '../sections/CallToAction.tsx';
+import HomeHero from '../features/homePage/hero/HomeHero.tsx';
+import AboutUsSection from '../features/homePage/aboutUsSection/AboutUsSection.tsx';
+import CtaSection from '../features/homePage/CTAsection/CtaSection.tsx';
+import FeaturesSection from '../features/homePage/featuresSection/FeaturesSection.tsx';
+import OverviewSection from '../features/homePage/OverviewSection/OverviewSection.tsx';
+import ValuesSection from '../features/homePage/valuesSection/ValuesSection.tsx';
+
 function HomePage() {
     return (
       <>
@@ -11,42 +12,12 @@ function HomePage() {
           This title should describe the entire page, not just a section
         </h1>
 
-        <Hero
-          title="Hero Section home page"
-          description="hero section decription blah-blah"
-          minHeightScreen
-        />
-
-        <Value
-          title="Value Section home page"
-          description="Value section decription blah-blah"
-          minHeightScreen
-        />
-        <Features
-          title="Features Section home page"
-          description="Features section decription blah-blah"
-          minHeightScreen
-        />
-
-        <About
-          title="About Section home page"
-          description="About section decription blah-blah"
-          minHeightScreen
-        />
-
-        <SocialProof
-          title="SocialProof Section home page"
-          description="SocialProof section decription blah-blah"
-          className="py-32 md:py-96"
-        />
-
-        <CallToAction
-          title="CallToAction Section home page"
-          description="callToAction section decription blah-blah"
-          className="py-32 md:py-96"
-          ctaLabel="CallToActionButton"
-          onCtaClick={() => alert('CallToAction Clicked')}
-        />
+        <HomeHero />
+        <ValuesSection />
+        <FeaturesSection />
+        <AboutUsSection />
+        <OverviewSection />
+        <CtaSection />
       </>
     );
 }

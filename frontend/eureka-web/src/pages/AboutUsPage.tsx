@@ -1,5 +1,4 @@
-import Hero from '../sections/Hero.tsx';
-import Value from '../sections/Value.tsx';
+import AboutUsHeroSection from '../features/aboutUsPage/hero/AboutUsHeroSection.tsx';
 
 function AboutUsPage() {
     return (
@@ -9,16 +8,8 @@ function AboutUsPage() {
           section
         </h1>
 
-        <Hero
-          title="Hero Section About Page"
-          description="hero section about page description blah-blah"
-          minHeightScreen
-        />
+        <AboutUsHeroSection />
 
-        <Value
-          title="Value Section About Page"
-          description="Value section about page description blah-blah"
-        />
       </>
     );
 }

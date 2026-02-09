@@ -29,7 +29,7 @@ function Navbar({
 
     const defaultLinks: NavLink[] = [
         { label: 'Home', path: '/' },
-        { label: 'Store', path: '/store' },
+        { label: 'Store', path: '/storePage' },
         { label: 'About Us', path: '/about' },
         { label: 'Support', path: '/support' },
     ];
