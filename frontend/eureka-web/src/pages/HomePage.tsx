@@ -9,10 +9,10 @@ function HomePage() {
     return (
       <>
         <HomeHero />
+        <OverviewSection />
         <ValuesSection />
         <FeaturesSection />
         <AboutUsSection />
-        <OverviewSection />
         <CtaSection />
       </>
     );

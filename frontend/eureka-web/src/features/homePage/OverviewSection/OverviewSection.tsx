@@ -1,6 +1,7 @@
 import Overview from '../../../components/sections/Overview.tsx';
 import Button from '../../../components/Button.tsx';
 import OverviewSectionContent from './OverviewSectionContent.tsx';
+import overview from '../../../assets/bg/overviewHome.png'
 
 function OverviewSection() {
   const handleLearnMoreClick = () => {
@@ -9,6 +10,7 @@ function OverviewSection() {
 
   return (
     <Overview
+      backgroundImage={overview}
       minHeightScreen
       content={
         <OverviewSectionContent

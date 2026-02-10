@@ -22,7 +22,7 @@ function Hero({ backgroundImage, content, actions, minHeightScreen }: HeroProps)
             : undefined
         }
       >
-        <div>
+        <div className="relative min-h-sceen">
           {content}
           {actions}
         </div>
