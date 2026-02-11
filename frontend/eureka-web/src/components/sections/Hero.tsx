@@ -7,12 +7,11 @@ export interface HeroProps {
   minHeightScreen?: boolean;
 }
 
-function Hero({ backgroundImage, content, actions, minHeightScreen }: HeroProps){
+function Hero({ backgroundImage, content, actions }: HeroProps){
     return (
       <Section
         aria-labelledby="hero-heading"
-        className="relative bg-no-repeat bg-cover bg-center "
-        minHeightScreen={minHeightScreen}
+        className="relative min-h-screen flex flex-col justify-center items-center"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}

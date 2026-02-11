@@ -1,18 +1,19 @@
 interface SectionProps {
   children: React.ReactNode;
   className?: string;
-  minHeightScreen?: boolean;
   style?: React.CSSProperties;
   backgroundImage?: string;
 }
 
-const Section = ({ children, style, className
-}: SectionProps) => {
+const Section = ({ children, className, style, backgroundImage }: SectionProps) => {
   return (
     <section
-      className={`relative min-h-screen ${className || ''}`}
+      className={`relative w-full ${className || ''}`}
       style={{
-        backgroundColor: 'white',
+        backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
         ...style,
       }}
     >
