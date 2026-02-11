@@ -4,21 +4,22 @@ export interface ValueProps {
   backgroundImage?: string;
   content: React.ReactNode;
   actions?: React.ReactNode;
-  minHeightScreen?: boolean;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 
-function Value({ backgroundImage, content, actions, minHeightScreen }: ValueProps) {
+function Value({ backgroundImage, content, className, actions, style }: ValueProps) {
   return (
     <Section
       aria-labelledby="value-heading"
-      className={backgroundImage ? '' : 'bg-gray-100'}
-      minHeightScreen={minHeightScreen}
-      style={
-        backgroundImage
-          ? { backgroundImage: `url(${backgroundImage})` }
-          : undefined
-      }
+      className={`relative flex flex-col justify-center items-center ${className || 'min-h-screen'}`}
+      style={{
+        backgroundImage: backgroundImage
+          ? `url(${backgroundImage})`
+          : undefined,
+        ...style,
+      }}
     >
       <div className="relative min-h-screen">
         {content}
