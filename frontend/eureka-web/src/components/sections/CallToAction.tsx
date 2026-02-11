@@ -19,7 +19,7 @@ function CallToAction({ backgroundImage, content, actions, minHeightScreen }: Ca
           : undefined
       }
     >
-      <div>
+      <div className="relative min-h-screen">
         {content}
         {actions}
       </div>

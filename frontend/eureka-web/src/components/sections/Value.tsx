@@ -20,7 +20,7 @@ function Value({ backgroundImage, content, actions, minHeightScreen }: ValueProp
           : undefined
       }
     >
-      <div>
+      <div className="relative min-h-screen">
         {content}
         {actions}
       </div>

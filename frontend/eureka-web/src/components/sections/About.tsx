@@ -19,7 +19,7 @@ function About({ backgroundImage, content, actions, minHeightScreen }: AboutProp
           : undefined
       }
     >
-      <div>
+      <div className="relative min-h-screen">
         {content}
         {actions}
       </div>

@@ -19,7 +19,7 @@ function Features({ backgroundImage, content, actions, minHeightScreen }: Featur
           : undefined
       }
     >
-      <div>
+      <div className="relative min-h-screen">
         {content}
         {actions}
       </div>

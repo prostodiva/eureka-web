@@ -1,24 +1,22 @@
-import classNames from 'classnames';
-
 interface SectionProps {
   children: React.ReactNode;
   className?: string;
   minHeightScreen?: boolean;
   style?: React.CSSProperties;
+  backgroundImage?: string;
 }
 
-const Section = ({ children, className = '', minHeightScreen = false, style
+const Section = ({ children, style, className
 }: SectionProps) => {
   return (
     <section
-      className={classNames(
-        `py-24 md:py-40 px-8 md:px-16 w-full`,
-        minHeightScreen && `min-h-screen`,
-        className
-      )}
-      style={style}
+      className={`relative min-h-screen ${className || ''}`}
+      style={{
+        backgroundColor: 'white',
+        ...style,
+      }}
     >
-      {children}
+      <div>{children}</div>
     </section>
   );
 };

@@ -7,22 +7,17 @@ export interface FeaturesProps {
   minHeightScreen?: boolean;
 }
 
-function Overview({ backgroundImage, content, actions, minHeightScreen }: FeaturesProps) {
+function Overview({ backgroundImage, content, actions}: FeaturesProps) {
   return (
     <Section
       aria-labelledby="overview-heading"
-      className={backgroundImage ? '' : 'bg-gray-100'}
-      minHeightScreen={minHeightScreen}
-      style={
-        backgroundImage
-          ? { backgroundImage: `url(${backgroundImage})` }
-          : undefined
-      }
+      className="relative bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
     >
-      <div>
-        {content}
-        {actions}
-      </div>
+      {content}
+      {actions}
     </Section>
   );
 }

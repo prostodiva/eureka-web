@@ -11,21 +11,14 @@ function Hero({ backgroundImage, content, actions, minHeightScreen }: HeroProps)
     return (
       <Section
         aria-labelledby="hero-heading"
-        className={`
-        bg-cover bg-center bg-no-repeat
-        ${!backgroundImage ? 'bg-gray-100' : ''}
-      `}
+        className="relative bg-no-repeat bg-cover bg-center "
         minHeightScreen={minHeightScreen}
-        style={
-          backgroundImage
-            ? { backgroundImage: `url(${backgroundImage})` }
-            : undefined
-        }
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
       >
-        <div className="relative min-h-sceen">
-          {content}
-          {actions}
-        </div>
+        {content}
+        {actions}
       </Section>
     );
 }

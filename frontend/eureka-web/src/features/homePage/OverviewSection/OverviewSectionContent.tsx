@@ -3,16 +3,10 @@ export interface AboutUsContentProps {
   description?: string;
 }
 
-function OverviewSectionContent({ title, description }: AboutUsContentProps) {
+function OverviewSectionContent() {
   return (
     <>
-      <h2
-        id="overview-heading"
-        className="text-2xl md:text-3xl font-semibold mb-4"
-      >
-        {title}
-      </h2>
-      <p>{description}</p>
+
     </>
   );
 }
