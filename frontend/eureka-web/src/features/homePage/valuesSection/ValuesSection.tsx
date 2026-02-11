@@ -1,7 +1,7 @@
 import ValuesSectionContent from './ValuesSectionContent.tsx';
 import Value from '../../../components/sections/Value.tsx';
 import values from '../../../assets/bg/valuesHome.png'
-import Button from '../../../components/Button.tsx';
+import Button from '../../../components/ui/Button.tsx';
 import arrowLeft from '../../../assets/bg/arrowLeft.png'
 import arrowRight from '../../../assets/bg/arrowRight.png';
 

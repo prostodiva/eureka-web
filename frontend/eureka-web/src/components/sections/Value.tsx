@@ -1,15 +1,8 @@
-import Section from '../Section.tsx';
-
-export interface ValueProps {
-  backgroundImage?: string;
-  content: React.ReactNode;
-  actions?: React.ReactNode;
-  className?: string;
-  style?: React.CSSProperties;
-}
+import Section from '../layout/Section.tsx';
+import type { BaseSectionProps } from '../../types/section.ts';
 
 
-function Value({ backgroundImage, content, className, actions, style }: ValueProps) {
+function Value({ backgroundImage, content, className, actions, style }: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="value-heading"

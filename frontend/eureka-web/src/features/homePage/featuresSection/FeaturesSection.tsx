@@ -1,6 +1,6 @@
 import Features from '../../../components/sections/Features.tsx';
 import FeatureSectionContent from './FeaturesSectionContent.tsx';
-import Button from '../../../components/Button.tsx';
+import Button from '../../../components/ui/Button.tsx';
 
 function FeaturesSection() {
   const handleLearnMoreClick = () => {

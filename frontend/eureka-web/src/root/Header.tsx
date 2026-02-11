@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar.tsx";
+import Navbar from "../components/ui/Navbar.tsx";
 import logo from "../assets/logo.png";
 import { Link } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi';

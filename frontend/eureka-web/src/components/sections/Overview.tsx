@@ -1,12 +1,7 @@
-import Section from '../Section.tsx';
+import Section from '../layout/Section.tsx';
+import type { BaseSectionProps } from '../../types/section';
 
-export interface FeaturesProps {
-  backgroundImage?: string;
-  content: React.ReactNode;
-  actions?: React.ReactNode;
-}
-
-function Overview({ backgroundImage, content, actions}: FeaturesProps) {
+function Overview({ backgroundImage, content, actions}: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="overview-heading"

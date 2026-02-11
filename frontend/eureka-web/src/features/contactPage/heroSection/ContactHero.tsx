@@ -1,5 +1,5 @@
 import Hero from '../../../components/sections/Hero.tsx';
-import Button from '../../../components/Button.tsx';
+import Button from '../../../components/ui/Button.tsx';
 import homeHeroBg from '../../../assets/bg/homeHero.png';
 import ContactHeroContent from './ContactHeroContent.tsx';
 

@@ -1,12 +1,8 @@
-import Section from '../Section.tsx';
+import Section from '../layout/Section.tsx';
 
-export interface AboutProps {
-  backgroundImage?: string;
-  content: React.ReactNode;
-  actions?: React.ReactNode;
-}
+import type { BaseSectionProps } from '../../types/section';
 
-function About({ backgroundImage, content, actions }: AboutProps) {
+function About({ backgroundImage, content, actions }: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="about-heading"

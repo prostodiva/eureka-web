@@ -1,13 +1,7 @@
-import Section from '../Section.tsx';
+import Section from '../layout/Section.tsx';
+import type { BaseSectionProps } from '../../types/section';
 
-export interface CallToActionProps {
-  backgroundImage?: string;
-  content: React.ReactNode;
-  actions?: React.ReactNode;
-
-}
-
-function CallToAction({ backgroundImage, content, actions }: CallToActionProps) {
+function CallToAction({ backgroundImage, content, actions }: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="callToAction-heading"

@@ -1,6 +1,6 @@
 import CallToAction from '../../../components/sections/CallToAction.tsx';
 import CtaContent from './CtaContent.tsx';
-import Button from '../../../components/Button.tsx';
+import Button from '../../../components/ui/Button.tsx';
 
 function CtaSection() {
   const handleDownloadClick = () => {

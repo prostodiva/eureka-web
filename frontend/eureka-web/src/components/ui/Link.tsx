@@ -1,6 +1,6 @@
 import type { ReactNode, MouseEvent } from 'react';
 import classNames from 'classnames';
-import useNavigation from '../hooks/useNavigation';
+import useNavigation from '../../hooks/useNavigation.ts';
 
 interface LinkProps {
     to: string;

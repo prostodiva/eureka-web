@@ -1,6 +1,6 @@
 import About from '../../../components/sections/About.tsx';
 import AboutUsContent from './AboutUsContent.tsx';
-import Button from '../../../components/Button.tsx';
+import Button from '../../../components/ui/Button.tsx';
 
 function AboutUsSection() {
   const handleLearnMoreClick = () => {

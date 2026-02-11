@@ -1,4 +1,4 @@
-import Link from './Link';
+import Link from './Link.tsx';
 import {useState} from "react";
 import { BsPuzzleFill } from 'react-icons/bs';
 import { IoExtensionPuzzle} from 'react-icons/io5';

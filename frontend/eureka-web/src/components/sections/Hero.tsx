@@ -1,14 +1,8 @@
-import Section from '../Section.tsx';
+import Section from '../layout/Section.tsx';
+import type { BaseSectionProps } from '../../types/section.ts';
 
-export interface HeroProps {
-  backgroundImage?: string;
-  content: React.ReactNode;
-  actions?: React.ReactNode;
-  className?: string;
-  style?: React.CSSProperties;
-}
 
-function Hero({ backgroundImage, content, actions, className, style }: HeroProps){
+function Hero({ backgroundImage, content, actions, className, style }: BaseSectionProps){
     return (
       <Section
         aria-labelledby="hero-heading"

@@ -1,6 +1,6 @@
 import Hero from '../../../components/sections/Hero.tsx';
 import HeroContent from './HeroContent.tsx';
-import Button from '../../../components/Button.tsx';
+import Button from '../../../components/ui/Button.tsx';
 import homeHeroBg from '../../../assets/bg/homeHero.png';
 import comp_19 from '../../../assets/comp_19.png';
 import { useNavigate } from 'react-router-dom';
