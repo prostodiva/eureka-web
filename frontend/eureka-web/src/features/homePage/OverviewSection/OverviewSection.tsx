@@ -7,7 +7,6 @@ function OverviewSection() {
   return (
     <Overview
       backgroundImage={overview}
-      minHeightScreen
       content={
         <OverviewSectionContent />
       }

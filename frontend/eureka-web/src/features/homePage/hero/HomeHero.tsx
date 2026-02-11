@@ -15,7 +15,6 @@ function HomeHero() {
   return (
     <Hero
       backgroundImage={homeHeroBg}
-      minHeightScreen
       content={<HeroContent />}
       actions={
         <Button

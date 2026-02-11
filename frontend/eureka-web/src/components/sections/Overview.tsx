@@ -4,7 +4,6 @@ export interface FeaturesProps {
   backgroundImage?: string;
   content: React.ReactNode;
   actions?: React.ReactNode;
-  minHeightScreen?: boolean;
 }
 
 function Overview({ backgroundImage, content, actions}: FeaturesProps) {

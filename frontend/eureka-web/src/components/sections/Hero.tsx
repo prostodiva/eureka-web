@@ -4,16 +4,20 @@ export interface HeroProps {
   backgroundImage?: string;
   content: React.ReactNode;
   actions?: React.ReactNode;
-  minHeightScreen?: boolean;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
-function Hero({ backgroundImage, content, actions }: HeroProps){
+function Hero({ backgroundImage, content, actions, className, style }: HeroProps){
     return (
       <Section
         aria-labelledby="hero-heading"
-        className="relative min-h-screen flex flex-col justify-center items-center"
+        className={`relative flex flex-col justify-center items-center ${className || 'min-h-screen'}`}
         style={{
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundImage: backgroundImage
+            ? `url(${backgroundImage})`
+            : undefined,
+          ...style,
         }}
       >
         {content}

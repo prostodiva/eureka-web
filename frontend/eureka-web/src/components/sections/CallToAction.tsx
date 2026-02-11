@@ -4,20 +4,17 @@ export interface CallToActionProps {
   backgroundImage?: string;
   content: React.ReactNode;
   actions?: React.ReactNode;
-  minHeightScreen?: boolean;
+
 }
 
-function CallToAction({ backgroundImage, content, actions, minHeightScreen }: CallToActionProps) {
+function CallToAction({ backgroundImage, content, actions }: CallToActionProps) {
   return (
     <Section
       aria-labelledby="callToAction-heading"
-      className={backgroundImage ? '' : 'bg-gray-100'}
-      minHeightScreen={minHeightScreen}
-      style={
-        backgroundImage
-          ? { backgroundImage: `url(${backgroundImage})` }
-          : undefined
-      }
+      className="relative min-h-screen flex flex-col justify-center items-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
     >
       <div className="relative min-h-screen">
         {content}
