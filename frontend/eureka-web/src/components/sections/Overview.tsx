@@ -5,7 +5,7 @@ function Overview({ backgroundImage, content, actions}: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="overview-heading"
-      className="relative min-h-[120vh] flex flex-col justify-center items-center"
+      className="relative min-h-[140vh] flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}

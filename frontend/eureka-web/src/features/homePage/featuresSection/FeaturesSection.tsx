@@ -1,25 +1,17 @@
 import Features from '../../../components/sections/Features.tsx';
 import FeatureSectionContent from './FeaturesSectionContent.tsx';
-import Button from '../../../components/ui/Button.tsx';
+import featuresHome from '../../../assets/bg/featuresHome.png';
 
 function FeaturesSection() {
-  const handleLearnMoreClick = () => {
-    console.log('learn more clicked');
-  };
 
   return (
     <Features
-      minHeightScreen
+      backgroundImage={featuresHome}
       content={
         <FeatureSectionContent
           title="Home Page: features"
           description="description"
         />
-      }
-      actions={
-        <Button variant="primary" onClick={handleLearnMoreClick}>
-          learnMore
-        </Button>
       }
     />
   );

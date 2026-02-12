@@ -26,12 +26,10 @@ const handleNext = () => {
   return (
     <Value
       backgroundImage={values}
-      className="relative min-h-[120vh] md:min-h-[150vh]"
-      style={{ backgroundPosition: 'top center' }}
       content={<ValuesSectionContent />}
       actions={
-        <div className="absolute bottom-36 left-1/2 -translate-x-14 flex flex-col items-center w-full">
-          <div className="flex mb-120 gap-210">
+        <div className="absolute bottom-40 flex flex-col justify-center gap-6 -translate-x-14 items-center w-full">
+          <div className="flex mb-15 gap-20">
             <Button
               variant="arrowLeft"
               backgroundImage={arrowLeft}
@@ -40,7 +38,7 @@ const handleNext = () => {
 
             <Button
               variant="arrowRight"
-              className="translate-x-26"
+              className="translate-x-12"
               backgroundImage={arrowRight}
               onClick={handleNext}
             />

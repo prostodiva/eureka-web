@@ -2,11 +2,11 @@ import Section from '../layout/Section.tsx';
 import type { BaseSectionProps } from '../../types/section.ts';
 
 
-function Value({ backgroundImage, content, className, actions, style }: BaseSectionProps) {
+function Value({ backgroundImage, content, actions, style }: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="value-heading"
-      className={`relative flex flex-col justify-center items-center ${className || 'min-h-screen'}`}
+      className="relative min-h-[140vh] flex flex-col justify-center items-center"
       style={{
         backgroundImage: backgroundImage
           ? `url(${backgroundImage})`
@@ -14,7 +14,7 @@ function Value({ backgroundImage, content, className, actions, style }: BaseSect
         ...style,
       }}
     >
-      <div className="relative min-h-screen">
+      <div>
         {content}
         {actions}
       </div>

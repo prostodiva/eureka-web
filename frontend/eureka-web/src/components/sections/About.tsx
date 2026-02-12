@@ -6,12 +6,12 @@ function About({ backgroundImage, content, actions }: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="about-heading"
-      className="relative min-h-screen flex flex-col justify-center items-center"
+      className="relative min-h-[120vh] flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
     >
-      <div className="relative min-h-screen">
+      <div>
         {content}
         {actions}
       </div>
