@@ -1,19 +1,16 @@
 import classNames from 'classnames';
+type ButtonVariant = 'primary' | 'secondary' | 'ternary' | 'add' | 'arrowLeft' | 'arrowRight';
+type ButtonSize = 'sm' | 'md' | 'lg';
+type ButtonType = 'button' | 'submit' | 'reset';
 
 interface ButtonProps {
   children?: React.ReactNode;
-  variant?:
-    | 'primary'
-    | 'secondary'
-    | 'ternary'
-    | 'add'
-    | 'arrowLeft'
-    | 'arrowRight';
-  size?: 'sm' | 'md' | 'lg';
+  variant?: ButtonVariant;
+  size?: ButtonSize;
   rounded?: boolean;
   outline?: boolean;
   active?: boolean;
-  type?: 'button' | 'submit' | 'reset';
+  type?: ButtonType;
   disabled?: boolean;
   className?: string;
   onClick?: () => void;

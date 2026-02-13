@@ -5,6 +5,9 @@ import { IoExtensionPuzzle } from 'react-icons/io5';
 import { FaPuzzlePiece } from 'react-icons/fa6';
 import { RiPuzzle2Fill } from 'react-icons/ri';
 
+type LinkVariant = 'horizontal' | 'vertical';
+type Alignment = 'start' | 'center' | 'end' | 'between';
+
 interface NavLink {
   label: string;
   path: string;
@@ -18,8 +21,8 @@ interface NavbarProps {
   linkClassName?: string;
   activeLinkClassName?: string;
   logo?: React.ReactNode;
-  variant?: 'horizontal' | 'vertical';
-  alignment?: 'start' | 'center' | 'end' | 'between';
+  variant?: LinkVariant;
+  alignment?: Alignment;
 }
 
 function Navbar({
