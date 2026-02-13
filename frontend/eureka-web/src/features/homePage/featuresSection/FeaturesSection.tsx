@@ -3,7 +3,6 @@ import FeatureSectionContent from './FeaturesSectionContent.tsx';
 import featuresHome from '../../../assets/bg/featuresHome.png';
 
 function FeaturesSection() {
-
   return (
     <Features
       backgroundImage={featuresHome}

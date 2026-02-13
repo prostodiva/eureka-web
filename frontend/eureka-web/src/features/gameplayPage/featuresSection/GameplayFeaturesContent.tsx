@@ -4,7 +4,10 @@ export interface GameplayFeaturesContentProps {
   description?: string;
 }
 
-function GameplayFeaturesContent({title, description}: GameplayFeaturesContentProps) {
+function GameplayFeaturesContent({
+  title,
+  description,
+}: GameplayFeaturesContentProps) {
   return (
     <>
       <h2

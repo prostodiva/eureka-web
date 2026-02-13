@@ -1,27 +1,26 @@
 import ValuesSectionContent from './ValuesSectionContent.tsx';
 import Value from '../../../components/sections/Value.tsx';
-import values from '../../../assets/bg/valuesHome.png'
+import values from '../../../assets/bg/valuesHome.png';
 import Button from '../../../components/ui/Button.tsx';
-import arrowLeft from '../../../assets/bg/arrowLeft.png'
+import arrowLeft from '../../../assets/bg/arrowLeft.png';
 import arrowRight from '../../../assets/bg/arrowRight.png';
 
 function ValuesSection() {
+  const handleBuyClick = () => {
+    console.log('buy clicked');
+  };
 
-const handleBuyClick = () => {
-  console.log('buy clicked');
-}
+  const handleDemoCLick = () => {
+    console.log('demo clicked');
+  };
 
-const handleDemoCLick = () => {
-  console.log('demo clicked');
-}
+  const handlePrev = () => {
+    console.log('prev clicked');
+  };
 
-const handlePrev = () => {
-  console.log('prev clicked');
-}
-
-const handleNext = () => {
-  console.log('next clicked');
-}
+  const handleNext = () => {
+    console.log('next clicked');
+  };
 
   return (
     <Value

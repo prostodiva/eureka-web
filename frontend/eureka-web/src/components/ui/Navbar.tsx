@@ -1,31 +1,31 @@
 import Link from './Link.tsx';
-import {useState} from "react";
+import { useState } from 'react';
 import { BsPuzzleFill } from 'react-icons/bs';
-import { IoExtensionPuzzle} from 'react-icons/io5';
+import { IoExtensionPuzzle } from 'react-icons/io5';
 import { FaPuzzlePiece } from 'react-icons/fa6';
 import { RiPuzzle2Fill } from 'react-icons/ri';
 
 interface NavLink {
-    label: string;
-    path: string;
-    icon?: React.ReactNode;
+  label: string;
+  path: string;
+  icon?: React.ReactNode;
 }
 
 interface NavbarProps {
-    links?: NavLink[];
-    containerClassName?: string;
-    navClassName?: string;
-    linkClassName?: string;
-    activeLinkClassName?: string;
-    logo?: React.ReactNode;
-    variant?: 'horizontal' | 'vertical';
-    alignment?: 'start' | 'center' | 'end' | 'between';
+  links?: NavLink[];
+  containerClassName?: string;
+  navClassName?: string;
+  linkClassName?: string;
+  activeLinkClassName?: string;
+  logo?: React.ReactNode;
+  variant?: 'horizontal' | 'vertical';
+  alignment?: 'start' | 'center' | 'end' | 'between';
 }
 
 function Navbar({
   links,
-  navClassName = 'w-full flex flex-col md:flex-row items-center gap-2 h-auto md:h-16',
-  linkClassName = 'gap-2 my-2 md:mx-4 text-base text-gray-400 flex items-center gap-2 whitespace-nowrap',
+  navClassName = 'w-full flex flex-col md:flex-row items-center gap-10 h-auto md:h-24 font-inter',
+  linkClassName = 'gap-2 my-2 md:mx-4 text-2xl text-gray-400 flex items-center gap-1 whitespace-nowrap',
   activeLinkClassName = 'font-bold text-white',
   variant = 'horizontal',
   alignment = 'start',

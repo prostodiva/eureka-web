@@ -4,10 +4,6 @@ export interface AboutUsContentProps {
 }
 
 function OverviewSectionContent() {
-  return (
-    <>
-
-    </>
-  );
+  return <></>;
 }
 export default OverviewSectionContent;

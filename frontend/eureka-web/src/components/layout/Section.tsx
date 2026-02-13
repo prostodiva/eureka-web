@@ -5,12 +5,19 @@ interface SectionProps {
   backgroundImage?: string;
 }
 
-const Section = ({ children, className, style, backgroundImage }: SectionProps) => {
+const Section = ({
+  children,
+  className,
+  style,
+  backgroundImage,
+}: SectionProps) => {
   return (
     <section
       className={`relative w-full ${className || ''}`}
       style={{
-        backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
+        backgroundImage: backgroundImage
+          ? `url(${backgroundImage})`
+          : undefined,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',

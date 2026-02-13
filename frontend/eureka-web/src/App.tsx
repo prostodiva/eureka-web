@@ -1,10 +1,10 @@
-import Root from "./root/Root";
+import Root from './root/Root';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import type { RouteObject } from 'react-router-dom';
-import HomePage from "./pages/HomePage";
-import GameplayPage from "./pages/GameplayPage.tsx";
-import AboutUsPage from "./pages/AboutUsPage.tsx";
-import ContactPage from "./pages/ContactPage.tsx";
+import HomePage from './pages/HomePage';
+import GameplayPage from './pages/GameplayPage.tsx';
+import AboutUsPage from './pages/AboutUsPage.tsx';
+import ContactPage from './pages/ContactPage.tsx';
 import WhyUsPage from './pages/WhyUsPage.tsx';
 
 const router = createBrowserRouter([
@@ -37,9 +37,7 @@ const router = createBrowserRouter([
 ] as RouteObject[]);
 
 function App() {
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

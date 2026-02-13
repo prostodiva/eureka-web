@@ -1,7 +1,7 @@
 import Section from '../layout/Section.tsx';
 import type { BaseSectionProps } from '../../types/section';
 
-function Overview({ backgroundImage, content, actions}: BaseSectionProps) {
+function Overview({ backgroundImage, content, actions }: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="overview-heading"

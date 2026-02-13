@@ -1,10 +1,11 @@
 import Section from '../layout/Section.tsx';
+
 import type { BaseSectionProps } from '../../types/section';
 
-function Features({ backgroundImage, content, actions }: BaseSectionProps) {
+function Connect({ backgroundImage, content, actions }: BaseSectionProps) {
   return (
     <Section
-      aria-labelledby="feature-heading"
+      aria-labelledby="about-heading"
       className="relative min-h-[120vh] flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
@@ -18,4 +19,4 @@ function Features({ backgroundImage, content, actions }: BaseSectionProps) {
   );
 }
 
-export default Features;
+export default Connect;

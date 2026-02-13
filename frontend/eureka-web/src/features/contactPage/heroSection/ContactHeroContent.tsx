@@ -4,16 +4,9 @@ export interface SupportHeroContentProps {
   description?: string;
 }
 
-function ContactHeroContent({ title, subtitle, description }: SupportHeroContentProps) {
+function ContactHeroContent() {
   return (
     <>
-      <h2 id="hero-heading" className="text-2xl md:text-3xl font-semibold mb-4">
-        {title}
-      </h2>
-
-      {subtitle && <p className="text-base md:text-lg">{subtitle}</p>}
-
-      <p className="text-base md:text-lg">{description}</p>
     </>
   );
 }

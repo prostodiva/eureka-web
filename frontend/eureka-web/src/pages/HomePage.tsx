@@ -5,15 +5,15 @@ import OverviewSection from '../features/homePage/overviewSection/OverviewSectio
 import ValuesSection from '../features/homePage/valuesSection/ValuesSection.tsx';
 
 function HomePage() {
-    return (
-      <>
-        <HomeHero />
-        <OverviewSection />
-        <ValuesSection />
-        <FeaturesSection />
-        <AboutUsSection />
-      </>
-    );
+  return (
+    <>
+      <HomeHero />
+      <OverviewSection />
+      <ValuesSection />
+      <FeaturesSection />
+      <AboutUsSection />
+    </>
+  );
 }
 
 export default HomePage;

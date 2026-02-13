@@ -5,10 +5,6 @@ export interface HeroContentProps {
 }
 
 function GameplayHeroContent() {
-  return (
-    <>
-
-    </>
-  );
+  return <></>;
 }
 export default GameplayHeroContent;

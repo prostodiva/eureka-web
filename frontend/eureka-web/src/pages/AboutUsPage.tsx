@@ -1,13 +1,11 @@
 import AboutUsHeroSection from '../features/aboutUsPage/hero/AboutUsHeroSection.tsx';
 
 function AboutUsPage() {
-    return (
-      <>
-
-        <AboutUsHeroSection />
-
-      </>
-    );
+  return (
+    <>
+      <AboutUsHeroSection />
+    </>
+  );
 }
 
 export default AboutUsPage;

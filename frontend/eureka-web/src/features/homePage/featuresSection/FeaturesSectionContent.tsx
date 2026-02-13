@@ -4,7 +4,10 @@ export interface FeatureSectionContentProps {
   description?: string;
 }
 
-function FeatureSectionContent({ title, description }: FeatureSectionContentProps) {
+function FeatureSectionContent({
+  title,
+  description,
+}: FeatureSectionContentProps) {
   return (
     <>
       <h2

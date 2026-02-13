@@ -3,7 +3,12 @@ import classNames from 'classnames';
 interface ButtonProps {
   children?: React.ReactNode;
   variant?:
-    | 'primary' | 'secondary' | 'ternary' | 'add' | 'arrowLeft' | 'arrowRight';
+    | 'primary'
+    | 'secondary'
+    | 'ternary'
+    | 'add'
+    | 'arrowLeft'
+    | 'arrowRight';
   size?: 'sm' | 'md' | 'lg';
   rounded?: boolean;
   outline?: boolean;
@@ -15,8 +20,18 @@ interface ButtonProps {
   backgroundImage?: string;
 }
 
-
-function Button({ children, variant = 'primary', rounded, outline, active, type = 'button', disabled, className, onClick, backgroundImage }: ButtonProps) {
+function Button({
+  children,
+  variant = 'primary',
+  rounded,
+  outline,
+  active,
+  type = 'button',
+  disabled,
+  className,
+  onClick,
+  backgroundImage,
+}: ButtonProps) {
   const buttonClasses = classNames(
     'text-center font-inter',
     {
@@ -28,7 +43,8 @@ function Button({ children, variant = 'primary', rounded, outline, active, type 
         variant === 'secondary' && active && !backgroundImage,
       'py-1 px-6 border bg-[#e93448] text-white hover:bg-white hover:text-black':
         variant === 'add' && !backgroundImage,
-      'p-2 w-32 h-12 bg-transparent': variant === 'arrowLeft' || variant === 'arrowRight',
+      'p-2 w-32 h-12 bg-transparent':
+        variant === 'arrowLeft' || variant === 'arrowRight',
       'rounded-[1vw]': rounded,
       'bg-white': outline && !backgroundImage,
       'opacity-50 cursor-not-allowed': disabled,

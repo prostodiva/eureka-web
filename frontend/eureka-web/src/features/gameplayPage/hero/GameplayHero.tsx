@@ -3,8 +3,6 @@ import GameplayHeroContent from './GameplayHeroContent.tsx';
 import gameplay from '../../../assets/bg/gameplay.png';
 
 function GameplayHero() {
-
-
   return (
     <Hero
       backgroundImage={gameplay}

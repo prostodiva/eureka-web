@@ -4,11 +4,7 @@ export interface HeroContentProps {
   description?: string;
 }
 
-function HeroContent( ) {
-  return (
-    <>
-
-    </>
-  );
+function HeroContent() {
+  return <></>;
 }
 export default HeroContent;

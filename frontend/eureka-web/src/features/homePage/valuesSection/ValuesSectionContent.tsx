@@ -4,10 +4,6 @@ export interface AboutUsContentProps {
 }
 
 function ValuesSectionContent() {
-  return (
-    <>
-
-    </>
-  );
+  return <></>;
 }
 export default ValuesSectionContent;

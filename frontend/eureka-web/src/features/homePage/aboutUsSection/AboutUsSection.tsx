@@ -3,7 +3,6 @@ import AboutUsContent from './AboutUsContent.tsx';
 import aboutUsHome from '../../../assets/bg/aboutUsHome.png';
 
 function AboutUsSection() {
-
   return (
     <About
       backgroundImage={aboutUsHome}

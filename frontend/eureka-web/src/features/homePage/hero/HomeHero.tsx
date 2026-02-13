@@ -10,7 +10,7 @@ function HomeHero() {
 
   const handleGameplayClick = () => {
     navigate('/gameplay');
-  }
+  };
 
   return (
     <Hero
