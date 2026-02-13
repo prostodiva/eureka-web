@@ -8,7 +8,7 @@ function GameplayHero() {
   return (
     <Hero
       backgroundImage={gameplay}
-      className="min-h-[120vh] md:min-h-[150vh]"
+      className="h-[180vh]"
       style={{ backgroundPosition: 'top center' }}
       content={<GameplayHeroContent />}
     />

@@ -28,7 +28,7 @@ const handleNext = () => {
       backgroundImage={values}
       content={<ValuesSectionContent />}
       actions={
-        <div className="absolute bottom-40 flex flex-col justify-center gap-6 -translate-x-14 items-center w-full">
+        <div className="absolute bottom-100 flex flex-col justify-center gap-6 -translate-x-14 items-center w-full">
           <div className="flex mb-15 gap-20">
             <Button
               variant="arrowLeft"

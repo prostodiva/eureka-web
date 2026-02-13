@@ -6,13 +6,13 @@ function Value({ backgroundImage, content, actions, style }: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="value-heading"
-      className="relative min-h-[140vh] flex flex-col justify-center items-center"
+      className="relative min-h-[139vh] bg-contain flex-col justify-center items-center"
       style={{
-        backgroundImage: backgroundImage
-          ? `url(${backgroundImage})`
-          : undefined,
+        backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
+        backgroundSize: 'cover',
+        backgroundPosition: 'top center',
+        backgroundRepeat: 'no-repeat',
         ...style,
-        backgroundColor: 'red',
       }}
     >
       <div>
