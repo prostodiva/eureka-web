@@ -12,6 +12,7 @@ function Value({ backgroundImage, content, actions, style }: BaseSectionProps) {
           ? `url(${backgroundImage})`
           : undefined,
         ...style,
+        backgroundColor: 'red',
       }}
     >
       <div>

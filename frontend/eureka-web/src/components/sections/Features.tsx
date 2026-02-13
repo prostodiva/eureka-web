@@ -6,7 +6,7 @@ function Features({ backgroundImage, content, actions }: BaseSectionProps) {
   return (
     <Section
       aria-labelledby="feature-heading"
-      className="relative min-h-[120vh] flex flex-col justify-center items-center "
+      className="relative min-h-[120vh] flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
