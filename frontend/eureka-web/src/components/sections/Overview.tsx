@@ -6,7 +6,7 @@ function Overview({ backgroundImage, content, actions, className }: BaseSectionP
     <Section
       backgroundImage={backgroundImage}
       aria-labelledby="overview-heading"
-      className={`relative w-full min-h-[140vh] flex flex-col justify-center items-center ${className || ''}`}
+      className={`relative w-full aspect-video sm:min-h-[80vh] lg:min-h-[140vh] flex flex-col justify-center items-center ${className || ''}`}
     >
       {content}
       {actions}

@@ -6,7 +6,7 @@ function Value({ backgroundImage, content, actions, className }: BaseSectionProp
     <Section
       backgroundImage={backgroundImage}
       aria-labelledby="value-heading"
-      className={`relative w-full min-h-[139vh] flex flex-col justify-center items-center ${className || ''}`}
+      className={`relative w-full aspect-video sm:min-h-[80vh] lg:min-h-[139vh] flex flex-col justify-center items-center ${className || ''}`}
     >
       {content}
       {actions}

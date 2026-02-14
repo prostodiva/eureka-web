@@ -6,7 +6,7 @@ function CallToAction({ backgroundImage, content, actions, className }: BaseSect
     <Section
       backgroundImage={backgroundImage}
       aria-labelledby="callToAction-heading"
-      className={`relative w-full min-h-[120vh] flex flex-col justify-center items-center ${className || ''}`}
+      className={`relative w-full aspect-video sm:min-h-[80vh] lg:min-h-[120vh] flex flex-col justify-center items-center ${className || ''}`}
     >
       {content}
       {actions}
