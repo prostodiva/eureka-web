@@ -1,19 +1,15 @@
 import Section from '../layout/Section.tsx';
 import type { BaseSectionProps } from '../../types/section';
 
-function CallToAction({ backgroundImage, content, actions }: BaseSectionProps) {
+function CallToAction({ backgroundImage, content, actions, className }: BaseSectionProps) {
   return (
     <Section
+      backgroundImage={backgroundImage}
       aria-labelledby="callToAction-heading"
-      className="relative min-h-[120vh] flex flex-col justify-center items-center"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-      }}
+      className={`relative w-full min-h-[120vh] flex flex-col justify-center items-center ${className || ''}`}
     >
-      <div>
-        {content}
-        {actions}
-      </div>
+      {content}
+      {actions}
     </Section>
   );
 }

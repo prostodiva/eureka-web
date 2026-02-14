@@ -2,19 +2,15 @@ import Section from '../layout/Section.tsx';
 
 import type { BaseSectionProps } from '../../types/section';
 
-function Connect({ backgroundImage, content, actions }: BaseSectionProps) {
+function Connect({ backgroundImage, content, actions, className }: BaseSectionProps) {
   return (
     <Section
-      aria-labelledby="about-heading"
-      className="relative min-h-[120vh] flex flex-col justify-center items-center"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-      }}
+      backgroundImage={backgroundImage}
+      aria-labelledby="connect-heading"
+      className={`relative w-full min-h-[120vh] flex flex-col justify-center items-center ${className || ''}`}
     >
-      <div>
-        {content}
-        {actions}
-      </div>
+      {content}
+      {actions}
     </Section>
   );
 }

@@ -20,9 +20,11 @@ function HomeHero() {
         <Button
           backgroundImage={comp_19}
           className="absolute
-                    bottom-16
-                    right-16
-                    w-[clamp(140px,18vw,320px)]
+                    z-20
+                    bottom-[17%]
+                    left-[52.5%]
+                    w-[12%]
+                    h-[12%]
                     aspect-2/1"
           onClick={handleGameplayClick}
         >

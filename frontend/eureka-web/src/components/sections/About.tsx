@@ -2,19 +2,15 @@ import Section from '../layout/Section.tsx';
 
 import type { BaseSectionProps } from '../../types/section';
 
-function About({ backgroundImage, content, actions }: BaseSectionProps) {
+function About({ backgroundImage, content, actions, className }: BaseSectionProps) {
   return (
     <Section
+      backgroundImage={backgroundImage}
+      className={`relative w-full min-h-[120vh] flex flex-col justify-center items-center ${className || ''}`}
       aria-labelledby="about-heading"
-      className="relative min-h-[120vh] flex flex-col justify-center items-center"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-      }}
     >
-      <div>
-        {content}
-        {actions}
-      </div>
+      {content}
+      {actions}
     </Section>
   );
 }
