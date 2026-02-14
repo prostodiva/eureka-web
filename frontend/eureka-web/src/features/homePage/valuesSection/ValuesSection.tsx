@@ -27,27 +27,24 @@ function ValuesSection() {
       backgroundImage={values}
       content={<ValuesSectionContent />}
       actions={
-        <div className="absolute bottom-100 flex flex-col justify-center gap-6 -translate-x-14 items-center w-full">
-          <div className="flex mb-15 gap-20">
+        <div className="absolute bottom-[10%] left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-6 w-full">
+          <div className="flex gap-6">
             <Button
               variant="arrowLeft"
               backgroundImage={arrowLeft}
               onClick={handlePrev}
             />
-
             <Button
               variant="arrowRight"
-              className="translate-x-12"
               backgroundImage={arrowRight}
               onClick={handleNext}
             />
           </div>
 
-          <div className="flex gap-6">
+          <div className="flex gap-6 justify-center">
             <Button variant="primary" onClick={handleBuyClick}>
               Buy Full Version
             </Button>
-
             <Button variant="secondary" onClick={handleDemoCLick}>
               Download Free Demo
             </Button>
