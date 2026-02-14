@@ -1,5 +1,11 @@
 import classNames from 'classnames';
-type ButtonVariant = 'primary' | 'secondary' | 'ternary' | 'add' | 'arrowLeft' | 'arrowRight';
+type ButtonVariant =
+  | 'primary'
+  | 'secondary'
+  | 'ternary'
+  | 'add'
+  | 'arrowLeft'
+  | 'arrowRight';
 type ButtonSize = 'sm' | 'md' | 'lg';
 type ButtonType = 'button' | 'submit' | 'reset';
 

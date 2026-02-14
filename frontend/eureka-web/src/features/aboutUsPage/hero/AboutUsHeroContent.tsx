@@ -5,10 +5,6 @@ export interface AboutUsHeroContentProps {
 }
 
 function AboutUsHeroContent() {
-  return (
-    <>
-
-    </>
-  );
+  return <></>;
 }
 export default AboutUsHeroContent;

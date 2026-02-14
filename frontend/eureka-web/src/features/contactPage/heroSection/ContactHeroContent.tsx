@@ -5,9 +5,6 @@ export interface SupportHeroContentProps {
 }
 
 function ContactHeroContent() {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 }
 export default ContactHeroContent;

@@ -3,14 +3,8 @@ import AboutUsHeroContent from './AboutUsHeroContent.tsx';
 import aboutUsHome from '../../../assets/bg/aboutUsHome.png';
 
 function AboutUsHeroSection() {
-
   return (
-    <Hero
-      backgroundImage={aboutUsHome}
-      content={
-        <AboutUsHeroContent />
-      }
-    />
+    <Hero backgroundImage={aboutUsHome} content={<AboutUsHeroContent />} />
   );
 }
 
