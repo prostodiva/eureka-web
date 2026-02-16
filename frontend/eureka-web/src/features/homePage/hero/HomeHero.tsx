@@ -16,6 +16,7 @@ function HomeHero() {
     <Hero
       backgroundImage={homeHeroBg}
       content={<HeroContent />}
+      className="h-screen flex items-center justify-center"
       actions={
         <Button
           backgroundImage={comp_19}
