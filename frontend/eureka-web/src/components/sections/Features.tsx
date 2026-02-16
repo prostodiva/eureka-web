@@ -6,7 +6,7 @@ function Features({ backgroundImage, content, actions, className }: BaseSectionP
     <Section
       backgroundImage={backgroundImage}
       aria-labelledby="feature-heading"
-      className={`relative w-full aspect-video sm:min-h-[80vh] lg:min-h-[120vh] flex flex-col justify-center items-center ${className || ''}`}
+      className={`relative w-full aspect-video ${className || ''}`}
     >
       {content}
       {actions}
