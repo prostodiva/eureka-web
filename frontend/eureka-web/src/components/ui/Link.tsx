@@ -25,6 +25,7 @@ function Link({ to, children, className, activeClassName }: LinkProps) {
     event.preventDefault();
 
     navigate(to);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
