@@ -4,7 +4,11 @@ import overview from '../../../assets/bg/overviewHome.png';
 
 function OverviewSection() {
   return (
-    <Overview backgroundImage={overview} content={<OverviewSectionContent />} />
+    <Overview
+      backgroundImage={overview}
+      content={<OverviewSectionContent />}
+      className="h-screen flex items-center justify-center"
+    />
   );
 }
 

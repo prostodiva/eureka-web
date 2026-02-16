@@ -1,1 +1,11 @@
 @import 'tailwindcss';
+@config "../tailwind.config.ts";
+
+@font-face {
+    font-family: 'Kingfink';
+    src: url('./assets/fonts/Kingfink.woff2') format('woff2'),
+    url('./assets/fonts/Kingfink.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
