@@ -7,10 +7,7 @@ function AboutUsSection() {
     <About
       backgroundImage={aboutUsHome}
       content={
-        <AboutUsContent
-          title="Home Page: section about us"
-          description="description. section about us"
-        />
+        <AboutUsContent />
       }
     />
   );

@@ -4,20 +4,13 @@ export interface AboutUsContentProps {
   description?: string;
 }
 
-function AboutUsContent({ title, subtitle, description }: AboutUsContentProps) {
+function AboutUsContent( ) {
   return (
-    <>
-      <h2
-        id="about-heading"
-        className="text-2xl md:text-3xl font-semibold mb-4"
-      >
-        {title}
-      </h2>
-
-      {subtitle && <p className="text-base md:text-lg">{subtitle}</p>}
-
-      <p className="text-base md:text-lg">{description}</p>
-    </>
+    <h1 className="absolute text-center top-50">
+      <span className="font-kingfink text-transparent [-webkit-text-stroke:2px_white] text-4xl">
+        FOUNDERS
+      </span>
+    </h1>
   );
 }
 export default AboutUsContent;
