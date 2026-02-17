@@ -6,7 +6,7 @@ export interface AboutUsContentProps {
 function ValuesSectionContent() {
   return (
     <h1 className="absolute text-center top-50">
-      <span className="font-kingfink text-transparent [-webkit-text-stroke:2px_white] text-4xl">
+      <span className="font-kingfink text-transparent [-webkit-text-stroke:1px_white] text-2xl">
         VISION
       </span>
     </h1>
