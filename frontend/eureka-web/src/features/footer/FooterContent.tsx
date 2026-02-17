@@ -57,7 +57,7 @@ function FooterContent() {
           {/* EUREKA & PuzzleLab */}
           <h1 className="font-inter text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[7rem] xl:text-[9rem] 2xl:text-[15rem] -ml-2 2xl:-ml-3 -mt-6 md:-mt-8 2xl:-mt-20 leading-[0.9]">
             <span className="block text-white font-normal">EUREKA</span>
-            <span className="block text-yellow-400 font-bold">PUZZLELAB</span>
+            <span className="block text-yellow-400 font-drabina-solid">PUZZLELAB</span>
           </h1>
         </div>
 

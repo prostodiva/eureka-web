@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         kingfink: ['Kingfink', 'sans-serif'],
+        'drabina-outline': ['drabina-outline', 'sans-serif'],
+        'drabina-solid': ['drabina-solid', 'sans-serif'],
       },
     },
   },

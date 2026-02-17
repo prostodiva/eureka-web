@@ -3,9 +3,22 @@
 
 @font-face {
     font-family: 'Kingfink';
-    src: url('./assets/fonts/Kingfink.woff2') format('woff2'),
-    url('./assets/fonts/Kingfink.ttf') format('truetype');
+    src: url('./assets/fonts/Kingfink.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: 'drabina-outline';
+    src: url('./assets/fonts/Drabina-Outline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'drabina-solid';
+    src: url('./assets/fonts/Drabina-Solid.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
