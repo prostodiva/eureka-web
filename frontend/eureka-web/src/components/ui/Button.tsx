@@ -38,9 +38,9 @@ function Button({
   const buttonClasses = classNames(
     'flex justify-center items-center text-center font-inter',
     {
-      'flex justify-center items-center py-8 px-18 w-[15%] sm:w-[40%] h-auto aspect-[4/1] text-center rounded-sm bg-[#EA5D5D] text-white font-bold hover:bg-[#FFDC5C] whitespace-nowrap hover:text-[#8658F1]':
+      'flex justify-center items-center py-6 px-18 w-[15%] sm:w-[40%] h-auto aspect-[4/1] text-center rounded-sm bg-[#EA5D5D] text-white font-bold hover:bg-[#FFDC5C] whitespace-nowrap hover:text-[#8658F1]':
         variant === 'primary' && !backgroundImage,
-      'flex justify-center items-center py-8 px-18 w-[15%] sm:w-[40%] h-auto aspect-[4/1] text-center rounded-sm bg-[#FFDC5C] text-[#8658F1] font-bold hover:bg-[#EA5D5D] whitespace-nowrap hover:text-white':
+      'flex justify-center items-center py-6 px-18 w-[15%] sm:w-[40%] h-auto aspect-[4/1] text-center rounded-sm bg-[#FFDC5C] text-[#8658F1] font-bold hover:bg-[#EA5D5D] whitespace-nowrap hover:text-white':
         variant === 'secondary' && !active && !backgroundImage,
       'flex justify-center items-center py-4 px-8 w-auto min-w-[80px] sm:min-w-[100px] h-auto aspect-[4/1] text-center rounded-sm bg-gray-50 text-black hover:bg-[#EA5D5D] whitespace-nowrap hover:text-white':
         variant === 'ternary' && !active && !backgroundImage,

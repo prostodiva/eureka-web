@@ -1,8 +1,3 @@
-export interface AboutUsContentProps {
-  title: string;
-  description?: string;
-}
-
 function OverviewSectionContent() {
   return (
     <h1 className="absolute text-center top-30 flex flex-col">
