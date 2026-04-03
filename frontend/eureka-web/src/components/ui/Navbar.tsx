@@ -38,11 +38,6 @@ function Navbar({
   const defaultLinks: NavLink[] = [
     { label: 'Home', path: '/', icon: <BsPuzzleFill /> },
     { label: 'Gameplay', path: '/gameplay', icon: <IoExtensionPuzzle /> },
-    // {
-    //   label: 'Why Us',
-    //   path: '/why',
-    //   icon: <RiPuzzle2Fill className="-scale-y-100 -scale-x-100" />,
-    // },
     { label: 'About Us', path: '/about', icon: <FaPuzzlePiece /> },
     {
       label: 'Contact',

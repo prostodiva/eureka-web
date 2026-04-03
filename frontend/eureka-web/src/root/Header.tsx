@@ -1,7 +1,6 @@
 import Navbar from '../components/ui/Navbar.tsx';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
-import { BiSearchAlt } from 'react-icons/bi';
 
 function Header() {
   return (
@@ -19,10 +18,13 @@ function Header() {
           <Navbar />
         </div>
 
-        <div className="justify-self-end text-white inline-flex items-center gap-6">
-          <div className="underline underline-offset-3">RU</div>
-          <BiSearchAlt />
-        </div>
+        {/**
+         * <div className="justify-self-end text-white inline-flex items-center gap-6">
+         *           <div className="underline underline-offset-3">RU</div>
+         *           <BiSearchAlt />
+         *         </div>
+         *
+         */}
       </div>
     </header>
   );

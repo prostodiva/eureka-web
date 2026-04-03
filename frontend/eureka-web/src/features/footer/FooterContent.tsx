@@ -1,7 +1,6 @@
 import { FaTelegramPlane } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa6';
 import { CgFacebook } from 'react-icons/cg';
-import Button from '../../components/ui/Button.tsx';
 import Navbar from '../../components/ui/Navbar.tsx';
 
 function FooterContent() {
@@ -18,46 +17,56 @@ function FooterContent() {
           </div>
 
           {/*email form button accept*/}
-          <div className="flex flex-col gap-2 sm:gap-3 md:gap-3 lg:gap-3 xl:gap-3 2xl:gap-4 relative z-20">
-            <form
-              className="border border-white rounded-sm w-full lg:w-full xl:w-full 2xl:w-190 h-auto flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-3 2xl:gap-4 p-2 sm:p-3 md:p-3 lg:p-3 xl:p-3 2xl:p-4"
-              onSubmit={(e) => {
-                e.preventDefault();
-              }}
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 bg-transparent outline-none text-white text-xs sm:text-sm md:text-base lg:text-sm xl:text-sm 2xl:text-base placeholder:text-gray-400"
-                required
-              />
-              <Button type="submit" variant="ternary">
-                Subscribe
-              </Button>
-            </form>
 
-            {/*checkbox + accept*/}
-            <div className="flex items-start gap-2 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-3 2xl:gap-4">
-              <input
-                type="checkbox"
-                id="terms"
-                required
-                className="mt-0.5 sm:mt-1 w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 cursor-pointer appearance-none border-2 border-gray-300 rounded checked:bg-[#EA5D5D] checked:border-[#EA5D5D]"
-              />
-              <label
-                htmlFor="terms"
-                className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-xs xl:text-sm 2xl:text-xl underline underline-offset-2 sm:underline-offset-3 cursor-pointer leading-tight"
+          {/*
+            * <form
+                className="border border-white rounded-sm w-full lg:w-full xl:w-full 2xl:w-190 h-auto flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-3 2xl:gap-4 p-2 sm:p-3 md:p-3 lg:p-3 xl:p-3 2xl:p-4"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                }}
               >
-                I accept the Terms by subscribing you agree to with our Privacy
-                Policy
-              </label>
-            </div>
-          </div>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 bg-transparent outline-none text-white text-xs sm:text-sm md:text-base lg:text-sm xl:text-sm 2xl:text-base placeholder:text-gray-400"
+                  required
+                />
+                <Button type="submit" variant="ternary">
+                  Subscribe
+                </Button>
+              </form>
+            *
+            * */}
 
+          <div className="flex flex-col gap-2 sm:gap-3 md:gap-3 lg:gap-3 xl:gap-3 2xl:gap-4 relative z-20 mt-10">
+            {/*checkbox + accept*/}
+            {/*
+              *
+              *   <div className="flex items-start gap-2 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-3 2xl:gap-4">
+                    <input
+                      type="checkbox"
+                      id="terms"
+                      required
+                      className="mt-0.5 sm:mt-1 w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 2xl:w-6 2xl:h-6 cursor-pointer appearance-none border-2 border-gray-300 rounded checked:bg-[#EA5D5D] checked:border-[#EA5D5D]"
+                    />
+                    <label
+                      htmlFor="terms"
+                      className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-xs xl:text-sm 2xl:text-xl underline underline-offset-2 sm:underline-offset-3 cursor-pointer leading-tight"
+                    >
+                      I accept the Terms by subscribing you agree to with our Privacy
+                      Policy
+                    </label>
+                  </div>
+              *
+              *
+              * */}
+          </div>
           {/* EUREKA & PuzzleLab */}
           <h1 className="font-inter text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[7rem] xl:text-[9rem] 2xl:text-[15rem] -ml-2 2xl:-ml-3 -mt-6 md:-mt-8 2xl:-mt-20 leading-[0.9]">
-            <span className="block text-white font-normal">EUREKA</span>
-            <span className="block text-yellow-400 font-drabina-solid">PUZZLELAB</span>
+            <span className="block text-white font-normal">EURIKA</span>
+            <span className="block text-yellow-400 font-drabina-solid">
+              PUZZLELAB
+            </span>
           </h1>
         </div>
 
@@ -74,7 +83,7 @@ function FooterContent() {
 
       {/* Copyright */}
       <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-10 xl:bottom-10 2xl:bottom-10 left-0 right-0 text-center text-gray-300 text-xs sm:text-sm md:text-base lg:text-sm xl:text-base 2xl:text-xl">
-        <p>© 2026 Margarita Kattsyna</p>
+        <p>© 2026 EURIKA</p>
       </div>
     </div>
   );

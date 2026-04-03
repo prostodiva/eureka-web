@@ -26,7 +26,8 @@ function HomeHero() {
                     left-[52.5%]
                     w-[12%]
                     h-[12%]
-                    aspect-2/1"
+                    aspect-2/1
+                    hover:brightness-110"
           onClick={handleGameplayClick}
         >
           <span className="sr-only">Gameplay</span>
