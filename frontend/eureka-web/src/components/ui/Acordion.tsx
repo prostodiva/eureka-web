@@ -31,15 +31,23 @@ function Accordion({ items }: AccordionProps) {
 
     return (
       <div key={item.id}>
-        <div
-          className="flex justify-between p-5 bg-[#8658F1] border-b items-center cursor-pointer text-white font-inter leading-relaxed"
+        <button
+          id={`accordion-header-${item.id}`}
+          className="flex justify-between p-3 sm:p-4 md:p-5 bg-[#8658F1] border-b items-center cursor-pointer text-white font-inter leading-relaxed w-full text-left"
           onClick={() => handleClick(index)}
+          aria-expanded={isExpanded}
+          aria-controls={`accordion-content-${item.id}`}
         >
           {item.label}
           {icon}
-        </div>
+        </button>
         {isExpanded && (
-          <div className="border-b p-5 text-white font-inter">
+          <div
+            id={`accordion-content-${item.id}`}
+            role="region"
+            aria-labelledby={`accordion-header-${item.id}`}
+            className="border-b p-3 sm:p-4 md:p-5 text-white font-inter"
+          >
             {item.content}
           </div>
         )}

@@ -6,7 +6,7 @@ function ContactConnect() {
     <>
       <Connect
         backgroundImage={contact_connect}
-        content={<h1>contact connect</h1>}
+        content={<h2 className="text-3xl md:text-4xl font-bold text-white">Get in Touch</h2>}
       />
     </>
   );

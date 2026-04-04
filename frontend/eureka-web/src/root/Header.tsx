@@ -11,7 +11,11 @@ function Header() {
           className="flex items-center hover:opacity-90 transition-opacity justify-self-start"
           aria-label="Home"
         >
-          <img src={logo} alt="Company Logo" className="h-2 md:h-6 w-auto" />
+          <img
+            src={logo}
+            alt="Company Logo"
+            className="h-6 sm:h-6 md:h-8 lg:h-10 w-auto"
+          />
         </Link>
 
         <div className="justify-self-center">

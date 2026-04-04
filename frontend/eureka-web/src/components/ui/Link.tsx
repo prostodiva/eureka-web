@@ -29,11 +29,9 @@ function Link({ to, children, className, activeClassName }: LinkProps) {
   };
 
   return (
-    <div>
-      <a className={classes} href={to} onClick={handleClick}>
-        {children}
-      </a>
-    </div>
+    <a className={classes} href={to} onClick={handleClick}>
+      {children}
+    </a>
   );
 }
 

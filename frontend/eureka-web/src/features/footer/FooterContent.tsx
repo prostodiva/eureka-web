@@ -11,9 +11,15 @@ function FooterContent() {
         <div className="flex flex-col gap-4 sm:gap-6 md:gap-7 lg:gap-6 xl:gap-7 2xl:gap-8">
           {/*socials*/}
           <div className="flex flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-7 xl:gap-8 2xl:gap-10">
-            <FaTelegramPlane className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
-            <FaInstagram className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
-            <CgFacebook className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
+            <a href="https://t.me/eurika" aria-label="Telegram" target="_blank" rel="noopener noreferrer" className="min-h-[44px] min-w-[44px] flex items-center justify-center">
+              <FaTelegramPlane className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
+            </a>
+            <a href="https://instagram.com/eurika" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="min-h-[44px] min-w-[44px] flex items-center justify-center">
+              <FaInstagram className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
+            </a>
+            <a href="https://facebook.com/eurika" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="min-h-[44px] min-w-[44px] flex items-center justify-center">
+              <CgFacebook className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
+            </a>
           </div>
 
           {/*email form button accept*/}

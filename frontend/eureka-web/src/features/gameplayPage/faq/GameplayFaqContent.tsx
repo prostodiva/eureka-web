@@ -24,7 +24,7 @@ function GameplayFaqContent() {
     },
     {
       id: 4,
-      label: 'How can schools or kindergartens collaborate',
+      label: 'How can schools or kindergartens collaborate?',
       content:
         'We offer flexible integration options for schools and kindergartens. Get access to a teacher dashboard, and track student progress. Reach out to us via the Contact page to discuss partnership plans tailored to your institution.',
     },
@@ -32,14 +32,14 @@ function GameplayFaqContent() {
 
   return (
     <>
-      <h1 className="absolute text-center top-20 flex flex-col">
-        <span className="font-kingfink text-6xl font-inter font-regular text-[#FFDC5C] mt-10 whitespace-nowrap leading-none">
-          CREATING MINDS <br />
-          CONNECTING IMAGINATION <br />
+      <h2 className="absolute text-center top-10 sm:top-15 md:top-20 flex flex-col px-4">
+        <span className="font-kingfink text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-inter font-regular text-[#FFDC5C] mt-6 sm:mt-8 md:mt-10 leading-none">
+          CREATING MINDS
+          CONNECTING IMAGINATION
         </span>
 
         <Accordion items={items}/>
-      </h1>
+      </h2>
     </>
   );
 }
