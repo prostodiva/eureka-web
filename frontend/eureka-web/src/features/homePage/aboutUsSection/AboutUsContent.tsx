@@ -1,38 +1,33 @@
-export interface AboutUsContentProps {
-  title: string;
-  subtitle?: string;
-  description?: string;
-}
+import FounderCard from '../../../components/ui/FounderCard.tsx';
+import ritaImg from '../../../assets/rita.png';
+import alekseiImg from '../../../assets/aleksei.png';
 
 function AboutUsContent( ) {
-  return (
-    <div
-      id="about"
-      className="absolute text-center top-8 sm:top-12 md:top-15 flex flex-col h-full px-4"
-    >
-      <div className="flex flex-col mt-8 sm:mt-12 md:mt-16">
-        <span className="font-kingfink text-transparent [-webkit-text-stroke:1.5px_#FFFFFF] text-xl sm:text-2xl">
-          FOUNDERS
-        </span>
-      </div>
+    return (
+      <div
+        id="about"
+        className="relative z-10 flex flex-col items-center w-full px-4 pt-20 sm:pt-24 md:pt-28"
+      >
+      <span className="font-kingfink text-transparent [-webkit-text-stroke:1.5px_#FFFFFF] text-xl sm:text-2xl mb-8 sm:mb-12 md:mb-16">
+        FOUNDERS
+      </span>
 
-      <div className="mt-56 sm:mt-72 md:mt-96 lg:mt-110 xl:mt-150 2xl:mt-250 xl:ml-[-10%] 2xl:ml-[-15%] grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-25 font-inter text-[#8658F1] leading-tight">
-        <p className="justify-self-start text-left">
-          <span className="font-bold text-lg sm:text-xl md:text-2xl">
-            Margarita Kattsyna
-          </span>
-          <br />
-          <span className="font-semibold text-base sm:text-lg md:text-xl">
-            Founder & Lead Engineer
-          </span>
-        </p>
-        <p className="justify-self-start text-left rotate-3">
-          <span className="font-bold text-lg sm:text-xl md:text-2xl">Aleksei Shchepin</span>
-          <br />
-          <span className="font-semibold text-base sm:text-lg md:text-xl">UX/UI Designer</span>
-        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 w-full max-w-3xl mx-auto">
+          <FounderCard
+            image={ritaImg}
+            name="Margarita Kattsyna"
+            role="Founder & Lead Engineer"
+            className="justify-self-end -mr-8"
+          />
+          <FounderCard
+            image={alekseiImg}
+            name="Aleksei Shchepin"
+            role="UX/UI Designer"
+            className="justify-self-start -ml-8 rotate-3"
+          />
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
+
 export default AboutUsContent;
