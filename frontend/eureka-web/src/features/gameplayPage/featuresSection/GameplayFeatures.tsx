@@ -1,17 +1,13 @@
-import Features from '../../../components/sections/Features.tsx';
+
 import gameplayFeatures from '../../../assets/bg/gameplayFeatures.png';
 import GameplayFeaturesContent from './GameplayFeaturesContent.tsx';
+import Hero from '../../../components/sections/Hero.tsx';
 
 function FeaturesSection() {
   return (
-    <Features
+    <Hero
       backgroundImage={gameplayFeatures}
-      content={
-        <GameplayFeaturesContent
-          title="gameplay Page: features"
-          description="description"
-        />
-      }
+      content={<GameplayFeaturesContent />}
     />
   );
 }

@@ -55,7 +55,11 @@ function Accordion({ items }: AccordionProps) {
     );
   });
 
-  return <div className="border-x border-t rounded">{renderedItems}</div>;
+  return (
+    <div className="border-x border-t rounded w-full max-w-md mx-auto">
+      {renderedItems}
+    </div>
+  );
 }
 
 export default Accordion;

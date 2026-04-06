@@ -7,10 +7,10 @@ export interface HeroContentProps {
 function HeroContent(){
   return (
     <h1 className="absolute -mt-15 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center leading-none">
-      <span className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-inter font-bold text-white -mt-6">
+      <span className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-kingfink text-white mt-10">
         LEARNING
       </span>
-      <span className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-inter font-bold text-white -mt-6">
+      <span className="whitespace-nowrap text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-kingfink text-white">
         STARTS WITH
       </span>
       <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-drabina-outline text-yellow-400">
