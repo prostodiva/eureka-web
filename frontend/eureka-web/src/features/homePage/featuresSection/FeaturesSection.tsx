@@ -14,17 +14,17 @@ function FeaturesSection() {
       backgroundImage={featuresHome}
       content={
         <FeatureSectionContent
-          title="Home Page: features"
-          description="description"
+          title="Interactive Learning"
+          description="Kids engage with puzzles, drag-and-drop activities, quizzes"
+          learnMoreHref="/gameplay"
+          textColor="text-[#8658F1]"
         />
       }
       actions={
-        <div className="absolute bottom-[40%] left-[20%] transform -translate-x-1/2 flex flex-col items-center gap-6 w-full">
-          <div className="flex gap-6 justify-center">
+        <div className="absolute left-10 bottom-1/3 flex flex-col items-start gap-6">
             <Button variant="secondary" onClick={handleDemoCLick}>
               Download Free Demo
             </Button>
-          </div>
         </div>
       }
     />

@@ -10,7 +10,7 @@ function ContactHeroContent() {
       </h1>
 
       {/* Subtitle */}
-      <p className="text-white text-center text-xs sm:text-sm md:text-base max-w-lg tracking-widest uppercase">
+      <p className="text-white text-center text-xs sm:text-sm md:text-base max-w-lg tracking-widest uppercase -mt-4 sm:-mt-6">
         Your ideas, questions, and feedback help us grow and make learning even
         more fun
       </p>

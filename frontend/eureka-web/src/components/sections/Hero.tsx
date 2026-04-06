@@ -10,7 +10,7 @@ function Hero({
   return (
     <Section
       backgroundImage={backgroundImage}
-      className={`relative w-full aspect-video ${className || ''}`}
+      className={`relative w-full min-h-screen ${className || ''}`}
     >
       {content}
       {actions}

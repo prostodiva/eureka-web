@@ -4,7 +4,7 @@ import alekseiImg from '../../../assets/aleksei.png';
 
 function AboutUsHeroContent() {
   return (
-    <div className="relative z-10 flex flex-col items-center w-full px-4 pt-24 sm:pt-28 md:pt-32">
+    <div className="relative z-10 flex flex-col items-center w-full px-4 pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24">
       {/* Our Story label */}
       <span className="font-kingfink text-transparent [-webkit-text-stroke:1.5px_#FFFFFF] text-xl sm:text-2xl">
         OUR STORY
@@ -17,12 +17,15 @@ function AboutUsHeroContent() {
 
       {/* Description */}
       <p className="text-white font-inter text-center text-sm sm:text-base md:text-lg leading-relaxed mt-2 sm:mt-3 max-w-4xl">
-        We are a startup that creates creative digital tools for children and
-        their parents. With the help of AI, children can turn their own drawings
-        into unique puzzles that challenge their imagination, logic, and
-        problem-solving skills. Through this experience, we introduce kids to
-        modern technology in a safe and playful way, helping them grow, adapt,
-        and explore their creativity with confidence.
+        This project is a personally developed digital platform focused on
+        creative tools for children and their parents. A 2D game built with
+        Unity and C#, along with a companion website, developed as an
+        independent project. The system was implemented from scratch, including
+        core gameplay mechanics, UI/UX, and overall architecture. Features
+        interactive puzzle gameplay with custom input handling, game state
+        management, and dynamic UI updates. This project highlights experience
+        in Unity development, object-oriented design, performance optimization,
+        and integration between a game client and a web platform.
       </p>
 
       {/* Founders label */}

@@ -6,10 +6,6 @@ import FooterContent from './FooterContent.tsx';
 
 function FooterSection() {
 
-  const handlePuzzleClick = () => {
-    alert('puzzle clicked');
-  }
-
   return (
     <Footer
       backgroundImage={footer_bg}
@@ -28,7 +24,6 @@ function FooterSection() {
                     w-[35%]
                     h-auto
                     aspect-square"
-          onClick={handlePuzzleClick}
         >
           <span className="sr-only">Gameplay</span>
         </Button>

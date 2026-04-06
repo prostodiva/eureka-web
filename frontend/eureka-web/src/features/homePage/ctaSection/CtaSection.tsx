@@ -9,11 +9,12 @@ function CtaSection() {
 
   return (
     <CallToAction
-      minHeightScreen
       content={
         <CtaContent
-          title="Home Page: call to action"
-          description="description. section call to action"
+          number="01"
+          title="Interactive Learning"
+          description="Kids engage with puzzles, drag-and-drop activities, quizzes"
+          learnMoreHref="/gameplay"
         />
       }
       actions={
