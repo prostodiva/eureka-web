@@ -34,7 +34,6 @@ const arrowRight = makeResponsiveImage({
 });
 
 function ValuesSectionContent() {
-
   const handlePrev = () => {
     console.log('prev clicked');
   };

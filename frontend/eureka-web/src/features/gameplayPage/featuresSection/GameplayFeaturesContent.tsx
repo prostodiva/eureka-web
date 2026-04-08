@@ -1,8 +1,6 @@
 import Button from '../../../components/ui/Button.tsx';
 
-
 function GameplayFeaturesContent() {
-
   const handleDemoCLick = () => {
     console.log('demo clicked');
   };

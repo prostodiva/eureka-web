@@ -29,10 +29,7 @@ const faq = makeResponsiveImage({
 function GameplayFaq() {
   return (
     <>
-      <About
-        backgroundImage={faq}
-        content={<GameplayFaqContent />}
-      />
+      <About backgroundImage={faq} content={<GameplayFaqContent />} />
     </>
   );
 }

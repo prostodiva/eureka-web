@@ -40,12 +40,17 @@ function loadTurnstileScript(): Promise<void> {
     );
     if (existing) {
       existing.addEventListener('load', () => resolve(), { once: true });
-      existing.addEventListener('error', () => reject(new Error('Failed to load Turnstile')), { once: true });
+      existing.addEventListener(
+        'error',
+        () => reject(new Error('Failed to load Turnstile')),
+        { once: true }
+      );
       return;
     }
 
     const script = document.createElement('script');
-    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+    script.src =
+      'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
     script.async = true;
     script.defer = true;
     script.onload = () => resolve();
@@ -56,7 +61,13 @@ function loadTurnstileScript(): Promise<void> {
   return turnstileScriptPromise;
 }
 
-export default function Turnstile({ siteKey, onToken, theme = 'auto', size = 'normal', className }: Props) {
+export default function Turnstile({
+  siteKey,
+  onToken,
+  theme = 'auto',
+  size = 'normal',
+  className,
+}: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const reactId = useId();
   const [widgetId, setWidgetId] = useState<string | null>(null);
@@ -81,7 +92,7 @@ export default function Turnstile({ siteKey, onToken, theme = 'auto', size = 'no
         size,
         callback: (token) => onToken(token),
         'expired-callback': () => onToken(null),
-        'error-callback': () => onToken(null)
+        'error-callback': () => onToken(null),
       });
 
       setWidgetId(id);
@@ -106,4 +117,3 @@ export default function Turnstile({ siteKey, onToken, theme = 'auto', size = 'no
 
   return <div ref={containerRef} className={className} />;
 }
-

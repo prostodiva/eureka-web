@@ -5,10 +5,14 @@ export interface CtaContentProps {
   learnMoreHref?: string;
 }
 
-function CtaContent({ number, title, description, learnMoreHref = '#' }: CtaContentProps) {
+function CtaContent({
+  number,
+  title,
+  description,
+  learnMoreHref = '#',
+}: CtaContentProps) {
   return (
     <div className="flex flex-col items-start px-8 sm:px-12 md:px-16 pt-8 sm:pt-10 md:pt-12">
-
       {/* Number */}
       <span className="font-inter text-purple-600 text-base sm:text-lg font-normal mb-2">
         {number}
@@ -27,13 +31,14 @@ function CtaContent({ number, title, description, learnMoreHref = '#' }: CtaCont
       )}
 
       {/* Learn More */}
-      <a href={learnMoreHref}
-      className="font-inter text-purple-600 text-sm sm:text-base font-semibold underline uppercase tracking-wider"
+      <a
+        href={learnMoreHref}
+        className="font-inter text-purple-600 text-sm sm:text-base font-semibold underline uppercase tracking-wider"
       >
-      Learn More
-    </a>
-  </div>
-);
+        Learn More
+      </a>
+    </div>
+  );
 }
 
 export default CtaContent;

@@ -13,34 +13,34 @@ const sizes = [400, 800, 1200, 1600, 2400];
 const formats = ['webp', 'avif'];
 
 if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
+  fs.mkdirSync(outputDir, { recursive: true });
 }
 
-fs.readdirSync(inputDir).forEach(file => {
-    const ext = path.extname(file).toLowerCase();
+fs.readdirSync(inputDir).forEach((file) => {
+  const ext = path.extname(file).toLowerCase();
 
-    if (!['.png', '.jpg', '.jpeg'].includes(ext)) return;
+  if (!['.png', '.jpg', '.jpeg'].includes(ext)) return;
 
-    const inputPath = path.join(inputDir, file);
-    const name = path.parse(file).name;
+  const inputPath = path.join(inputDir, file);
+  const name = path.parse(file).name;
 
-    sizes.forEach(size => {
-        formats.forEach(format => {
-            const outputPath = path.join(outputDir, `${name}-${size}.${format}`);
+  sizes.forEach((size) => {
+    formats.forEach((format) => {
+      const outputPath = path.join(outputDir, `${name}-${size}.${format}`);
 
-            if (fs.existsSync(outputPath)) return;
+      if (fs.existsSync(outputPath)) return;
 
-            sharp(inputPath)
-                .resize({
-                    width: size,
-                    withoutEnlargement: true
-                })
-                .toFormat(format, {
-                    quality: format === 'avif' ? 65 : 88
-                })
-                .toFile(outputPath)
-                .then(() => console.log(`Created: ${outputPath}`))
-                .catch(err => console.error(err));
-        });
+      sharp(inputPath)
+        .resize({
+          width: size,
+          withoutEnlargement: true,
+        })
+        .toFormat(format, {
+          quality: format === 'avif' ? 65 : 88,
+        })
+        .toFile(outputPath)
+        .then(() => console.log(`Created: ${outputPath}`))
+        .catch((err) => console.error(err));
     });
+  });
 });

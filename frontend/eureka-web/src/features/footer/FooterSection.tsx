@@ -52,7 +52,6 @@ const footer_bg = makeResponsiveImage({
 // });
 
 function FooterSection() {
-
   return (
     <Footer
       backgroundImage={footer_bg}

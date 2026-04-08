@@ -1,4 +1,3 @@
-
 import gameplayFeatures400avif from '../../../assets/optimized/gameplayFeatures-400.avif';
 import gameplayFeatures800avif from '../../../assets/optimized/gameplayFeatures-800.avif';
 import gameplayFeatures1200avif from '../../../assets/optimized/gameplayFeatures-1200.avif';

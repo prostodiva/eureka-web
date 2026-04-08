@@ -13,9 +13,7 @@ function GameplayHeroContent() {
       </h1>
 
       {/*YouTube Window*/}
-      <div>
-
-      </div>
+      <div></div>
     </div>
   );
 }

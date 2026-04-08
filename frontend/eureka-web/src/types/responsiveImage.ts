@@ -4,4 +4,3 @@ export type ResponsiveImage = {
   avifSrcSet: string;
   webpSrcSet: string;
 };
-

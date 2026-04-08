@@ -39,4 +39,3 @@ export function makeResponsiveImage(src: Sources): ResponsiveImage {
     webpSrcSet: webpEntries.map(([url, w]) => `${url} ${w}w`).join(', '),
   };
 }
-

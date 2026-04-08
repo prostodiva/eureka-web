@@ -1,7 +1,12 @@
 import Section from '../layout/Section.tsx';
 import type { BaseSectionProps } from '../../types/section';
 
-function Overview({ backgroundImage, content, actions, className }: BaseSectionProps) {
+function Overview({
+  backgroundImage,
+  content,
+  actions,
+  className,
+}: BaseSectionProps) {
   return (
     <Section
       backgroundImage={backgroundImage}

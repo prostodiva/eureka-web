@@ -43,7 +43,9 @@ function Button({
       .filter(Boolean)
       .map((part) => {
         const [url, descriptor] = part.split(/\s+/);
-        const width = descriptor?.endsWith('w') ? Number(descriptor.slice(0, -1)) : NaN;
+        const width = descriptor?.endsWith('w')
+          ? Number(descriptor.slice(0, -1))
+          : NaN;
         if (!url || !Number.isFinite(width) || width <= 0) return null;
 
         const x = width / baseWidth;
@@ -83,9 +85,9 @@ function Button({
         backgroundImage:
           typeof backgroundImage === 'string'
             ? `url(${backgroundImage})`
-            : toImageSetX(backgroundImage.avifSrcSet, 'image/avif') ??
+            : (toImageSetX(backgroundImage.avifSrcSet, 'image/avif') ??
               toImageSetX(backgroundImage.webpSrcSet, 'image/webp') ??
-              `url(${backgroundImage.fallbackSrc})`,
+              `url(${backgroundImage.fallbackSrc})`),
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

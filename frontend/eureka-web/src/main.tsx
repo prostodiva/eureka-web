@@ -6,7 +6,9 @@ import { ErrorBoundary } from 'react-error-boundary';
 
 if (import.meta.env.DEV) {
   window.addEventListener('beforeunload', () => {
-    console.warn('[nav-debug] beforeunload fired (this is a real document unload)');
+    console.warn(
+      '[nav-debug] beforeunload fired (this is a real document unload)'
+    );
   });
 }
 

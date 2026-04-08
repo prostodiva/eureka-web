@@ -27,14 +27,7 @@ const aboutUsHome = makeResponsiveImage({
 });
 
 function AboutUsSection() {
-  return (
-    <About
-      backgroundImage={aboutUsHome}
-      content={
-        <AboutUsContent />
-      }
-    />
-  );
+  return <About backgroundImage={aboutUsHome} content={<AboutUsContent />} />;
 }
 
 export default AboutUsSection;

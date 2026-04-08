@@ -30,38 +30,35 @@ function Accordion({ items }: AccordionProps) {
     );
 
     return (
-        <div
-            key={item.id}
-            className="bg-[#8658F1] rounded-xl overflow-hidden"
+      <div key={item.id} className="bg-[#8658F1] rounded-xl overflow-hidden">
+        <button
+          id={`accordion-header-${item.id}`}
+          className="flex justify-between items-center w-full px-6 py-10 text-left text-white font-semibold text-xl"
+          onClick={() => handleClick(index)}
+          aria-expanded={isExpanded}
+          aria-controls={`accordion-content-${item.id}`}
         >
-          <button
-              id={`accordion-header-${item.id}`}
-              className="flex justify-between items-center w-full px-6 py-10 text-left text-white font-semibold text-xl"
-              onClick={() => handleClick(index)}
-              aria-expanded={isExpanded}
-              aria-controls={`accordion-content-${item.id}`}
-          >
           {item.label}
           {icon}
         </button>
-          {isExpanded && (
-              <div
-                  id={`accordion-content-${item.id}`}
-                  role="region"
-                  aria-labelledby={`accordion-header-${item.id}`}
-                  className="bg-yellow-400 text-[#8658F1] px-6 py-10 text-xl"
-              >
-                {item.content}
-              </div>
+        {isExpanded && (
+          <div
+            id={`accordion-content-${item.id}`}
+            role="region"
+            aria-labelledby={`accordion-header-${item.id}`}
+            className="bg-yellow-400 text-[#8658F1] px-6 py-10 text-xl"
+          >
+            {item.content}
+          </div>
         )}
       </div>
     );
   });
 
   return (
-      <div className="w-full max-w-accordion mx-auto px-8 flex flex-col gap-4">
-        {renderedItems}
-      </div>
+    <div className="w-full max-w-accordion mx-auto px-8 flex flex-col gap-4">
+      {renderedItems}
+    </div>
   );
 }
 

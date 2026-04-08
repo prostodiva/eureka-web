@@ -1,4 +1,3 @@
-
 import Section from '../components/layout/Section.tsx';
 import type { BaseSectionProps } from '../types/section.ts';
 

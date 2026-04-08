@@ -5,7 +5,6 @@ const basicMiddleware = require('./middleware/basic');
 const errorHandler = require('./middleware/errorHandler');
 const contact = require('./api/contact');
 
-
 const app = express();
 
 app.set('trust proxy', 1);
@@ -23,7 +22,6 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
 
 const corsOptions = {
     origin: function (origin, callback) {
-        // Non-browser clients (or same-origin) may not send Origin. Allow in dev, deny in prod.
         if (!origin) {
             return callback(
                 process.env.NODE_ENV === 'production'
@@ -42,15 +40,15 @@ const corsOptions = {
     maxAge: 86400
 };
 
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
+app.options('/*', cors(corsOptions));
 
+app.use(cors(corsOptions));
 app.use(...basicMiddleware);
 
-//Routes
+// Routes
 app.use('/api/contact', contact);
 
-//test route
+// Test route
 app.get('/api/test', (req, res) => {
     res.json({ message: 'Backend is working!' });
 });

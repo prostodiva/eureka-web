@@ -1,7 +1,12 @@
 import Section from '../layout/Section.tsx';
 import type { BaseSectionProps } from '../../types/section';
 
-function CallToAction({ backgroundImage, content, actions, className }: BaseSectionProps) {
+function CallToAction({
+  backgroundImage,
+  content,
+  actions,
+  className,
+}: BaseSectionProps) {
   return (
     <Section
       backgroundImage={backgroundImage}

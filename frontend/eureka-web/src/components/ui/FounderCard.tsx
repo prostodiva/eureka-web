@@ -14,7 +14,7 @@ function FounderCard({
   name,
   role,
   rotate = '',
-  className = "",
+  className = '',
 }: FounderCardProps) {
   return (
     <div className={`flex flex-col ${rotate} ${className}`.trim()}>
@@ -22,7 +22,12 @@ function FounderCard({
       {typeof image === 'string' ? (
         <img src={image} alt={name} className="w-full object-cover block" />
       ) : (
-        <ResponsiveImageEl image={image} alt={name} className="w-full object-cover block" sizes="(min-width: 640px) 50vw, 100vw" />
+        <ResponsiveImageEl
+          image={image}
+          alt={name}
+          className="w-full object-cover block"
+          sizes="(min-width: 640px) 50vw, 100vw"
+        />
       )}
 
       {/* Yellow name box — matches what you have in the screenshot */}

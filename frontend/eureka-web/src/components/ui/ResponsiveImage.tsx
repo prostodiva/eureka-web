@@ -1,6 +1,9 @@
 import type { ResponsiveImage as ResponsiveImageType } from '../../types/responsiveImage.ts';
 
-type Props = Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'src' | 'srcSet'> & {
+type Props = Omit<
+  React.ImgHTMLAttributes<HTMLImageElement>,
+  'src' | 'srcSet'
+> & {
   image: ResponsiveImageType;
   sizes?: string;
 };
@@ -16,4 +19,3 @@ function ResponsiveImage({ image, sizes = '100vw', alt, ...imgProps }: Props) {
 }
 
 export default ResponsiveImage;
-
