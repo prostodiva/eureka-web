@@ -7,6 +7,7 @@ function ContactConnect() {
     <>
       <Connect
         backgroundImage={contact_connect}
+        style={{ backgroundColor: '#8658F1' }}
         content={<ContactConnectContent />}
       />
     </>

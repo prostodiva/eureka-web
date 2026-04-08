@@ -6,6 +6,7 @@ function GameplayHero() {
   return (
     <Hero
       backgroundImage={gameplay}
+      style={{ backgroundColor: '#A37CFF' }}
       content={<GameplayHeroContent />}
     />
   );

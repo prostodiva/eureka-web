@@ -15,6 +15,7 @@ function HomeHero() {
   return (
     <Hero
       backgroundImage={homeHeroBg}
+      style={{ backgroundColor: '#8658F1' }}
       content={<HeroContent />}
       className="min-h-screen flex items-center justify-center"
       actions={

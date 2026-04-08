@@ -6,6 +6,7 @@ function AboutUsHeroSection() {
   return (
     <Hero
       backgroundImage={aboutUsHome}
+      style={{ backgroundColor: '#A37CFF' }}
       content={<AboutUsHeroContent />}
     />
   );

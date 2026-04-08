@@ -4,7 +4,11 @@ import ContactHeroContent from './ContactHeroContent.tsx';
 
 function ContactHero() {
   return (
-    <Hero backgroundImage={contact_hero} content={<ContactHeroContent />} />
+    <Hero
+      backgroundImage={contact_hero}
+      style={{ backgroundColor: '#8658F1' }}
+      content={<ContactHeroContent />}
+    />
   );
 }
 

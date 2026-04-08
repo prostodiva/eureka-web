@@ -1,15 +1,23 @@
 import React from 'react';
 
-interface SectionProps {
+interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
-  className?: string;
-  style?: React.CSSProperties;
   backgroundImage?: string;
 }
 
-const Section = ({ children, className, backgroundImage }: SectionProps) => {
+const Section = ({
+  children,
+  className,
+  backgroundImage,
+  style,
+  ...rest
+}: SectionProps) => {
   return (
-    <section className={`relative w-full ${className || ''}`}>
+    <section
+      {...rest}
+      style={style}
+      className={`relative w-full ${className || ''}`}
+    >
       {backgroundImage && (
         <img
           src={backgroundImage}

@@ -3,6 +3,7 @@ import type { BaseSectionProps } from '../../types/section.ts';
 
 function Hero({
   backgroundImage,
+  style,
   content,
   actions,
   className,
@@ -10,6 +11,7 @@ function Hero({
   return (
     <Section
       backgroundImage={backgroundImage}
+      style={style}
       className={`relative w-full min-h-screen ${className || ''}`}
     >
       {content}

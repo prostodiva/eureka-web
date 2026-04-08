@@ -1,6 +1,6 @@
-import type { ReactNode, MouseEvent } from 'react';
+import type { ReactNode } from 'react';
 import classNames from 'classnames';
-import useNavigation from '../../hooks/useNavigation.ts';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 interface LinkProps {
   to: string;
@@ -10,28 +10,24 @@ interface LinkProps {
 }
 
 function Link({ to, children, className, activeClassName }: LinkProps) {
-  const { navigate, currentPath } = useNavigation();
-
-  const classes = classNames(
-    'text-black',
-    className,
-    currentPath === to && activeClassName
-  );
-
-  const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
-    if (event.metaKey || event.ctrlKey) {
-      return;
-    }
-    event.preventDefault();
-
-    navigate(to);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const navigate = useNavigate();
 
   return (
-    <a className={classes} href={to} onClick={handleClick}>
+    <NavLink
+      to={to}
+      className={({ isActive }) =>
+        classNames('text-black', className, isActive && activeClassName)
+      }
+      onClick={(e) => {
+        if (!e.defaultPrevented && e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+          e.preventDefault();
+          navigate(to);
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }}
+    >
       {children}
-    </a>
+    </NavLink>
   );
 }
 
