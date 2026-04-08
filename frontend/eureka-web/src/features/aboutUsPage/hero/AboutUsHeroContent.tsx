@@ -1,6 +1,6 @@
 import FounderCard from '../../../components/ui/FounderCard.tsx';
 import ritaImg from '../../../assets/rita.png';
-import alekseiImg from '../../../assets/aleksei.png';
+import alekseiImg from '../../../assets/rita1.png';
 
 function AboutUsHeroContent() {
   return (

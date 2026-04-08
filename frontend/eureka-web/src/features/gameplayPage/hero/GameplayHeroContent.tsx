@@ -6,7 +6,7 @@ export interface HeroContentProps {
 
 function GameplayHeroContent() {
   return (
-    <div className="relative z-10 flex flex-col items-center w-full px-4 pt-16 sm:pt-20 md:pt-24">
+    <div className="relative min-h-screen flex flex-col justify-between z-10 items-center w-full px-[1vw] py-[5vh]">
       {/* Title */}
       <h1 className="font-kingfink text-[#FFDC5C] text-center text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-tight mt-20">
         EURIKA GAMEPLAY
