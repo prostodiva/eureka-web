@@ -1,22 +1,31 @@
 import { useState } from 'react';
 import { ImEnvelop } from "react-icons/im";
+import Turnstile from './Turnstile.tsx';
 
 function ContactForm() {
     const [accepted, setAccepted] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? '';
+    const turnstileSiteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY as string | undefined;
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!turnstileToken) {
+            setStatus('error');
+            return;
+        }
         setStatus('loading');
 
         try {
-            const response = await fetch('http://localhost:3001/api/contact', {
+            const response = await fetch(`${apiBaseUrl}/api/contact`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, message }),
+                body: JSON.stringify({ name, email, message, turnstileToken }),
             });
 
             const data = await response.json();
@@ -26,6 +35,7 @@ function ContactForm() {
                 setEmail('');
                 setMessage('');
                 setAccepted(false);
+                setTurnstileToken(null);
             } else {
                 setStatus('error');
             }
@@ -94,16 +104,31 @@ function ContactForm() {
         </span>
             </label>
 
+            {turnstileSiteKey ? (
+                <Turnstile
+                    siteKey={turnstileSiteKey}
+                    onToken={setTurnstileToken}
+                    theme="auto"
+                    className="mt-2"
+                />
+            ) : (
+                <p className="text-center text-red-300 text-sm">
+                    Turnstile is not configured. Set <code>VITE_TURNSTILE_SITE_KEY</code>.
+                </p>
+            )}
+
             <button
                 type="submit"
-                disabled={!accepted || status === 'loading'}
+                disabled={!accepted || !turnstileToken || status === 'loading'}
                 className="w-full bg-purple-700 text-white font-inter font-semibold py-4 disabled:opacity-50 hover:bg-purple-800 transition-colors"
             >
                 {status === 'loading' ? 'Sending...' : 'Send Message'}
             </button>
 
             {status === 'error' && (
-                <p className="text-center mt-2 text-red-300">Something went wrong. Please try again.</p>
+                <p className="text-center mt-2 text-red-300">
+                    Something went wrong. Please try again.
+                </p>
             )}
         </form>
     );
