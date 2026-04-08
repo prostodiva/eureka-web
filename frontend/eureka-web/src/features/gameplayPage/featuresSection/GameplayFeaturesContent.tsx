@@ -9,22 +9,21 @@ function GameplayFeaturesContent() {
 
   return (
     <>
-      <div className="relative z-10 flex flex-col items-center w-full min-h-screen">
-        {/* Section 1 - top text + image side by side */}
-        <div className="flex items-center justify-between px-4 sm:px-6 md:px-10 pt-6 sm:pt-8 md:pt-10">
-          <span className="font-kingfink text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-[#8658F1] leading-tight">
+      <div className="relative min-h-screen flex flex-col justify-between px-[1vw] py-[5vh]">
+        <div className="flex items-center justify-between">
+          <span className="font-kingfink text-[clamp(4rem,6vw,8rem)] text-[#8658F1] leading-tight">
             WATCH LEARNING TAKE SHAPE
           </span>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-10 gap-4">
-          <div className="w-full md:w-1/2">{/* your puzzle image */}</div>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="w-full md:w-1/2"></div>
 
-          <div className="w-full md:w-1/2 flex flex-col gap-2">
-            <span className="font-kingfink text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-[#8658F1] leading-tight">
-              AN EXPERIENCE TO PLAY & LEARN
+          <div className="flex flex-col items-center">
+            <span className="font-kingfink text-[clamp(4rem,5vw,8rem)] text-[#8658F1] leading-none mt-[5vh]">
+              AN EXPERIENCE <br /> TO PLAY & LEARN
             </span>
-            <p className="ml-0 sm:ml-4 md:ml-10 lg:ml-20 font-inter text-gray-500 text-sm sm:text-base">
+            <p className="font-inter text-gray-500 text-sm sm:text-base">
               Explore how puzzles, symbols, and landmarks turn learning into
               play.
             </p>
@@ -32,8 +31,8 @@ function GameplayFeaturesContent() {
         </div>
 
         {/* Section 3 - bottom text */}
-        <div className="flex flex-col items-center px-4 sm:px-6 md:px-10 pt-10 sm:pt-15 md:pt-25">
-          <span className="font-kingfink text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-[#8658F1] leading-tight text-center">
+        <div className="flex flex-col items-center mt-auto">
+          <span className="font-kingfink text-[clamp(4rem,6vw,8rem)] text-[#8658F1] leading-tight text-center">
             AN EXPERIENCE TO PLAY & REPLAY
           </span>
         </div>
