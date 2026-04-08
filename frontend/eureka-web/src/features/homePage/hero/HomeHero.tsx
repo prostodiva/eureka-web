@@ -24,7 +24,7 @@ function HomeHero() {
           className="absolute
             z-20
             bottom-[17vh]
-            2xl:bottom-[14vh]
+            2xl:bottom-[13vh]
             left-[52.5vw]
             w-[12vw]
             aspect-[3.1/1.7]
