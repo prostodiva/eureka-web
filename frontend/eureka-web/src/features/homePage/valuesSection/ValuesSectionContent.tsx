@@ -1,6 +1,37 @@
-import arrowLeft from "../../../assets/bg/arrowLeft.png";
-import arrowRight from '../../../assets/bg/arrowRight.png';
+import arrowLeft400avif from '../../../assets/optimized/arrowLeft-400.avif';
+import arrowLeft800avif from '../../../assets/optimized/arrowLeft-800.avif';
+import arrowLeft1200avif from '../../../assets/optimized/arrowLeft-1200.avif';
+import arrowLeft400webp from '../../../assets/optimized/arrowLeft-400.webp';
+import arrowLeft800webp from '../../../assets/optimized/arrowLeft-800.webp';
+import arrowLeft1200webp from '../../../assets/optimized/arrowLeft-1200.webp';
+import arrowRight400avif from '../../../assets/optimized/arrowRight-400.avif';
+import arrowRight800avif from '../../../assets/optimized/arrowRight-800.avif';
+import arrowRight1200avif from '../../../assets/optimized/arrowRight-1200.avif';
+import arrowRight400webp from '../../../assets/optimized/arrowRight-400.webp';
+import arrowRight800webp from '../../../assets/optimized/arrowRight-800.webp';
+import arrowRight1200webp from '../../../assets/optimized/arrowRight-1200.webp';
 import Button from '../../../components/ui/Button.tsx';
+import { makeResponsiveImage } from '../../../utils/makeResponsiveImage.ts';
+
+const arrowLeft = makeResponsiveImage({
+  fallbackSrc: arrowLeft400webp,
+  avif400: arrowLeft400avif,
+  avif800: arrowLeft800avif,
+  avif1200: arrowLeft1200avif,
+  webp400: arrowLeft400webp,
+  webp800: arrowLeft800webp,
+  webp1200: arrowLeft1200webp,
+});
+
+const arrowRight = makeResponsiveImage({
+  fallbackSrc: arrowRight400webp,
+  avif400: arrowRight400avif,
+  avif800: arrowRight800avif,
+  avif1200: arrowRight1200avif,
+  webp400: arrowRight400webp,
+  webp800: arrowRight800webp,
+  webp1200: arrowRight1200webp,
+});
 
 function ValuesSectionContent() {
 

@@ -1,8 +1,10 @@
 import React from 'react';
+import type { ResponsiveImage } from '../../types/responsiveImage.ts';
+import ResponsiveImageEl from '../ui/ResponsiveImage.tsx';
 
 interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
-  backgroundImage?: string;
+  backgroundImage?: string | ResponsiveImage;
 }
 
 const Section = ({
@@ -18,13 +20,21 @@ const Section = ({
       style={style}
       className={`relative w-full ${className || ''}`}
     >
-      {backgroundImage && (
-        <img
-          src={backgroundImage}
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          alt=""
-        />
-      )}
+      {backgroundImage &&
+        (typeof backgroundImage === 'string' ? (
+          <img
+            src={backgroundImage}
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            alt=""
+          />
+        ) : (
+          <ResponsiveImageEl
+            image={backgroundImage}
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            alt=""
+            sizes="100vw"
+          />
+        ))}
       {children}
     </section>
   );

@@ -1,5 +1,8 @@
+import type { ResponsiveImage } from '../../types/responsiveImage.ts';
+import ResponsiveImageEl from './ResponsiveImage.tsx';
+
 interface FounderCardProps {
-  image: string;
+  image: string | ResponsiveImage;
   name: string;
   role: string;
   rotate?: string;
@@ -16,7 +19,11 @@ function FounderCard({
   return (
     <div className={`flex flex-col ${rotate} ${className}`.trim()}>
       {/* Photo */}
-      <img src={image} alt={name} className="w-full object-cover block" />
+      {typeof image === 'string' ? (
+        <img src={image} alt={name} className="w-full object-cover block" />
+      ) : (
+        <ResponsiveImageEl image={image} alt={name} className="w-full object-cover block" sizes="(min-width: 640px) 50vw, 100vw" />
+      )}
 
       {/* Yellow name box — matches what you have in the screenshot */}
       <div className="bg-[#FFDC5C] border-2 border-black p-3 sm:p-4">

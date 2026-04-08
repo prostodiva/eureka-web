@@ -1,6 +1,24 @@
 import Navbar from '../components/ui/Navbar.tsx';
-import logo from '../assets/logo.png';
+import ResponsiveImage from '../components/ui/ResponsiveImage.tsx';
+import { makeResponsiveImage } from '../utils/makeResponsiveImage.ts';
+import logo400avif from '../assets/optimized/logo-400.avif';
+import logo800avif from '../assets/optimized/logo-800.avif';
+import logo1200avif from '../assets/optimized/logo-1200.avif';
+import logo400webp from '../assets/optimized/logo-400.webp';
+import logo800webp from '../assets/optimized/logo-800.webp';
+import logo1200webp from '../assets/optimized/logo-1200.webp';
 import { Link } from 'react-router-dom';
+
+const logo = makeResponsiveImage({
+  alt: 'Company Logo',
+  fallbackSrc: logo400webp,
+  avif400: logo400avif,
+  avif800: logo800avif,
+  avif1200: logo1200avif,
+  webp400: logo400webp,
+  webp800: logo800webp,
+  webp1200: logo1200webp,
+});
 
 function Header() {
   return (
@@ -11,10 +29,10 @@ function Header() {
           className="flex items-center hover:opacity-90 transition-opacity justify-self-start"
           aria-label="Home"
         >
-          <img
-            src={logo}
-            alt="Company Logo"
+          <ResponsiveImage
+            image={logo}
             className="h-6 sm:h-6 md:h-6 lg:h-6 w-auto"
+            sizes="96px"
           />
         </Link>
 
