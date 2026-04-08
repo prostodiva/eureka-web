@@ -21,13 +21,13 @@ function HomeHero() {
         <Button
           backgroundImage={comp_19}
           className="absolute
-                    z-20
-                    bottom-[17%]
-                    left-[52.5%]
-                    w-[12%]
-                    h-[12%]
-                    aspect-2/1
-                    hover:brightness-110"
+            z-20
+            bottom-[17vh]
+            2xl:bottom-[14vh]
+            left-[52.5vw]
+            w-[12vw]
+            aspect-[3.1/1.7]
+            hover:brightness-110"
           onClick={handleGameplayClick}
         >
           <span className="sr-only">Gameplay</span>
