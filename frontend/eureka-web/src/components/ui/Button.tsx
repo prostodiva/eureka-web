@@ -36,29 +36,6 @@ function Button({
   onClick,
   backgroundImage,
 }: ButtonProps) {
-  const toImageSetX = (srcSet: string, mimeType: string, baseWidth = 400) => {
-    const entries = srcSet
-      .split(',')
-      .map((part) => part.trim())
-      .filter(Boolean)
-      .map((part) => {
-        const [url, descriptor] = part.split(/\s+/);
-        const width = descriptor?.endsWith('w')
-          ? Number(descriptor.slice(0, -1))
-          : NaN;
-        if (!url || !Number.isFinite(width) || width <= 0) return null;
-
-        const x = width / baseWidth;
-        if (!Number.isFinite(x) || x <= 0) return null;
-
-        // CSS image-set() supports resolution descriptors (1x, 2x...). We map widths to x
-        // using a fixed baseWidth that matches our generation (400/800/1200/1600/2400...).
-        return `url(${url}) type("${mimeType}") ${x}x`;
-      })
-      .filter((v): v is string => Boolean(v));
-
-    return entries.length ? `image-set(${entries.join(', ')})` : null;
-  };
 
   const buttonClasses = classNames(
     'flex justify-center items-center text-center font-inter',
@@ -80,19 +57,17 @@ function Button({
     className
   );
 
-  const backgroundStyle = backgroundImage
-    ? {
-        backgroundImage:
-          typeof backgroundImage === 'string'
-            ? `url(${backgroundImage})`
-            : (toImageSetX(backgroundImage.avifSrcSet, 'image/avif') ??
-              toImageSetX(backgroundImage.webpSrcSet, 'image/webp') ??
-              `url(${backgroundImage.fallbackSrc})`),
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }
-    : {};
+    const backgroundStyle = backgroundImage
+        ? {
+            backgroundImage:
+                typeof backgroundImage === 'string'
+                    ? `url(${backgroundImage})`
+                    : `url(${backgroundImage.fallbackSrc})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+        }
+        : {};
 
   return (
     <button
