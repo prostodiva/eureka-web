@@ -1,9 +1,12 @@
 const errorHandler = (err, req, res, next) => {
     console.error(err.stack);
-    res.status(500).json({
-        error: 'Something broke!',
-        message: err.message
-    });
+    const isProd = process.env.NODE_ENV === 'production';
+
+    res.status(500).json(
+        isProd
+            ? { error: 'Internal server error' }
+            : { error: 'Internal server error', message: err.message }
+    );
 };
 
 module.exports = errorHandler;
