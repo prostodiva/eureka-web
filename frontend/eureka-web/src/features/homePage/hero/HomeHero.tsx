@@ -24,7 +24,6 @@ function HomeHero() {
                   className="pointer-events-auto absolute z-20 bottom-[17vh] 2xl:bottom-[13vh] left-[52.5vw] w-[12vw] aspect-[3.1/1.7] hover:brightness-110"
                   onClick={handleGameplayClick}
               >
-                <span className="sr-only">Gameplay</span>
               </Button>
             </div>
           }

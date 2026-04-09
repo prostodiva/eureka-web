@@ -1,4 +1,4 @@
-import type { ResponsiveImage } from '../../types/responsiveImage.ts';
+import type { ResponsiveImage } from '@/types/responsiveImage.ts';
 import ResponsiveImageEl from './ResponsiveImage.tsx';
 
 interface FounderCardProps {
@@ -17,7 +17,7 @@ function FounderCard({
   className = '',
 }: FounderCardProps) {
   return (
-    <div className={`flex flex-col ${rotate} ${className}`.trim()}>
+    <div className={`flex flex-col w-full ${rotate} ${className}`.trim()}>
       {/* Photo */}
       {typeof image === 'string' ? (
         <img src={image} alt={name} className="w-full object-cover block" />
