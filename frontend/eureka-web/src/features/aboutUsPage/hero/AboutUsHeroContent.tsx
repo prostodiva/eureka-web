@@ -1,39 +1,5 @@
-import FounderCard from '../../../components/ui/FounderCard.tsx';
-import { makeResponsiveImage } from '../../../utils/makeResponsiveImage.ts';
-import rita400avif from '../../../assets/optimized/rita-400.avif';
-import rita800avif from '../../../assets/optimized/rita-800.avif';
-import rita1200avif from '../../../assets/optimized/rita-1200.avif';
-import rita400webp from '../../../assets/optimized/rita-400.webp';
-import rita800webp from '../../../assets/optimized/rita-800.webp';
-import rita1200webp from '../../../assets/optimized/rita-1200.webp';
-import aleksei400avif from '../../../assets/optimized/rita1-400.avif';
-import aleksei800avif from '../../../assets/optimized/rita1-800.avif';
-import aleksei1200avif from '../../../assets/optimized/rita1-1200.avif';
-import aleksei400webp from '../../../assets/optimized/rita1-400.webp';
-import aleksei800webp from '../../../assets/optimized/rita1-800.webp';
-import aleksei1200webp from '../../../assets/optimized/rita1-1200.webp';
-
-const ritaImg = makeResponsiveImage({
-  alt: 'Margarita Kattsyna',
-  fallbackSrc: rita800webp,
-  avif400: rita400avif,
-  avif800: rita800avif,
-  avif1200: rita1200avif,
-  webp400: rita400webp,
-  webp800: rita800webp,
-  webp1200: rita1200webp,
-});
-
-const alekseiImg = makeResponsiveImage({
-  alt: 'Aleksei Shchepin',
-  fallbackSrc: aleksei800webp,
-  avif400: aleksei400avif,
-  avif800: aleksei800avif,
-  avif1200: aleksei1200avif,
-  webp400: aleksei400webp,
-  webp800: aleksei800webp,
-  webp1200: aleksei1200webp,
-});
+import FounderCard from '@/components/ui/FounderCard';
+import { ritaImg, alekseiImg } from '@/assets/images';
 
 function AboutUsHeroContent() {
   return (
