@@ -28,8 +28,8 @@ interface NavbarProps {
 function Navbar({
   links,
   navClassName = 'w-full flex flex-col md:flex-row items-center gap-10 h-auto md:h-24 font-inter',
-  linkClassName = 'gap-2 my-2 md:mx-4 text-2xl text-gray-400 flex items-center gap-1 whitespace-nowrap',
-  activeLinkClassName = 'font-bold text-white',
+  linkClassName = 'gap-2 my-2 md:mx-4 text-xl text-white flex items-center gap-1 whitespace-nowrap',
+  activeLinkClassName = 'font-bold text-yellow-300',
   variant = 'horizontal',
   alignment = 'start',
 }: NavbarProps) {

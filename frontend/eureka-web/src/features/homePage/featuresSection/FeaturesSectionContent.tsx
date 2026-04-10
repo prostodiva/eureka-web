@@ -1,3 +1,6 @@
+import { box } from '@/assets/images';
+import ResponsiveImageEl from '@/components/ui/ResponsiveImage';
+
 export interface FeatureSectionContentProps {
   title: string;
   description?: string;
@@ -33,6 +36,8 @@ function FeatureSectionContent({
       >
         Learn More
       </a>
+
+        <div><ResponsiveImageEl image={box} alt="box" /></div>
     </div>
   );
 }

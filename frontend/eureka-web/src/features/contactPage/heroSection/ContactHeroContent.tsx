@@ -1,10 +1,12 @@
 import { IoCloseOutline } from 'react-icons/io5';
+import { puzzle1, puzzle2, puzzle3, puzzle4 } from '@/assets/images';
+import ResponsiveImageEl from '@/components/ui/ResponsiveImage';
 
 function ContactHeroContent() {
   return (
-    <div className="relative z-10 flex flex-col items-center w-full px-4 pt-16 sm:pt-20 md:pt-24">
+    <div className="relative z-10 flex flex-col items-center w-full px-4 pt-16 sm:pt-20 md:pt-24 top-10">
       {/* Title */}
-      <h1 className="font-kingfink text-white text-center text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-tight">
+      <h1 className="font-kingfink text-white text-center text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none">
         LET'S CONNECT &<br />
         CREATE TOGETHER
       </h1>
@@ -15,27 +17,28 @@ function ContactHeroContent() {
         more fun
       </p>
 
-      {/* 4-col grid mirrors the 4 puzzle pieces in the background */}
-      <div className="grid grid-cols-4 w-full max-w-4xl mx-auto mt-8 sm:mt-12">
-        {/* Columns 1-3: empty — puzzle pieces are decorative bg */}
-        <div />
-        <div />
-        <div />
+        {/* Puzzles */}
+        <div className="grid grid-cols-4 w-full max-w-6xl mx-auto mt-8 sm:mt-12 gap-4">
+            <div><ResponsiveImageEl image={puzzle1} alt="Puzzle 1" /></div>
+            <div><ResponsiveImageEl image={puzzle2} alt="Puzzle 2" /></div>
 
-        {/* Column 4: tooltip floats over the 4th puzzle piece */}
-        <div className="flex items-start justify-start">
-          <div className="relative bg-white rounded-lg p-3 sm:p-4 w-full">
-            <button className="absolute top-2 right-2 text-gray-400">
-              <IoCloseOutline size={16} />
-            </button>
-            <p className="font-inter font-bold text-[#8658F1]  text-sm sm:text-base leading-snug pr-4">
-              Explore opportunities to build creative learning tools with us.
-            </p>
-            {/* Arrow */}
-            <div className="absolute -bottom-2 left-6 w-4 h-4 bg-white rotate-45" />
-          </div>
+            {/* Puzzle 3 — tooltip anchored here, overlaps into puzzle 4 */}
+            <div className="relative">
+                <ResponsiveImageEl image={puzzle3} alt="Puzzle 3"  />
+                <div className="absolute top-4 left-1/2 w-56 z-20">
+                    <div className="relative bg-white rounded-lg p-3 sm:p-4">
+                        <IoCloseOutline size={16} className="absolute top-2 right-2" />
+                        <p className="font-inter font-bold text-[#8658F1] text-sm sm:text-base leading-snug pr-4">
+                            Explore opportunities to build creative learning tools with us.
+                        </p>
+                        {/* Arrow pointing down-left */}
+                        <div className="absolute -bottom-2 left-6 w-4 h-4 bg-white rotate-45" />
+                    </div>
+                </div>
+            </div>
+
+            <div><ResponsiveImageEl image={puzzle4} alt="Puzzle 4" /></div>
         </div>
-      </div>
     </div>
   );
 }

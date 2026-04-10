@@ -142,12 +142,12 @@ import rita400webp from '@/assets/optimized/rita-400.webp';
 import rita800webp from '@/assets/optimized/rita-800.webp';
 import rita1200webp from '@/assets/optimized/rita-1200.webp';
 
-import aleksei400avif from '@/assets/optimized/rita1-400.avif';
-import aleksei800avif from '@/assets/optimized/rita1-800.avif';
-import aleksei1200avif from '@/assets/optimized/rita1-1200.avif';
-import aleksei400webp from '@/assets/optimized/rita1-400.webp';
-import aleksei800webp from '@/assets/optimized/rita1-800.webp';
-import aleksei1200webp from '@/assets/optimized/rita1-1200.webp';
+import aleksei400avif from '@/assets/optimized/aleksei-400.avif';
+import aleksei800avif from '@/assets/optimized/aleksei-800.avif';
+import aleksei1200avif from '@/assets/optimized/aleksei-1200.avif';
+import aleksei400webp from '@/assets/optimized/aleksei-400.webp';
+import aleksei800webp from '@/assets/optimized/aleksei-800.webp';
+import aleksei1200webp from '@/assets/optimized/aleksei-1200.webp';
 
 export const ritaImg = makeResponsiveImage({
     alt: 'Margarita Kattsyna',
@@ -321,6 +321,109 @@ export const contactHero = makeResponsiveImage({
     webp1200: contactHero1200webp,
     webp1600: contactHero1600webp,
     webp2400: contactHero2400webp,
+});
+
+
+import box400avif from '@/assets/optimized/box-400.avif';
+import box800avif from '@/assets/optimized/box-800.avif';
+import box1200avif from '@/assets/optimized/box-1200.avif';
+import box1600avif from '@/assets/optimized/box-1600.avif';
+import box2400avif from '@/assets/optimized/box-2400.avif';
+import box400webp from '@/assets/optimized/box-400.webp';
+import box800webp from '@/assets/optimized/box-800.webp';
+import box1200webp from '@/assets/optimized/box-1200.webp';
+import box1600webp from '@/assets/optimized/box-1600.webp';
+import box2400webp from '@/assets/optimized/box-2400.webp';
+
+import puzzle1_400avif from '@/assets/optimized/puzzle1-400.avif';
+import puzzle1_800avif from '@/assets/optimized/puzzle1-800.avif';
+import puzzle1_1200avif from '@/assets/optimized/puzzle1-1200.avif';
+import puzzle1_1600avif from '@/assets/optimized/puzzle1-1600.avif';
+import puzzle1_2400avif from '@/assets/optimized/puzzle1-2400.avif';
+import puzzle1_400webp from '@/assets/optimized/puzzle1-400.webp';
+import puzzle1_800webp from '@/assets/optimized/puzzle1-800.webp';
+import puzzle1_1200webp from '@/assets/optimized/puzzle1-1200.webp';
+import puzzle1_1600webp from '@/assets/optimized/puzzle1-1600.webp';
+import puzzle1_2400webp from '@/assets/optimized/puzzle1-2400.webp';
+
+import puzzle2_400avif from '@/assets/optimized/puzzle2-400.avif';
+import puzzle2_800avif from '@/assets/optimized/puzzle2-800.avif';
+import puzzle2_1200avif from '@/assets/optimized/puzzle2-1200.avif';
+import puzzle2_1600avif from '@/assets/optimized/puzzle2-1600.avif';
+import puzzle2_2400avif from '@/assets/optimized/puzzle2-2400.avif';
+import puzzle2_400webp from '@/assets/optimized/puzzle2-400.webp';
+import puzzle2_800webp from '@/assets/optimized/puzzle2-800.webp';
+import puzzle2_1200webp from '@/assets/optimized/puzzle2-1200.webp';
+import puzzle2_1600webp from '@/assets/optimized/puzzle2-1600.webp';
+import puzzle2_2400webp from '@/assets/optimized/puzzle2-2400.webp';
+
+import puzzle3_400avif from '@/assets/optimized/puzzle3-400.avif';
+import puzzle3_800avif from '@/assets/optimized/puzzle3-800.avif';
+import puzzle3_1200avif from '@/assets/optimized/puzzle3-1200.avif';
+import puzzle3_1600avif from '@/assets/optimized/puzzle3-1600.avif';
+import puzzle3_2400avif from '@/assets/optimized/puzzle3-2400.avif';
+import puzzle3_400webp from '@/assets/optimized/puzzle3-400.webp';
+import puzzle3_800webp from '@/assets/optimized/puzzle3-800.webp';
+import puzzle3_1200webp from '@/assets/optimized/puzzle3-1200.webp';
+import puzzle3_1600webp from '@/assets/optimized/puzzle3-1600.webp';
+import puzzle3_2400webp from '@/assets/optimized/puzzle3-2400.webp';
+
+import puzzle4_400avif from '@/assets/optimized/puzzle4-400.avif';
+import puzzle4_800avif from '@/assets/optimized/puzzle4-800.avif';
+import puzzle4_1200avif from '@/assets/optimized/puzzle4-1200.avif';
+import puzzle4_1600avif from '@/assets/optimized/puzzle4-1600.avif';
+import puzzle4_2400avif from '@/assets/optimized/puzzle4-2400.avif';
+import puzzle4_400webp from '@/assets/optimized/puzzle4-400.webp';
+import puzzle4_800webp from '@/assets/optimized/puzzle4-800.webp';
+import puzzle4_1200webp from '@/assets/optimized/puzzle4-1200.webp';
+import puzzle4_1600webp from '@/assets/optimized/puzzle4-1600.webp';
+import puzzle4_2400webp from '@/assets/optimized/puzzle4-2400.webp';
+
+import val400avif from '@/assets/optimized/val-400.avif';
+import val800avif from '@/assets/optimized/val-800.avif';
+import val1200avif from '@/assets/optimized/val-1200.avif';
+import val1600avif from '@/assets/optimized/val-1600.avif';
+import val2400avif from '@/assets/optimized/val-2400.avif';
+import val400webp from '@/assets/optimized/val-400.webp';
+import val800webp from '@/assets/optimized/val-800.webp';
+import val1200webp from '@/assets/optimized/val-1200.webp';
+import val1600webp from '@/assets/optimized/val-1600.webp';
+import val2400webp from '@/assets/optimized/val-2400.webp';
+
+export const box = makeResponsiveImage({
+    fallbackSrc: box800webp,
+    avif400: box400avif, avif800: box800avif, avif1200: box1200avif, avif1600: box1600avif, avif2400: box2400avif,
+    webp400: box400webp, webp800: box800webp, webp1200: box1200webp, webp1600: box1600webp, webp2400: box2400webp,
+});
+
+export const puzzle1 = makeResponsiveImage({
+    fallbackSrc: puzzle1_800webp,
+    avif400: puzzle1_400avif, avif800: puzzle1_800avif, avif1200: puzzle1_1200avif, avif1600: puzzle1_1600avif, avif2400: puzzle1_2400avif,
+    webp400: puzzle1_400webp, webp800: puzzle1_800webp, webp1200: puzzle1_1200webp, webp1600: puzzle1_1600webp, webp2400: puzzle1_2400webp,
+});
+
+export const puzzle2 = makeResponsiveImage({
+    fallbackSrc: puzzle2_800webp,
+    avif400: puzzle2_400avif, avif800: puzzle2_800avif, avif1200: puzzle2_1200avif, avif1600: puzzle2_1600avif, avif2400: puzzle2_2400avif,
+    webp400: puzzle2_400webp, webp800: puzzle2_800webp, webp1200: puzzle2_1200webp, webp1600: puzzle2_1600webp, webp2400: puzzle2_2400webp,
+});
+
+export const puzzle3 = makeResponsiveImage({
+    fallbackSrc: puzzle3_800webp,
+    avif400: puzzle3_400avif, avif800: puzzle3_800avif, avif1200: puzzle3_1200avif, avif1600: puzzle3_1600avif, avif2400: puzzle3_2400avif,
+    webp400: puzzle3_400webp, webp800: puzzle3_800webp, webp1200: puzzle3_1200webp, webp1600: puzzle3_1600webp, webp2400: puzzle3_2400webp,
+});
+
+export const puzzle4 = makeResponsiveImage({
+    fallbackSrc: puzzle4_800webp,
+    avif400: puzzle4_400avif, avif800: puzzle4_800avif, avif1200: puzzle4_1200avif, avif1600: puzzle4_1600avif, avif2400: puzzle4_2400avif,
+    webp400: puzzle4_400webp, webp800: puzzle4_800webp, webp1200: puzzle4_1200webp, webp1600: puzzle4_1600webp, webp2400: puzzle4_2400webp,
+});
+
+export const val = makeResponsiveImage({
+    fallbackSrc: val800webp,
+    avif400: val400avif, avif800: val800avif, avif1200: val1200avif, avif1600: val1600avif, avif2400: val2400avif,
+    webp400: val400webp, webp800: val800webp, webp1200: val1200webp, webp1600: val1600webp, webp2400: val2400webp,
 });
 
 
