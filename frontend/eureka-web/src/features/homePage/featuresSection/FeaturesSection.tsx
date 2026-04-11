@@ -3,7 +3,6 @@ import FeatureSectionContent from './FeaturesSectionContent';
 import Button from '@/components/ui/Button';
 import { featuresHome } from '@/assets/images';
 
-
 function FeaturesSection() {
   const handleDemoCLick = () => console.log('demo clicked');
 

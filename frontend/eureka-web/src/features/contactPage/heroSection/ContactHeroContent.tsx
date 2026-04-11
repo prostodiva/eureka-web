@@ -17,28 +17,34 @@ function ContactHeroContent() {
         more fun
       </p>
 
-        {/* Puzzles */}
-        <div className="grid grid-cols-4 w-full max-w-6xl mx-auto mt-8 sm:mt-12 gap-4">
-            <div><ResponsiveImageEl image={puzzle1} alt="Puzzle 1" /></div>
-            <div><ResponsiveImageEl image={puzzle2} alt="Puzzle 2" /></div>
-
-            {/* Puzzle 3 — tooltip anchored here, overlaps into puzzle 4 */}
-            <div className="relative">
-                <ResponsiveImageEl image={puzzle3} alt="Puzzle 3"  />
-                <div className="absolute top-4 left-1/2 w-56 z-20">
-                    <div className="relative bg-white rounded-lg p-3 sm:p-4">
-                        <IoCloseOutline size={16} className="absolute top-2 right-2" />
-                        <p className="font-inter font-bold text-[#8658F1] text-sm sm:text-base leading-snug pr-4">
-                            Explore opportunities to build creative learning tools with us.
-                        </p>
-                        {/* Arrow pointing down-left */}
-                        <div className="absolute -bottom-2 left-6 w-4 h-4 bg-white rotate-45" />
-                    </div>
-                </div>
-            </div>
-
-            <div><ResponsiveImageEl image={puzzle4} alt="Puzzle 4" /></div>
+      {/* Puzzles */}
+      <div className="grid grid-cols-4 w-full max-w-6xl mx-auto mt-8 sm:mt-12 gap-4">
+        <div>
+          <ResponsiveImageEl image={puzzle1} alt="Puzzle 1" />
         </div>
+        <div>
+          <ResponsiveImageEl image={puzzle2} alt="Puzzle 2" />
+        </div>
+
+        {/* Puzzle 3 — tooltip anchored here, overlaps into puzzle 4 */}
+        <div className="relative">
+          <ResponsiveImageEl image={puzzle3} alt="Puzzle 3" />
+          <div className="absolute top-4 left-1/2 w-56 z-20">
+            <div className="relative bg-white rounded-lg p-3 sm:p-4">
+              <IoCloseOutline size={16} className="absolute top-2 right-2" />
+              <p className="font-inter font-bold text-[#8658F1] text-sm sm:text-base leading-snug pr-4">
+                Explore opportunities to build creative learning tools with us.
+              </p>
+              {/* Arrow pointing down-left */}
+              <div className="absolute -bottom-2 left-6 w-4 h-4 bg-white rotate-45" />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <ResponsiveImageEl image={puzzle4} alt="Puzzle 4" />
+        </div>
+      </div>
     </div>
   );
 }

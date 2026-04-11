@@ -1,5 +1,5 @@
 import React from 'react';
-import type { ResponsiveImage } from '../../types/responsiveImage.ts';
+import type { ResponsiveImage } from '@/types/responsiveImage.ts';
 import ResponsiveImageEl from '../ui/ResponsiveImage.tsx';
 
 interface SectionProps extends React.HTMLAttributes<HTMLElement> {

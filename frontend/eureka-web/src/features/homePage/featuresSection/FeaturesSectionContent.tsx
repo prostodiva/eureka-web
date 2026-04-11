@@ -37,7 +37,9 @@ function FeatureSectionContent({
         Learn More
       </a>
 
-        <div><ResponsiveImageEl image={box} alt="box" /></div>
+      <div>
+        <ResponsiveImageEl image={box} alt="box" />
+      </div>
     </div>
   );
 }

@@ -38,20 +38,20 @@ function AboutUsHeroContent() {
       </h2>
 
       {/* Founder cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 w-full max-w-3xl mx-auto px-4 gap-4">
-            <FounderCard
-                image={ritaImg}
-                name="Margarita Kattsyna"
-                role="Founder & Lead Engineer"
-                className="justify-self-center sm:justify-self-end sm:-mr-8"
-            />
-            <FounderCard
-                image={alekseiImg}
-                name="Aleksei Shchepin"
-                role="UX/UI Designer"
-                className="justify-self-center sm:justify-self-start sm:-ml-8 sm:rotate-3"
-            />
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-full max-w-3xl mx-auto px-4 gap-4">
+        <FounderCard
+          image={ritaImg}
+          name="Margarita Kattsyna"
+          role="Founder & Lead Engineer"
+          className="justify-self-center sm:justify-self-end sm:-mr-8"
+        />
+        <FounderCard
+          image={alekseiImg}
+          name="Aleksei Shchepin"
+          role="UX/UI Designer"
+          className="justify-self-center sm:justify-self-start sm:-ml-8 sm:rotate-3"
+        />
+      </div>
     </div>
   );
 }

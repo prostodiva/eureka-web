@@ -36,7 +36,6 @@ function Button({
   onClick,
   backgroundImage,
 }: ButtonProps) {
-
   const buttonClasses = classNames(
     'flex justify-center items-center text-center font-inter',
     {
@@ -57,17 +56,17 @@ function Button({
     className
   );
 
-    const backgroundStyle = backgroundImage
-        ? {
-            backgroundImage:
-                typeof backgroundImage === 'string'
-                    ? `url(${backgroundImage})`
-                    : `url(${backgroundImage.fallbackSrc})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-        }
-        : {};
+  const backgroundStyle = backgroundImage
+    ? {
+        backgroundImage:
+          typeof backgroundImage === 'string'
+            ? `url(${backgroundImage})`
+            : `url(${backgroundImage.fallbackSrc})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }
+    : {};
 
   return (
     <button
