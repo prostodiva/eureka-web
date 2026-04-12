@@ -3,7 +3,6 @@ import type { BaseSectionProps } from '../types/section.ts';
 
 function Footer({
   backgroundImage,
-  content,
   actions,
   className,
 }: BaseSectionProps) {
@@ -16,7 +15,6 @@ function Footer({
         backgroundImage={backgroundImage}
         className={`relative w-full h-[50vh] sm:h-[50vh] md:h-[60vh] lg:h-[60vh] xl:h-[80vh] ${className || ''}`}
       >
-        {content}
         {actions}
       </Section>
     </footer>
