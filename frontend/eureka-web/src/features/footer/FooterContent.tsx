@@ -15,15 +15,15 @@ function FooterContent() {
 
           {/* socials */}
           <div className="flex flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-7 xl:gap-8 2xl:gap-10">
-            <a href="https://t.me/eurika" aria-label="Telegram" target="_blank" rel="noopener noreferrer"
+            <a href="https://t.me/@RITA_EVOLVERS" aria-label="Telegram" target="_blank" rel="noopener noreferrer"
               className="min-h-[44px] min-w-[44px] flex items-center justify-center">
               <FaTelegramPlane className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
             </a>
-            <a href="https://instagram.com/eurika" aria-label="Instagram" target="_blank" rel="noopener noreferrer"
+            <a href="https://instagram.com/prosto_diva" aria-label="Instagram" target="_blank" rel="noopener noreferrer"
               className="min-h-[44px] min-w-[44px] flex items-center justify-center">
               <FaInstagram className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
             </a>
-            <a href="https://facebook.com/eurika" aria-label="Facebook" target="_blank" rel="noopener noreferrer"
+            <a href="https://facebook.com/kattsyna" aria-label="Facebook" target="_blank" rel="noopener noreferrer"
               className="min-h-[44px] min-w-[44px] flex items-center justify-center">
               <CgFacebook className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
             </a>
