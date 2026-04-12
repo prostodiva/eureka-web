@@ -7,10 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "preview": "vite preview",
+    "preview": "npm run build && wrangler dev",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,html}\"",
     "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
@@ -27,6 +28,7 @@
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.31.2",
     "@eslint/js": "^9.33.0",
     "@types/node": "^25.5.2",
     "@types/react": "^19.1.10",
@@ -41,7 +43,8 @@
     "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
-    "vite": "^8.0.7"
+    "vite": "^8.0.7",
+    "wrangler": "^4.81.1"
   },
   "overrides": {
     "ajv": "^6.14.0",
