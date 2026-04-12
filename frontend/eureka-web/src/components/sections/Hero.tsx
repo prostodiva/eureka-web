@@ -4,17 +4,21 @@ import type { BaseSectionProps } from '@/types/section.ts';
 function Hero({
   backgroundImage,
   style,
-  content,
   actions,
   className,
+  children,
+  button,
+  buttonClassName,
 }: BaseSectionProps) {
   return (
     <Section
       backgroundImage={backgroundImage}
+      button={button}
+      buttonClassName={buttonClassName}
       style={style}
-      className={`relative w-full min-h-screen aspect-[9/16] sm:aspect-auto ${className || ''}`}
+      className={`relative w-full min-h-screen ${className || ''}`}
     >
-      {content}
+      {children}
       {actions}
     </Section>
   );

@@ -1,16 +1,12 @@
-import Connect from '@/components/sections/Connect';
 import ContactConnectContent from './ContactConnectContent';
-import { contactConnect } from '@/assets/images';
+import Hero from '@/components/sections/Hero';
 
 function ContactConnect() {
   return (
-    <>
-      <Connect
-        backgroundImage={contactConnect}
-        style={{ backgroundColor: '#8658F1' }}
-        content={<ContactConnectContent />}
-      />
-    </>
+    <Hero style={{ backgroundColor: '#A37CFF' }}>
+      <ContactConnectContent />
+    </Hero>
   );
 }
+
 export default ContactConnect;

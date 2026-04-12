@@ -1,14 +1,15 @@
-import Overview from '@/components/sections/Overview';
 import OverviewSectionContent from './OverviewSectionContent';
-import { overviewHome } from '@/assets/images';
+
+import Hero from '@/components/sections/Hero';
 
 function OverviewSection() {
   return (
-    <Overview
-      backgroundImage={overviewHome}
-      content={<OverviewSectionContent />}
-      className="h-screen flex items-center justify-center"
-    />
+    <Hero
+      style={{ backgroundColor: '#A37CFF' }}
+      className="min-h-screen flex items-start justify-center"
+    >
+      <OverviewSectionContent />
+    </Hero>
   );
 }
 

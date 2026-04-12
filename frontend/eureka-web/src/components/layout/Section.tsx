@@ -1,41 +1,37 @@
-import React from 'react';
-import type { ResponsiveImage } from '@/types/responsiveImage.ts';
-import ResponsiveImageEl from '../ui/ResponsiveImage.tsx';
-
-interface SectionProps extends React.HTMLAttributes<HTMLElement> {
-  children: React.ReactNode;
-  backgroundImage?: string | ResponsiveImage;
-}
+import type { BaseSectionProps } from '@/types/section.ts';
 
 const Section = ({
   children,
   className,
   backgroundImage,
   style,
+  button,
+  buttonClassName,
   ...rest
-}: SectionProps) => {
+}: BaseSectionProps) => {
   return (
     <section
       {...rest}
       style={style}
-      className={`relative w-full ${className || ''}`}
+      className={`relative w-full min-h-screen ${className || ''}`}
     >
-      {backgroundImage &&
-        (typeof backgroundImage === 'string' ? (
+      {backgroundImage && (
+        <picture className="absolute inset-0 z-0 w-full h-full">
+          <source srcSet={backgroundImage.avifSrcSet} type="image/avif" />
+          <source srcSet={backgroundImage.webpSrcSet} type="image/webp" />
           <img
-            src={backgroundImage}
-            className="absolute inset-0 w-full h-full object-cover z-0"
-            alt=""
+            src={backgroundImage.fallbackSrc}
+            alt={backgroundImage.alt ?? ''}
+            className="w-full h-full object-cover"
           />
-        ) : (
-          <ResponsiveImageEl
-            image={backgroundImage}
-            className="absolute inset-0 w-full h-full object-cover z-0"
-            alt=""
-            sizes="100vw"
-          />
-        ))}
-      {children}
+        </picture>
+      )}
+
+      {button && (
+        <div className={`absolute z-20 ${buttonClassName || ''}`}>{button}</div>
+      )}
+
+      <div className="relative z-10">{children}</div>
     </section>
   );
 };

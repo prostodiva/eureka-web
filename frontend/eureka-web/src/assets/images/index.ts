@@ -494,3 +494,78 @@ export const heroMobile = makeResponsiveImage({
   webp1600: heroMobile1600webp,
   webp2400: heroMobile2400webp,
 });
+
+import overviewMobile400avif from '@/assets/optimized/overviewMobile-400.avif';
+import overviewMobile800avif from '@/assets/optimized/overviewMobile-800.avif';
+import overviewMobile1200avif from '@/assets/optimized/overviewMobile-1200.avif';
+import overviewMobile1600avif from '@/assets/optimized/overviewMobile-1600.avif';
+import overviewMobile2400avif from '@/assets/optimized/overviewMobile-2400.avif';
+import overviewMobile400webp from '@/assets/optimized/overviewMobile-400.webp';
+import overviewMobile800webp from '@/assets/optimized/overviewMobile-800.webp';
+import overviewMobile1200webp from '@/assets/optimized/overviewMobile-1200.webp';
+import overviewMobile1600webp from '@/assets/optimized/overviewMobile-1600.webp';
+import overviewMobile2400webp from '@/assets/optimized/overviewMobile-2400.webp';
+
+export const overviewMobile = makeResponsiveImage({
+  fallbackSrc: overviewMobile800webp,
+  avif400: overviewMobile400avif,
+  avif800: overviewMobile800avif,
+  avif1200: overviewMobile1200avif,
+  avif1600: overviewMobile1600avif,
+  avif2400: overviewMobile2400avif,
+  webp400: overviewMobile400webp,
+  webp800: overviewMobile800webp,
+  webp1200: overviewMobile1200webp,
+  webp1600: overviewMobile1600webp,
+  webp2400: overviewMobile2400webp,
+});
+
+import featuresMobile400avif from '@/assets/optimized/featuresMobile-400.avif';
+import featuresMobile800avif from '@/assets/optimized/featuresMobile-800.avif';
+import featuresMobile1200avif from '@/assets/optimized/featuresMobile-1200.avif';
+import featuresMobile1600avif from '@/assets/optimized/featuresMobile-1600.avif';
+import featuresMobile2400avif from '@/assets/optimized/featuresMobile-2400.avif';
+import featuresMobile400webp from '@/assets/optimized/featuresMobile-400.webp';
+import featuresMobile800webp from '@/assets/optimized/featuresMobile-800.webp';
+import featuresMobile1200webp from '@/assets/optimized/featuresMobile-1200.webp';
+import featuresMobile1600webp from '@/assets/optimized/featuresMobile-1600.webp';
+import featuresMobile2400webp from '@/assets/optimized/featuresMobile-2400.webp';
+
+export const featuresMobile = makeResponsiveImage({
+  fallbackSrc: featuresMobile800webp,
+  avif400: featuresMobile400avif,
+  avif800: featuresMobile800avif,
+  avif1200: featuresMobile1200avif,
+  avif1600: featuresMobile1600avif,
+  avif2400: featuresMobile2400avif,
+  webp400: featuresMobile400webp,
+  webp800: featuresMobile800webp,
+  webp1200: featuresMobile1200webp,
+  webp1600: featuresMobile1600webp,
+  webp2400: featuresMobile2400webp,
+});
+
+import overviewImg400avif from '@/assets/optimized/overviewImg-400.avif';
+import overviewImg800avif from '@/assets/optimized/overviewImg-800.avif';
+import overviewImg1200avif from '@/assets/optimized/overviewImg-1200.avif';
+import overviewImg1600avif from '@/assets/optimized/overviewImg-1600.avif';
+import overviewImg2400avif from '@/assets/optimized/overviewImg-2400.avif';
+import overviewImg400webp from '@/assets/optimized/overviewImg-400.webp';
+import overviewImg800webp from '@/assets/optimized/overviewImg-800.webp';
+import overviewImg1200webp from '@/assets/optimized/overviewImg-1200.webp';
+import overviewImg1600webp from '@/assets/optimized/overviewImg-1600.webp';
+import overviewImg2400webp from '@/assets/optimized/overviewImg-2400.webp';
+
+export const overviewImg = makeResponsiveImage({
+  fallbackSrc: overviewImg800webp,
+  avif400: overviewImg400avif,
+  avif800: overviewImg800avif,
+  avif1200: overviewImg1200avif,
+  avif1600: overviewImg1600avif,
+  avif2400: overviewImg2400avif,
+  webp400: overviewImg400webp,
+  webp800: overviewImg800webp,
+  webp1200: overviewImg1200webp,
+  webp1600: overviewImg1600webp,
+  webp2400: overviewImg2400webp,
+});

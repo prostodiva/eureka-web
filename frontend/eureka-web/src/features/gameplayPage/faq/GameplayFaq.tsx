@@ -1,12 +1,14 @@
-import About from '@/components/sections/About';
+import Hero from '@/components/sections/Hero';
 import GameplayFaqContent from './GameplayFaqContent';
-import { faq } from '@/assets/images';
 
 function GameplayFaq() {
   return (
-    <>
-      <About backgroundImage={faq} content={<GameplayFaqContent />} />
-    </>
+    <Hero
+      style={{ backgroundColor: '#A37CFF' }}
+      className="min-h-screen flex items-start justify-center"
+    >
+      <GameplayFaqContent />
+    </Hero>
   );
 }
 export default GameplayFaq;

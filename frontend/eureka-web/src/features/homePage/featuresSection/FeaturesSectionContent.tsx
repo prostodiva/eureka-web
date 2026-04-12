@@ -2,42 +2,36 @@ import { box } from '@/assets/images';
 import ResponsiveImageEl from '@/components/ui/ResponsiveImage';
 
 export interface FeatureSectionContentProps {
-  title: string;
-  description?: string;
   learnMoreHref?: string;
   textColor?: string;
 }
 
 function FeatureSectionContent({
-  title,
-  description,
   learnMoreHref = '#',
   textColor = 'text-[#8658F1]',
 }: FeatureSectionContentProps) {
   return (
-    <div className="flex flex-col items-start px-[4vw] pt-[3vh] z-10">
+    <div className="flex flex-col items-start px-4 sm:px-6 md:px-8 xl:px-12 pt-26 sm:pt-8 md:pt-20 xl:pt-20 z-10">
       <h2
-        className={`font-kingfink ${textColor} text-[clamp(2rem,4vw,7rem)] leading-none mb-[2vh]`}
+        className={`font-kingfink ${textColor} text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-none mb-4 md:mb-6`}
       >
-        {title}
+        Interactive Learning
       </h2>
 
-      {description && (
-        <p
-          className={`font-inter ${textColor} text-[clamp(0.75rem,1vw,1.5rem)] max-w-[30vw] leading-relaxed mb-[2vh]`}
-        >
-          {description}
-        </p>
-      )}
+      <p
+        className={`font-inter ${textColor} text-sm sm:text-base md:text-lg xl:text-xl max-w-xs sm:max-w-sm md:max-w-md leading-relaxed mb-4 md:mb-6`}
+      >
+        Kids engage with puzzles, drag-and-drop activities, quizzes
+      </p>
 
       <a
         href={learnMoreHref}
-        className={`font-inter ${textColor} text-[clamp(0.75rem,1vw,1.5rem)] font-semibold underline uppercase tracking-wider`}
+        className={`font-inter ${textColor} text-sm sm:text-base md:text-lg font-semibold underline uppercase tracking-wider`}
       >
         Learn More
       </a>
 
-      <div>
+      <div className="relative left-[90px] mb-20 md:mt-6 xl:-mt-20 xl:left-[500px]">
         <ResponsiveImageEl image={box} alt="box" />
       </div>
     </div>

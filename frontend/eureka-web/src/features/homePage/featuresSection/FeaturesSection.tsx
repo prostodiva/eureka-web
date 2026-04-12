@@ -1,34 +1,24 @@
-import Features from '@/components/sections/Features';
 import FeatureSectionContent from './FeaturesSectionContent';
-import Button from '@/components/ui/Button';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { featuresHome } from '@/assets/images';
+import Hero from '@/components/sections/Hero';
+import Button from '@/components/ui/Button';
 
 function FeaturesSection() {
-  const handleDemoCLick = () => console.log('demo clicked');
+  const handleDemoClick = () => console.log('demo clicked');
+  const isMobile = useMediaQuery('(max-width: 640px)');
 
   return (
-    <Features
-      backgroundImage={featuresHome}
-      content={
-        <FeatureSectionContent
-          title="Interactive Learning"
-          description="Kids engage with puzzles, drag-and-drop activities, quizzes"
-          learnMoreHref="/gameplay"
-          textColor="text-[#8658F1]"
-        />
-      }
-      actions={
-        <div className="absolute left-[4vw] bottom-[30vh] flex flex-col items-start gap-[2vh]">
-          <Button
-            variant="secondary"
-            onClick={handleDemoCLick}
-            className="text-[clamp(0.75rem,1vw,1.25rem)] py-[1.5vh] px-[3vw]"
-          >
-            Download Free Demo
-          </Button>
-        </div>
-      }
-    />
+    <Hero
+      backgroundImage={isMobile ? undefined : featuresHome}
+      style={isMobile ? { backgroundColor: '#FFD743' } : undefined}
+      onClick={handleDemoClick}
+      button={<Button variant="primary">Demo</Button>}
+      buttonClassName="top-[600px] xl:left-[200px] xl:top-[500px]"
+      className="min-h-screen flex items-center justify-center"
+    >
+      <FeatureSectionContent />
+    </Hero>
   );
 }
 

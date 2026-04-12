@@ -4,11 +4,9 @@ import { aboutUsHome } from '@/assets/images';
 
 function GameplayHero() {
   return (
-    <Hero
-      backgroundImage={aboutUsHome}
-      style={{ backgroundColor: '#A37CFF' }}
-      content={<GameplayHeroContent />}
-    />
+    <Hero backgroundImage={aboutUsHome} style={{ backgroundColor: '#A37CFF' }}>
+      <GameplayHeroContent />
+    </Hero>
   );
 }
 

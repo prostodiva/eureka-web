@@ -1,13 +1,14 @@
 import Hero from '@/components/sections/Hero';
 import GameplayFeaturesContent from './GameplayFeaturesContent';
-import { gameplayFeatures } from '@/assets/images';
 
 function FeaturesSection() {
   return (
     <Hero
-      backgroundImage={gameplayFeatures}
-      content={<GameplayFeaturesContent />}
-    />
+      style={{ backgroundColor: '#FFD743' }}
+      className="min-h-screen flex items-start justify-center"
+    >
+      <GameplayFeaturesContent />
+    </Hero>
   );
 }
 

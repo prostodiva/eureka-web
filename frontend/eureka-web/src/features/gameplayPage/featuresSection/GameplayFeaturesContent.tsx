@@ -1,4 +1,6 @@
 import Button from '../../../components/ui/Button.tsx';
+import { val } from '@/assets/images';
+import ResponsiveImageEl from '@/components/ui/ResponsiveImage';
 
 function GameplayFeaturesContent() {
   const handleDemoCLick = () => {
@@ -7,7 +9,7 @@ function GameplayFeaturesContent() {
 
   return (
     <>
-      <div className="relative min-h-screen flex flex-col justify-between px-[1vw] py-[5vh]">
+      <div className="relative z-10 flex flex-col items-center justify-start pt-20 sm:pt-10 md:pt-10 xl:pt-10 text-center">
         <div className="flex items-center justify-between">
           <span className="font-kingfink text-[clamp(4rem,6vw,8rem)] text-[#8658F1] leading-tight">
             WATCH LEARNING TAKE SHAPE
@@ -15,7 +17,11 @@ function GameplayFeaturesContent() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="w-full md:w-1/2"></div>
+          <div className="w-full md:w-1/2">
+            <div className="relative w-full">
+              <ResponsiveImageEl image={val} alt="val" />
+            </div>
+          </div>
 
           <div className="flex flex-col items-center">
             <span className="font-kingfink text-[clamp(4rem,5vw,8rem)] text-[#8658F1] leading-none mt-[5vh]">

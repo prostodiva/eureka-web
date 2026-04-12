@@ -10,10 +10,15 @@ type Props = Omit<
 
 function ResponsiveImage({ image, sizes = '100vw', alt, ...imgProps }: Props) {
   return (
-    <picture style={{ display: 'contents' }}>
+    <picture>
       <source type="image/avif" srcSet={image.avifSrcSet} sizes={sizes} />
       <source type="image/webp" srcSet={image.webpSrcSet} sizes={sizes} />
-      <img src={image.fallbackSrc} alt={alt ?? image.alt ?? ''} {...imgProps} />
+      <img
+        src={image.fallbackSrc}
+        alt={alt ?? image.alt ?? ''}
+        className="w-full h-auto"
+        {...imgProps}
+      />
     </picture>
   );
 }
