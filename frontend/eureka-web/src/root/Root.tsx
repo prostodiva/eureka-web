@@ -4,9 +4,9 @@ import FooterSection from '../features/footer/FooterSection.tsx';
 
 function Root() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-full flex flex-col">
       <Header />
-      <main className="grow" id="main-content">
+      <main className="grow overflow-hidden" id="main-content">
         <Outlet />
       </main>
       <FooterSection />

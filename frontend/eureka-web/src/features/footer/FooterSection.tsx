@@ -1,12 +1,16 @@
+import Footer from '@/root/Footer';
 import FooterContent from './FooterContent';
-import Hero from '@/components/sections/Hero';
 
 function FooterSection() {
   return (
-    <Hero>
+    <Footer>
       <FooterContent />
-    </Hero>
+    </Footer>
   );
 }
 
 export default FooterSection;
+
+
+
+

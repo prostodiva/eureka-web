@@ -13,7 +13,7 @@ const Section = ({
     <section
       {...rest}
       style={style}
-      className={`relative w-full min-h-screen ${className || ''}`}
+      className={`relative w-full ${className || ''}`}
     >
       {backgroundImage && (
         <picture className="absolute inset-0 z-0 w-full h-full">

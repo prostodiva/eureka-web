@@ -331,6 +331,17 @@ import box1200webp from '@/assets/optimized/box-1200.webp';
 import box1600webp from '@/assets/optimized/box-1600.webp';
 import box2400webp from '@/assets/optimized/box-2400.webp';
 
+import puzzle_400avif from '@/assets/optimized/puzzle-400.avif';
+import puzzle_800avif from '@/assets/optimized/puzzle-800.avif';
+import puzzle_1200avif from '@/assets/optimized/puzzle-1200.avif';
+import puzzle_1600avif from '@/assets/optimized/puzzle-1600.avif';
+import puzzle_2400avif from '@/assets/optimized/puzzle-2400.avif';
+import puzzle_400webp from '@/assets/optimized/puzzle-400.webp';
+import puzzle_800webp from '@/assets/optimized/puzzle-800.webp';
+import puzzle_1200webp from '@/assets/optimized/puzzle-1200.webp';
+import puzzle_1600webp from '@/assets/optimized/puzzle-1600.webp';
+import puzzle_2400webp from '@/assets/optimized/puzzle-2400.webp';
+
 import puzzle1_400avif from '@/assets/optimized/puzzle1-400.avif';
 import puzzle1_800avif from '@/assets/optimized/puzzle1-800.avif';
 import puzzle1_1200avif from '@/assets/optimized/puzzle1-1200.avif';
@@ -398,6 +409,20 @@ export const box = makeResponsiveImage({
   webp1200: box1200webp,
   webp1600: box1600webp,
   webp2400: box2400webp,
+});
+
+export const puzzle = makeResponsiveImage({
+  fallbackSrc: puzzle_800webp,
+  avif400: puzzle_400avif,
+  avif800: puzzle_800avif,
+  avif1200: puzzle_1200avif,
+  avif1600: puzzle_1600avif,
+  avif2400: puzzle_2400avif,
+  webp400: puzzle_400webp,
+  webp800: puzzle_800webp,
+  webp1200: puzzle_1200webp,
+  webp1600: puzzle_1600webp,
+  webp2400: puzzle_2400webp,
 });
 
 export const puzzle1 = makeResponsiveImage({
@@ -568,4 +593,22 @@ export const overviewImg = makeResponsiveImage({
   webp1200: overviewImg1200webp,
   webp1600: overviewImg1600webp,
   webp2400: overviewImg2400webp,
+});
+
+import logo400avif from '@/assets/optimized/logo-400.avif';
+import logo800avif from '@/assets/optimized/logo-800.avif';
+import logo1200avif from '@/assets/optimized/logo-1200.avif';
+import logo400webp from '@/assets/optimized/logo-400.webp';
+import logo800webp from '@/assets/optimized/logo-800.webp';
+import logo1200webp from '@/assets/optimized/logo-1200.webp';
+
+export const logo = makeResponsiveImage({
+  alt: 'Company Logo',
+  fallbackSrc: logo400webp,
+  avif400: logo400avif,
+  avif800: logo800avif,
+  avif1200: logo1200avif,
+  webp400: logo400webp,
+  webp800: logo800webp,
+  webp1200: logo1200webp,
 });

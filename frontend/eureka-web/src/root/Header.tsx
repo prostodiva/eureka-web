@@ -1,24 +1,8 @@
 import Navbar from '../components/ui/Navbar.tsx';
 import ResponsiveImage from '../components/ui/ResponsiveImage.tsx';
-import { makeResponsiveImage } from '../utils/makeResponsiveImage.ts';
-import logo400avif from '../assets/optimized/logo-400.avif';
-import logo800avif from '../assets/optimized/logo-800.avif';
-import logo1200avif from '../assets/optimized/logo-1200.avif';
-import logo400webp from '../assets/optimized/logo-400.webp';
-import logo800webp from '../assets/optimized/logo-800.webp';
-import logo1200webp from '../assets/optimized/logo-1200.webp';
+import { logo } from '@/assets/images';
 import { Link } from 'react-router-dom';
 
-const logo = makeResponsiveImage({
-  alt: 'Company Logo',
-  fallbackSrc: logo400webp,
-  avif400: logo400avif,
-  avif800: logo800avif,
-  avif1200: logo1200avif,
-  webp400: logo400webp,
-  webp800: logo800webp,
-  webp1200: logo1200webp,
-});
 
 function Header() {
   return (
@@ -39,14 +23,6 @@ function Header() {
         <div className="justify-self-center">
           <Navbar />
         </div>
-
-        {/**
-         * <div className="justify-self-end text-white inline-flex items-center gap-6">
-         *           <div className="underline underline-offset-3">RU</div>
-         *           <BiSearchAlt />
-         *         </div>
-         *
-         */}
       </div>
     </header>
   );

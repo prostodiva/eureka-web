@@ -1,14 +1,16 @@
 @import 'tailwindcss';
 @config "../tailwind.config.ts";
 
-html,
-body,
-#root {
+html, body {
   height: 100%;
 }
 
+#root {
+  min-height: 100%; 
+}
+
 body {
-  /* Prevent white flash before background images/fonts load */
+   margin: 0; 
   background: #8658f1;
   color: #fff;
 }
