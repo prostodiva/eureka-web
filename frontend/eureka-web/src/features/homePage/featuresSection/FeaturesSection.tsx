@@ -12,11 +12,14 @@ function FeaturesSection() {
     <Hero
       backgroundImage={isMobile ? undefined : featuresHome}
       style={isMobile ? { backgroundColor: '#FFD743' } : undefined}
-      onClick={handleDemoClick}
-      button={<Button variant="primary">Demo</Button>}
-      buttonClassName="top-[600px] xl:left-[200px] xl:top-[500px]"
       className="min-h-screen flex items-center justify-center"
     >
+      <Button 
+      variant="primary" 
+      onClick={handleDemoClick} 
+      className="top-[600px] xl:left-[200px] xl:top-[500px]"
+      >
+        Demo</Button>
       <FeatureSectionContent />
     </Hero>
   );

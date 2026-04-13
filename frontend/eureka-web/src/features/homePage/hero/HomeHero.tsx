@@ -1,14 +1,16 @@
-import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 import Hero from '@/components/sections/Hero';
+import { useNavigate } from 'react-router-dom';
+
 import HeroContent from './HeroContent';
-import { homeHeroBg, heroMobile, comp19 } from '@/assets/images';
+import { homeHeroBg, heroMobile } from '@/assets/images';
+import { comp19 } from '@/assets/images';
 import Button from '@/components/ui/Button';
 
 function HomeHero() {
-  const navigate = useNavigate();
   const isMobile = useMediaQuery('(max-width: 640px)');
 
+  const navigate = useNavigate();
   const handleGameplayClick = () => {
     navigate('/gameplay');
   };
@@ -17,16 +19,17 @@ function HomeHero() {
     <Hero
       backgroundImage={isMobile ? heroMobile : homeHeroBg}
       style={{ backgroundColor: '#8658F1' }}
-      button={
+      className="min-h-screen flex items-center justify-center"
+    >
+      <div
+        className={`absolute z-20 top-[900px] right-[32%] xl:top-[580px] xl:right-[32%] xl:top-[610px] xl:right-[35%] 2xl:top-[1000px] 2xl:right-[36%]`}
+      >
         <Button
           backgroundImage={comp19}
           onClick={handleGameplayClick}
           className="w-50 xl:w-45 2xl:w-65 aspect-[3.1/1.7] hover:brightness-110 pointer-events-auto"
         />
-      }
-      buttonClassName="top-[900px] right-[32%] xl:top-[580px] xl:right-[32%] xl:top-[610px] xl:right-[35%] 2xl:top-[1000px] 2xl:right-[36%]"
-      className="min-h-screen flex items-center justify-center"
-    >
+      </div>
       <HeroContent />
     </Hero>
   );

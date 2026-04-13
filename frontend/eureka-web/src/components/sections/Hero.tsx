@@ -1,26 +1,36 @@
-import Section from '../layout/Section.tsx';
 import type { BaseSectionProps } from '@/types/section.ts';
+
 
 function Hero({
   backgroundImage,
   style,
-  actions,
   className,
   children,
-  button,
-  buttonClassName,
 }: BaseSectionProps) {
+  
   return (
-    <Section
-      backgroundImage={backgroundImage}
-      button={button}
-      buttonClassName={buttonClassName}
+    <section
       style={style}
-      className={`relative w-full min-h-screen ${className || ''}`}
+      className={`relative ${className || ''}`}
     >
-      {children}
-      {actions}
-    </Section>
+      {backgroundImage && (
+        <picture className="absolute inset-0 z-0 w-full h-full">
+          <source srcSet={backgroundImage.avifSrcSet} type="image/avif" />
+          <source srcSet={backgroundImage.webpSrcSet} type="image/webp" />
+          <img
+            src={backgroundImage.fallbackSrc}
+            alt={backgroundImage.alt ?? ''}
+            className="w-full h-full object-cover"
+          />
+        </picture>
+      )}
+
+   
+
+      {/* <div className="relative z-10"> */}
+        {children}
+      {/* </div> */}
+    </section>
   );
 }
 
