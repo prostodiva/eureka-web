@@ -21,10 +21,10 @@ function HomeHero() {
         <Button
           backgroundImage={comp19}
           onClick={handleGameplayClick}
-          className="w-45 aspect-[3.1/1.7] hover:brightness-110 pointer-events-auto"
+          className="w-50 xl:w-45 2xl:w-65 aspect-[3.1/1.7] hover:brightness-110 pointer-events-auto"
         />
       }
-      buttonClassName="top-[580px] right-[32%] xl:top-[610px] xl:right-[35%]"
+      buttonClassName="top-[900px] right-[32%] xl:top-[580px] xl:right-[32%] xl:top-[610px] xl:right-[35%] 2xl:top-[1000px] 2xl:right-[36%]"
       className="min-h-screen flex items-center justify-center"
     >
       <HeroContent />

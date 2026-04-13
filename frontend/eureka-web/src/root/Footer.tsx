@@ -8,7 +8,7 @@ function Footer({ backgroundImage, children, className }: BaseSectionProps) {
         backgroundImage={backgroundImage}
         className={`relative w-full min-h-fit ${className || ''}`}
       >
-        {children} 
+        {children}
       </Section>
     </footer>
   );

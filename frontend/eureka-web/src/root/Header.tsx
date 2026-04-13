@@ -3,7 +3,6 @@ import ResponsiveImage from '../components/ui/ResponsiveImage.tsx';
 import { logo } from '@/assets/images';
 import { Link } from 'react-router-dom';
 
-
 function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-20 w-full">
