@@ -4,7 +4,7 @@ import ResponsiveImageEl from '@/components/ui/ResponsiveImage.tsx';
 
 function ContactHeroContent() {
   return (
-    <div className="relative z-10 flex flex-col items-center w-full px-4 pt-16 sm:pt-20 md:pt-24 top-10">
+    <div className="relative min-h-screen z-10 flex flex-col items-center w-full px-4 pt-16 sm:pt-20 md:pt-24 top-10">
       {/* Title */}
       <h1 className="font-kingfink text-white text-center text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none">
         LET'S CONNECT &<br />

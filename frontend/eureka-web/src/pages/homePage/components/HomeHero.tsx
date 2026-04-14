@@ -19,10 +19,9 @@ function HomeHero() {
     <Section
       backgroundImage={isMobile ? heroMobile : homeHeroBg}
       style={{ backgroundColor: '#8658F1' }}
-      className="min-h-screen flex items-center justify-center"
     >
       <div
-        className={`absolute z-20 top-[590px] right-[26%] xl:top-[580px] xl:right-[32%] xl:top-[610px] xl:right-[35%] 2xl:top-[1000px] 2xl:right-[36%]`}
+        className="absolute z-20 top-[590px] right-[26%] xl:top-[580px] xl:right-[32%] xl:top-[610px] xl:right-[35%] 2xl:top-[1000px] 2xl:right-[36%]"
       >
         <Button
           backgroundImage={comp19}

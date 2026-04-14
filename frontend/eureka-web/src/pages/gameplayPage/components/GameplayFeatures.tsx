@@ -5,7 +5,6 @@ function FeaturesSection() {
   return (
     <Section
       style={{ backgroundColor: '#FFD743' }}
-      className="min-h-screen flex items-start justify-center"
     >
       <GameplayFeaturesContent />
     </Section>

@@ -11,7 +11,7 @@ function Section({
   return (
     <section
       style={style}
-      className={`relative ${className || ''}`}
+      className={`relative flex items-center justify-center ${className || ''}`}
     >
       {backgroundImage && (
         <picture className="absolute inset-0 z-0 w-full h-full">
@@ -25,11 +25,7 @@ function Section({
         </picture>
       )}
 
-   
-
-      {/* <div className="relative z-10"> */}
-        {children}
-      {/* </div> */}
+      {children}
     </section>
   );
 }
