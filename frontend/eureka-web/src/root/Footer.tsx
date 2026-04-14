@@ -1,16 +1,16 @@
 
-import Hero from '@/components/sections/Hero.tsx';
+import Section from '@/components/Section.tsx';
 import type { BaseSectionProps } from '../types/section.ts';
 
 function Footer({ backgroundImage, children, className }: BaseSectionProps) {
   return (
     <footer className="relative w-full overflow-hidden">
-      <Hero
+      <Section
         backgroundImage={backgroundImage}
         className={`relative w-full min-h-fit ${className || ''}`}
       >
         {children}
-      </Hero>
+      </Section>
     </footer>
   );
 }
