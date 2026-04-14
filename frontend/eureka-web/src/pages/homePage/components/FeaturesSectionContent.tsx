@@ -2,15 +2,10 @@ import { box } from '@/assets/images';
 import ResponsiveImageEl from '@/components/ui/ResponsiveImage.tsx';
 import { Link } from 'react-router-dom';
 
-export interface FeatureSectionContentProps {
-  learnMoreHref?: string;
-  textColor?: string;
-}
 
-function FeatureSectionContent({
-}: FeatureSectionContentProps) {
+function FeatureSectionContent() {
   return (
-    <div className="relative min-h-screen flex flex-col items-start px-4 pt-26 sm:pt-8 md:pt-20 xl:pt-20 z-10">
+    <div className="relative min-h-dvh flex flex-col items-start pt-26 sm:pt-8 md:pt-20 xl:pt-20 z-10">
       <div className="relative xl:left-[300px] 2xl:left-[450px]">
         <h2 className="font-kingfink text-[#8658F1] text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-8xl leading-none mb-4 md:mb-6">
           Interactive Learning

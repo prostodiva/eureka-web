@@ -5,9 +5,9 @@ function OverviewSectionContent() {
   return (
     <div
       id="overview"
-      className="relative z-10 flex flex-col items-center w-full px-4 "
+      className="relative z-10 flex flex-col items-center w-full"
     >
-      <div className="relative min-h-screen z-10 flex flex-col items-center justify-start pt-20 sm:pt-10 md:pt-10 xl:pt-20 2xl:pt-20 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-start pt-20 sm:pt-10 md:pt-10 xl:pt-20 2xl:pt-20 text-center">
         <h2 className="leading-none flex flex-col items-center">
           <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-kingfink text-transparent [-webkit-text-stroke:1px_white]">
             CREATE

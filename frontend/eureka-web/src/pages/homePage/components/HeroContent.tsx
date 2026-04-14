@@ -1,6 +1,6 @@
 function HeroContent() {
   return (
-    <div className="relative min-h-dvh z-10 flex flex-col items-center justify-center px-4 text-center -mt-50">
+    <div className="relative min-h-dvh z-10 flex flex-col items-center text-center pt-40">
       <h1 className="2xl:leading-none">
         <span className="block text-7xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[12rem] font-kingfink text-white">
           LEARNING
