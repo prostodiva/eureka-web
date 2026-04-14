@@ -1,10 +1,10 @@
 import Root from './root/Root';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import type { RouteObject } from 'react-router-dom';
-import HomePage from './pages/homePage/HomePage.tsx';
-import GameplayPage from './pages/gameplayPage/GameplayPage.tsx';
-import AboutUsPage from './pages/aboutUsPage/AboutUsPage.tsx';
-import ContactPage from './pages/contactPage/ContactPage.tsx';
+import HomePage from './pages/homePage';
+import GameplayPage from './pages/gameplayPage';
+import AboutUsPage from './pages/aboutUsPage';
+import ContactPage from './pages/contactPage';
 
 const router = createBrowserRouter([
   {

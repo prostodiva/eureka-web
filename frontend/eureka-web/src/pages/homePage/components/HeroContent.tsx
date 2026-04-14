@@ -1,11 +1,10 @@
 function HeroContent() {
   return (
-    <div className="relative min-h-screen z-10 flex flex-col items-center justify-start px-4 pt-10 sm:pt-32 md:pt-36 xl:pt-42 text-center">
-      <h1 className="2xl:leading-none mt-37 xl:mt-0 2xl:mt-20">
-        <span className="block text-7xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[12rem] font-kingfink text-white xl:-mb-6">
+    <div className="relative min-h-dvh z-10 flex flex-col items-center justify-center px-4 text-center -mt-50">
+      <h1 className="2xl:leading-none">
+        <span className="block text-7xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[12rem] font-kingfink text-white">
           LEARNING
         </span>
-
         {/* Mobile: "WITH A" on one line | XL: "WITH" on one line */}
         <div className="block">
           <span className="font-kingfink text-7xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[12rem]  text-white">
