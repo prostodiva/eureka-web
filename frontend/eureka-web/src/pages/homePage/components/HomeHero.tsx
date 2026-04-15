@@ -11,16 +11,13 @@ function HomeHero() {
   };
 
   return (
-    <Section
-      style={{ backgroundColor: '#8658F1' }}
-    >
-      <div className="absolute inset-0 z-0 w-screen flex items-end justify-center">
-        <Bg onClick={handleGameplayClick}/>
+    <Section style={{ backgroundColor: '#8658F1' }}>
+      <div className="absolute inset-0 z-0 w-screen flex items-center justify-center">
+        <Bg onClick={handleGameplayClick} />
       </div>
       <div className="z-10 pointer-events-none">
         <HeroContent />
       </div>
-      
     </Section>
   );
 }

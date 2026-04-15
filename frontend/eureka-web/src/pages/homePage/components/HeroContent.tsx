@@ -1,16 +1,16 @@
 function HeroContent() {
   return (
-    <div className="relative min-h-dvh z-10 flex flex-col items-center text-center pt-20 2xl:pt-40">
+    <div className="relative min-h-dvh z-10 flex flex-col items-center text-center pt-30 lg:pt-40 xl:pt-40 2xl:pt-40">
       <h1 className="2xl:leading-none">
-        <span className="block text-7xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[12rem] font-kingfink text-white">
+        <span className="block text-7xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-9xl 2xl:text-[12rem] font-kingfink text-white">
           LEARNING
         </span>
         {/* Mobile: "WITH A" on one line | XL: "WITH" on one line */}
         <div className="block">
-          <span className="font-kingfink text-7xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[12rem]  text-white">
+          <span className="font-kingfink text-7xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-9xl 2xl:text-[12rem]  text-white">
             STARTS WITH
           </span>
-          <span className="font-drabina-outline text-7xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[12rem] text-yellow-400 xl:hidden">
+          <span className="font-drabina-outline text-7xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-9xl 2xl:text-[12rem] text-yellow-400 lg:hidden">
             {' '}
             A
           </span>
@@ -18,10 +18,10 @@ function HeroContent() {
 
         {/* Mobile: "PUZZLE" alone | XL: "A PUZZLE" together */}
         <div className="block xl:-mt-5">
-          <span className="font-drabina-outline text-7xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[12rem] text-yellow-400 hidden xl:inline">
+          <span className="font-drabina-outline text-7xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-9xl 2xl:text-[12rem] text-yellow-400 hidden lg:inline">
             A{' '}
           </span>
-          <span className="font-drabina-outline text-7xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[12rem] text-yellow-400">
+          <span className="font-drabina-outline text-7xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-9xl 2xl:text-[12rem] text-yellow-400">
             PUZZLE
           </span>
         </div>
