@@ -5,18 +5,18 @@ function OverviewSectionContent() {
   return (
     <div
       id="overview"
-      className="relative z-10 flex flex-col items-center w-full"
+      className="relative min-h-dvh z-10 flex flex-col items-center w-full pt-20"
     >
       <div className="relative z-10 flex flex-col items-center justify-start pt-20 sm:pt-10 md:pt-10 xl:pt-20 2xl:pt-20 text-center">
         <h2 className="leading-none flex flex-col items-center">
-          <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-kingfink text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="block text-md sm:text-xl md:text-xl lg:text-xl xl:text-2xl font-kingfink text-transparent [-webkit-text-stroke:1px_white]">
             CREATE
           </span>
 
           <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-7xl font-kingfink text-[#FFDC5C] pt-5  mt-2 xl:mt-4 leading-none">
             LEARN HISTORY THROUGH AN INTERACTIVE GAME. DISCOVER FAMOUS PLACES,
-            SYMBOLS, AND LANDMARKS STEP BY STEP. PLAY, SOLVE PUZZLES, AND EXPLORE
-            THE UNITED STATES IN A FUN WAY
+            SYMBOLS, AND LANDMARKS STEP BY STEP. PLAY, SOLVE PUZZLES, AND
+            EXPLORE THE UNITED STATES IN A FUN WAY
           </span>
 
           <span className="block text-md sm:text-md md:text-base lg:text-lg xl:text-xl 2xl:text-3xl font-inter font-semibold text-white leading-tight mt-2 xl:mt-4 pt-5">
@@ -39,7 +39,7 @@ function OverviewSectionContent() {
           </p>
         </div>
 
-        <div className="relative w-full">
+        <div className="relative -top-10 sm:-top-16 lg:-top-56">
           <ResponsiveImageEl image={overviewImg} alt="overviewImg" />
         </div>
       </div>
