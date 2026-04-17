@@ -71,15 +71,15 @@ function Navbar({
   ));
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full flex items-center md:justify-center">
       {/*hamburger button for mobile*/}
       <button
-        className="md:hidden px-4 py-2 text-2xl"
+        className="md:hidden ml-auto px-4 py-2 text-2xl font-inter"
         onClick={() => setMobileOpen(!mobileOpen)}
         aria-label="Toggle menu"
         aria-expanded={mobileOpen}
       >
-        HUM
+      MENU
       </button>
 
       <nav

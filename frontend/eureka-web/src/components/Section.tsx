@@ -1,6 +1,5 @@
 import type { BaseSectionProps } from '@/types/section.ts';
 
-
 function Section({
   backgroundImage,
   style,

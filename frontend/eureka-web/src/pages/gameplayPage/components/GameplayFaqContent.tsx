@@ -3,7 +3,7 @@ import { faqItems } from '@/data/data.tsx';
 
 function GameplayFaqContent() {
   return (
-    <div className="relative min-h-screen z-10 flex flex-col items-center justify-start px-4 pt-10 sm:pt-32 md:pt-36 xl:pt-42 text-center">
+    <div className="relative min-h-dvh z-10 flex flex-col items-center justify-start px-4 pt-10 sm:pt-32 md:pt-36 xl:pt-42 text-center">
       <h2 className="relative flex flex-col pt-20 sm:pt-10 md:pt-10 xl:pt-10 text-center">
         <span className="font-kingfink text-[#FFD743] leading-none text-[clamp(2rem,6vw,7rem)]">
           CREATING MINDS
@@ -13,7 +13,7 @@ function GameplayFaqContent() {
       </h2>
 
       {/* Accordion container */}
-        <div className="max-w-accordion">
+        <div className="max-w-accordion m-20">
           <Accordion items={faqItems} />
         </div>
     </div>

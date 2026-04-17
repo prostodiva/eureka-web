@@ -70,76 +70,81 @@ function ContactForm() {
 
   return (
     <form
-      className="flex flex-col gap-4 w-full max-w-2xl mx-auto"
+      className="flex flex-col gap-3 sm:gap-4 w-full max-w-md sm:max-w-lg md:max-w-2xl mx-auto px-4 sm:px-0"
       onSubmit={handleSubmit}
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* Name + Email */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
         <input
           type="text"
           placeholder="Your full name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="bg-[#DACBFF] text-white placeholder-[#A37CFF] font-inter px-4 py-3 outline-none focus:ring-2 focus:ring-white/40"
+          className="bg-[#DACBFF] text-white placeholder-[#A37CFF] font-inter px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base outline-none focus:ring-2 focus:ring-white/40"
         />
+
         <input
           type="email"
           placeholder="Your email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="bg-[#DACBFF] text-white placeholder-[#A37CFF] font-inter px-4 py-3 outline-none focus:ring-2 focus:ring-white/40"
+          className="bg-[#DACBFF] text-white placeholder-[#A37CFF] font-inter px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base outline-none focus:ring-2 focus:ring-white/40"
         />
       </div>
 
+      {/* Message */}
       <textarea
         placeholder="Type your message..."
-        rows={6}
+        rows={5}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        className="bg-[#DACBFF] text-white placeholder-[#A37CFF] font-inter px-4 py-3 outline-none focus:ring-2 focus:ring-white/40 resize-none"
+        className="bg-[#DACBFF] text-white placeholder-[#A37CFF] font-inter px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base outline-none focus:ring-2 focus:ring-white/40 resize-none"
       />
 
-      <label className="flex items-center gap-2 text-white text-sm cursor-pointer">
+      {/* Checkbox */}
+      <label className="flex items-start gap-2 text-white text-xs sm:text-sm cursor-pointer leading-snug">
         <input
           type="checkbox"
           checked={accepted}
           onChange={() => setAccepted(!accepted)}
-          className="w-4 h-4 accent-purple-700"
+          className="w-4 h-4 mt-0.5 accent-purple-700 shrink-0"
         />
         <span>
-          I accept the{' '}
-          <a href="/terms" className="underline">
-            Terms
-          </a>{' '}
-          by subscribing you agree to with our{' '}
-          <a href="/privacy" className="underline">
-            Privacy Policy
-          </a>
+          I accept the{" "}
+          <a href="/terms" className="underline">Terms</a>{" "}
+          and agree with our{" "}
+          <a href="/privacy" className="underline">Privacy Policy</a>
         </span>
       </label>
 
-      {turnstileSiteKey ? (
-        <Turnstile
-          siteKey={turnstileSiteKey}
-          onToken={setTurnstileToken}
-          theme="auto"
-          className="mt-2"
-        />
-      ) : (
-        <p className="text-center text-red-300 text-sm">
-          Turnstile is not configured. Set <code>VITE_TURNSTILE_SITE_KEY</code>.
-        </p>
-      )}
+      {/* Turnstile */}
+      <div className="scale-90 sm:scale-100 origin-left">
+        {turnstileSiteKey ? (
+          <Turnstile
+            siteKey={turnstileSiteKey}
+            onToken={setTurnstileToken}
+            theme="auto"
+            className="mt-1"
+          />
+        ) : (
+          <p className="text-center text-red-300 text-sm">
+            Turnstile is not configured.
+          </p>
+        )}
+      </div>
 
+      {/* Button */}
       <button
         type="submit"
         disabled={!accepted || !turnstileToken || status === 'loading'}
-        className="w-full bg-purple-700 text-white font-inter font-semibold py-4 disabled:opacity-50 hover:bg-purple-800 transition-colors"
+        className="w-full bg-purple-700 text-white font-inter font-semibold py-3 sm:py-4 text-sm sm:text-base disabled:opacity-50 hover:bg-purple-800 transition-colors"
       >
         {status === 'loading' ? 'Sending...' : 'Send Message'}
       </button>
 
+      {/* Error */}
       {status === 'error' && (
-        <p className="text-center mt-2 text-red-300">
+        <p className="text-center mt-1 text-red-300 text-sm">
           Something went wrong. Please try again.
         </p>
       )}

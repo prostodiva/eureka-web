@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 function FeatureSectionContent() {
   return (
-    <div className="relative min-h-dvh flex flex-col items-start pt-26 sm:pt-8 md:pt-20 xl:pt-20 z-10">
-      <div className="relative xl:left-[300px] 2xl:left-[450px]">
+    <div className="relative min-h-dvh grid grid-col md:grid-cols-2 gap-10 items-start pt-26 sm:pt-8 md:pt-20 xl:pt-20 z-10">
+      <div className="col-start-2">
         <h2 className="font-kingfink text-[#8658F1] text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-8xl leading-none mb-4 md:mb-6">
           Interactive Learning
         </h2>
@@ -21,15 +21,17 @@ function FeatureSectionContent() {
         >
           Learn More
         </Link>
-      </div>
 
-      <div className="relative mb-20 md:mt-6 xl:-mt-20 top-[50px] xl:left-[250px] 2xl:top-[100px]">
+
         <ResponsiveImageEl
           image={box}
           alt="box"
-          className="w-250 xl:w-150 2xl:w-250"
+          className="w-200 xl:w-150 2xl:w-250"
         />
       </div>
+
+  
+
     </div>
   );
 }

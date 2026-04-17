@@ -4,7 +4,7 @@ import ResponsiveImageEl from '@/components/ui/ResponsiveImage.tsx';
 
 function ContactHeroContent() {
   return (
-    <div className="relative min-h-screen z-10 flex flex-col items-center w-full px-4 pt-16 sm:pt-20 md:pt-24 top-10">
+    <div className="relative min-h-dvh z-10 flex flex-col items-center w-full pt-20 sm:pt-22 md:pt-26 xl:pt-28 2xl:pt-44">
       {/* Title */}
       <h1 className="font-kingfink text-white text-center text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none">
         LET'S CONNECT &<br />
@@ -18,7 +18,7 @@ function ContactHeroContent() {
       </p>
 
       {/* Puzzles */}
-      <div className="grid grid-cols-4 w-full max-w-6xl mx-auto mt-8 sm:mt-12 gap-4">
+      <div className="grid grid-cols-4 w-full max-w-5xl justify-between mt-8 sm:mt-12 gap-4">
         <div>
           <ResponsiveImageEl image={puzzle1} alt="Puzzle 1" />
         </div>
