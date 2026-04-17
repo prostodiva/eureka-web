@@ -70,7 +70,7 @@ function ContactForm() {
 
   return (
     <form
-      className="flex flex-col gap-3 sm:gap-4 w-full max-w-md sm:max-w-lg md:max-w-2xl mx-auto px-4 sm:px-0"
+      className="flex flex-col gap-3 sm:gap-4 w-full max-w-md sm:max-w-lg md:max-w-2xl mx-auto px-4 sm:px-0 pt-20"
       onSubmit={handleSubmit}
     >
       {/* Name + Email */}
