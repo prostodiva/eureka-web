@@ -27,11 +27,9 @@ interface NavbarProps {
 
 function Navbar({
   links,
-  navClassName = 'w-full flex flex-col md:flex-row items-center gap-10 h-auto md:h-24 font-inter',
   linkClassName = 'gap-2 my-2 md:mx-4 text-xl text-white flex items-center gap-1 whitespace-nowrap',
   activeLinkClassName = 'font-bold text-yellow-300',
   variant = 'horizontal',
-  alignment = 'start',
 }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -48,15 +46,7 @@ function Navbar({
 
   const navLinks = links || defaultLinks;
 
-  const alignmentClasses = {
-    start: 'justify-start',
-    center: 'justify-center',
-    end: 'justify-end',
-    between: 'justify-between',
-  };
-
-  const variantClasses =
-    variant === 'vertical' ? 'flex-col' : 'flex-col md:flex-row';
+  const variantClasses = variant === 'vertical' ? 'flex-col': mobileOpen ?  'flex-col absolute top-12 right-0' : 'hidden md:flex'  ;
 
   const renderedLinks = navLinks.map((link) => (
     <Link
@@ -71,22 +61,20 @@ function Navbar({
   ));
 
   return (
-    <div className="relative w-full flex items-center md:justify-center">
+    <div className="flex items-center justify-end md:justify-center">
       {/*hamburger button for mobile*/}
-      <button
+      {variant==='horizontal'&&<button
         className="md:hidden ml-auto px-4 py-2 text-2xl font-inter"
         onClick={() => setMobileOpen(!mobileOpen)}
         aria-label="Toggle menu"
         aria-expanded={mobileOpen}
       >
       MENU
-      </button>
+      </button>}
 
       <nav
         aria-label="Primary navigation"
-        className={`${navClassName} ${variantClasses} ${alignmentClasses[alignment]} ${
-          mobileOpen ? 'flex' : 'hidden'
-        } md:flex`}
+        className={`flex ${variantClasses} items-start gap-10  justify-center`}
       >
         {renderedLinks}
       </nav>

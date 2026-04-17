@@ -53,7 +53,7 @@ function FooterContent() {
         </div>
 
         {/* navbar */}
-        <div className="hidden md:flex md:items-start md:justify-start md:col-start-2 md:pt-2 md:justify-self-center">
+        <div className="md:flex md:items-start md:justify-start md:col-start-2 md:pt-2 md:justify-self-center">
           <Navbar
             variant="vertical"
             navClassName="flex flex-col gap-1 sm:gap-1.5 md:gap-2 lg:gap-1.5 xl:gap-1.5 2xl:gap-2"

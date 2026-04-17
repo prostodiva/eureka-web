@@ -19,7 +19,7 @@ function Header() {
           />
         </Link>
 
-         <div className="absolute left-1/2 -translate-x-1/2">
+         <div className="absolute w-full left-0 top-0">
           <Navbar />
         </div>
       </div>

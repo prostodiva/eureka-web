@@ -12,8 +12,8 @@ function ContactHeroContent() {
       </h1>
 
       {/* Subtitle */}
-      <p className="text-white mt-5 text-center font-inter tracking-wide sm:tracking-wider md:tracking-normal max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-xs sm:text-sm md:text-base xl:text-2xl 2xl:text-3xl uppercase -mt-4 sm:-mt-6">
-        Your ideas, questions, and feedback help us grow and make learning even
+      <p className="text-white mt-5 text-center font-inter tracking-wide sm:tracking-wider md:tracking-normal text-xs sm:text-sm md:text-base xl:text-2xl 2xl:text-3xl uppercase -mt-4 sm:-mt-6">
+        Your ideas, questions, and feedback help us <br></br>grow and make learning even
         more fun
       </p>
 
