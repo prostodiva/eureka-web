@@ -13,20 +13,20 @@ function OverviewSectionContent() {
             CREATE
           </span>
 
-          <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-7xl font-kingfink text-[#FFDC5C] pt-5  mt-2 xl:mt-4 leading-none">
+          <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-7xl font-kingfink text-[#FFDC5C] pt-5 m-5 mt-2 xl:mt-4 leading-none">
             LEARN HISTORY THROUGH AN INTERACTIVE GAME. DISCOVER FAMOUS PLACES,
             SYMBOLS, AND LANDMARKS STEP BY STEP. PLAY, SOLVE PUZZLES, AND
             EXPLORE THE UNITED STATES IN A FUN WAY
           </span>
 
-          <span className="block text-md sm:text-md md:text-base lg:text-lg xl:text-xl 2xl:text-3xl font-inter font-semibold text-white leading-tight mt-2 xl:mt-4 pt-5">
+          <span className="block text-md sm:text-md md:text-base lg:text-lg xl:text-xl 2xl:text-3xl font-inter font-semibold text-white leading-tight xl:mt-4 pt-5 m-5">
             Learning history becomes a game. <br />
             Children explore symbols, landmarks, and famous places through
             interactive puzzles and levels
           </span>
         </h2>
 
-        <div className="mt-4 xl:mt-6 grid grid-cols-2 gap-4 md:gap-8 xl:gap-12 font-inter font-semibold text-white text-md sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl leading-tight">
+        <div className="mt-4 xl:mt-6 grid grid-cols-2 gap-4 md:gap-8 xl:gap-12 font-inter font-semibold text-white text-md sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl leading-tight m-5">
           <p className="text-right">
             Every level builds curiosity and knowledge, <br />
             turning exploration and problem-solving <br />
