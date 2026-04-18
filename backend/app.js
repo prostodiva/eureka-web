@@ -23,12 +23,7 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
 const corsOptions = {
     origin: function (origin, callback) {
         if (!origin) {
-            return callback(
-                process.env.NODE_ENV === 'production'
-                    ? new Error('CORS origin missing')
-                    : null,
-                process.env.NODE_ENV !== 'production'
-            );
+            return callback(null, process.env.NODE_ENV !== 'production');
         }
 
         if (allowedOrigins.includes(origin)) return callback(null, true);
