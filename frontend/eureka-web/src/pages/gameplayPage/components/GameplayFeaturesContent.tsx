@@ -9,11 +9,9 @@ function GameplayFeaturesContent() {
 
   return (
     <>
-      <div className="relative min-h-dvh z-10 flex flex-col items-center justify-start text-center m-10">
-        <div className="flex items-center justify-between">
-          <span className="font-kingfink text-[clamp(4rem,6vw,8rem)] text-[#8658F1] leading-tight">
-            WATCH LEARNING TAKE SHAPE
-          </span>
+      <div className="relative min-h-dvh z-10 text-center py-20 md:py-20">
+        <div className="font-kingfink text-5xl md:text-6xl lg:text-8xl 2xl:text-9xl text-[#8658F1] leading-tight">
+          WATCH LEARNING TAKE SHAPE
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -23,10 +21,10 @@ function GameplayFeaturesContent() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center">
-            <span className="font-kingfink text-[clamp(4rem,5vw,8rem)] text-[#8658F1] leading-none ">
+          <div>
+            <div className="font-kingfink text-4xl md:text-6xl lg:text-8xl 2xl:text-9xl text-[#8658F1] leading-none ">
               AN EXPERIENCE <br /> TO PLAY & LEARN
-            </span>
+            </div>
             <p className="font-inter text-gray-500 text-sm sm:text-base">
               Explore how puzzles, symbols, and landmarks turn learning into
               play.
@@ -35,18 +33,19 @@ function GameplayFeaturesContent() {
         </div>
 
         {/* Section 3 - bottom text */}
-        <div className="flex flex-col items-center mt-auto">
-          <span className="font-kingfink text-[clamp(4rem,6vw,8rem)] text-[#8658F1] leading-tight text-center">
-            AN EXPERIENCE TO PLAY & REPLAY
-          </span>
+        <div className="mt-auto font-kingfink text-4xl md:text-6xl lg:text-8xl 2xl:text-9xl text-[#8658F1] leading-tight text-center">
+          AN EXPERIENCE TO PLAY & REPLAY
         </div>
 
         {/* Button */}
-        <div className="relative flex justify-center m-10">
-          <Button variant="primary" onClick={handleDemoCLick}>
-            Download Free Demo
-          </Button>
-        </div>
+
+        <Button
+          variant="primary"
+          onClick={handleDemoCLick}
+          className="mx-auto "
+        >
+          Download Free Demo
+        </Button>
       </div>
     </>
   );

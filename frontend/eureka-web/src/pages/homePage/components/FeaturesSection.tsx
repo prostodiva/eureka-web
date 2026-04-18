@@ -1,8 +1,8 @@
-import FeatureSectionContent from './FeaturesSectionContent.tsx';
-import { useMediaQuery } from '@/hooks/useMediaQuery.tsx';
 import { featuresHome } from '@/assets/images';
 import Section from '@/components/Section.tsx';
 import Button from '@/components/ui/Button.tsx';
+import { useMediaQuery } from '@/hooks/useMediaQuery.tsx';
+import FeatureSectionContent from './FeaturesSectionContent.tsx';
 
 function FeaturesSection() {
   const handleDemoClick = () => console.log('demo clicked');
@@ -11,12 +11,10 @@ function FeaturesSection() {
   return (
     <Section
       backgroundImage={isMobile ? undefined : featuresHome}
+      className='flex-col-reverse md:flex-row'
       style={isMobile ? { backgroundColor: '#FFD743' } : undefined}
     >
-      <div className="absolute z-20 
-                    bottom-6 left-1/2 -translate-x-1/2
-                    md:bottom-150 xl:left-[200px] xl:translate-x-0
-                    2xl:left-[300px]"
+      <div className="z-20 flex w-full justify-center items-center"
       >
         <Button
           variant="primary"

@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 
 function FeatureSectionContent() {
   return (
-    <div className="relative min-h-dvh grid grid-col md:grid-cols-2 gap-10 items-start pt-20 sm:pt-8 md:pt-20 xl:pt-20 z-10">
-      <div className="col-start-2">
+    <div className="relative sm:pt-8 md:pt-20 xl:pt-20 z-10 px-10 w-full">
         <h2 className="font-kingfink text-[#8658F1] text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-8xl leading-none mb-4 md:mb-6">
           Interactive Learning
         </h2>
@@ -28,7 +27,6 @@ function FeatureSectionContent() {
           alt="box"
           className="w-200 xl:w-150 2xl:w-250"
         />
-      </div>
 
   
 

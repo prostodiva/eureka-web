@@ -13,7 +13,7 @@ function GameplayFaqContent() {
       </h2>
 
       {/* Accordion container */}
-        <div className="max-w-accordion m-20">
+        <div className="max-w-accordion md:m-20">
           <Accordion items={faqItems} />
         </div>
     </div>
