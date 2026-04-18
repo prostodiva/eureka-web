@@ -39,7 +39,7 @@ function Button({
   const buttonClasses = classNames(
     'flex justify-center items-center text-center font-inter',
     {
-      'flex justify-center items-center py-6 px-26 w-auto h-auto text-center rounded-sm bg-[#EA5D5D] text-white font-bold hover:bg-[#FFD743] hover:text-[#8658F1] whitespace-nowrap':
+      'flex justify-center items-center py-6 px-20 w-auto h-auto text-center rounded-sm bg-[#EA5D5D] text-white font-bold hover:bg-[#FFD743] hover:text-[#8658F1] whitespace-nowrap':
         variant === 'primary' && !backgroundImage,
       'flex justify-center items-center py-6 px-26 w-auto h-auto text-center rounded-sm bg-[#FFDC5C] text-[#8658F1] font-bold hover:bg-[#EA5D5D] whitespace-nowrap hover:text-white':
         variant === 'secondary' && !active && !backgroundImage,

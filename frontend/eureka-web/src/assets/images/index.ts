@@ -75,30 +75,6 @@ export const featuresHome = makeResponsiveImage({
   webp2400: featuresHome2400webp,
 });
 
-import overviewHome400avif from '@/assets/optimized/overviewHome-400.avif';
-import overviewHome800avif from '@/assets/optimized/overviewHome-800.avif';
-import overviewHome1200avif from '@/assets/optimized/overviewHome-1200.avif';
-import overviewHome1600avif from '@/assets/optimized/overviewHome-1600.avif';
-import overviewHome2400avif from '@/assets/optimized/overviewHome-2400.avif';
-import overviewHome400webp from '@/assets/optimized/overviewHome-400.webp';
-import overviewHome800webp from '@/assets/optimized/overviewHome-800.webp';
-import overviewHome1200webp from '@/assets/optimized/overviewHome-1200.webp';
-import overviewHome1600webp from '@/assets/optimized/overviewHome-1600.webp';
-import overviewHome2400webp from '@/assets/optimized/overviewHome-2400.webp';
-
-export const overviewHome = makeResponsiveImage({
-  fallbackSrc: overviewHome800webp,
-  avif400: overviewHome400avif,
-  avif800: overviewHome800avif,
-  avif1200: overviewHome1200avif,
-  avif1600: overviewHome1600avif,
-  avif2400: overviewHome2400avif,
-  webp400: overviewHome400webp,
-  webp800: overviewHome800webp,
-  webp1200: overviewHome1200webp,
-  webp1600: overviewHome1600webp,
-  webp2400: overviewHome2400webp,
-});
 
 import arrowLeft400avif from '@/assets/optimized/arrowLeft-400.avif';
 import arrowLeft800avif from '@/assets/optimized/arrowLeft-800.avif';

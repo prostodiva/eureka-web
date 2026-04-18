@@ -33,6 +33,7 @@ fs.readdirSync(inputDir).forEach((file) => {
       sharp(inputPath)
         .resize({
           width: size,
+          fit: 'inside',    
           withoutEnlargement: true,
         })
         .toFormat(format, {

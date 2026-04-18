@@ -9,7 +9,7 @@ function GameplayFeaturesContent() {
 
   return (
     <>
-      <div className="relative min-h-dvh z-10 flex flex-col items-center justify-start pt-20 sm:pt-10 md:pt-10 xl:pt-10 text-center">
+      <div className="relative min-h-dvh z-10 flex flex-col items-center justify-start text-center m-10">
         <div className="flex items-center justify-between">
           <span className="font-kingfink text-[clamp(4rem,6vw,8rem)] text-[#8658F1] leading-tight">
             WATCH LEARNING TAKE SHAPE
@@ -24,7 +24,7 @@ function GameplayFeaturesContent() {
           </div>
 
           <div className="flex flex-col items-center">
-            <span className="font-kingfink text-[clamp(4rem,5vw,8rem)] text-[#8658F1] leading-none mt-[5vh]">
+            <span className="font-kingfink text-[clamp(4rem,5vw,8rem)] text-[#8658F1] leading-none ">
               AN EXPERIENCE <br /> TO PLAY & LEARN
             </span>
             <p className="font-inter text-gray-500 text-sm sm:text-base">

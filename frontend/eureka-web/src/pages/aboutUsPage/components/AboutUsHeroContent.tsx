@@ -49,7 +49,7 @@ function AboutUsHeroContent() {
           image={alekseiImg}
           name="Aleksei Shchepin"
           role="UX/UI Designer"
-          className="justify-self-center sm:justify-self-start sm:-ml-8 sm:rotate-3"
+          className="justify-self-center sm:justify-self-start"
         />
       </div>
     </div>

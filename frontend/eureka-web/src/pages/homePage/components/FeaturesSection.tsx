@@ -13,12 +13,16 @@ function FeaturesSection() {
       backgroundImage={isMobile ? undefined : featuresHome}
       style={isMobile ? { backgroundColor: '#FFD743' } : undefined}
     >
-      <div className="absolute z-20 top-[700px] xl:left-[200px] xl:top-[350px] 2xl:left-[300px] 2xl:top-[500px] 2xl:left-[400px]">
+      <div className="absolute z-20 
+                    bottom-6 left-1/2 -translate-x-1/2
+                    md:bottom-150 xl:left-[200px] xl:translate-x-0
+                    2xl:left-[300px]"
+      >
         <Button
           variant="primary"
           onClick={handleDemoClick}
         >
-          Demo
+          Download Demo
         </Button>
       </div>
       <FeatureSectionContent />
