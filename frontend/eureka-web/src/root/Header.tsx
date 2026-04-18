@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className="absolute top-0 left-0 right-0 z-20 w-full">
+    <header className="absolute top-5 left-0 right-0 z-20 w-full">
       <div className="mx-auto px-4 md:px-8 lg:px-16 py-2 flex items-center justify-between">
         <Link
           to="/"

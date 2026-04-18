@@ -46,7 +46,12 @@ function Navbar({
 
   const navLinks = links || defaultLinks;
 
-  const variantClasses = variant === 'vertical' ? 'flex-col': mobileOpen ?  'flex-col absolute top-12 right-0' : 'hidden md:flex'  ;
+  const variantClasses =
+    variant === 'vertical'
+      ? 'flex-col'
+      : mobileOpen
+        ? 'flex-col absolute top-12 right-0 p-6 bg-[#8658F1] rounded-xl shadow-xl'
+        : 'hidden md:flex';  ;
 
   const renderedLinks = navLinks.map((link) => (
     <Link
@@ -74,7 +79,7 @@ function Navbar({
 
       <nav
         aria-label="Primary navigation"
-        className={`flex ${variantClasses} items-start gap-10  justify-center`}
+        className={`flex ${variantClasses} items-start gap-2 justify-center`}
       >
         {renderedLinks}
       </nav>

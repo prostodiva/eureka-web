@@ -8,10 +8,10 @@ import ResponsiveImage from '../ui/ResponsiveImage.tsx';
 
 function FooterContent() {
   return (
-    <div className="relative w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24 2xl:px-32 z-10 py-6 sm:py-10 md:py-16 xl:py-20 2xl:py-44 overflow-hidden">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mb-6 sm:mb-8 2xl:mb-8 items-start justify-between">
+    <div className="relative w-full mx-auto z-10 p-5 overflow-hidden">
+      <div className="grid grid-cols-2 md:grid-cols-3 items-start justify-start gap-2 mb-5 md:items-center">
         {/* socials + EURIKA + PUZZLELAB */}
-        <div className="flex flex-col gap-4 sm:gap-6 md:gap-7 lg:gap-6 xl:gap-7 2xl:gap-8">
+        <div className="flex flex-col gap-4">
           {/* socials */}
           <div className="flex flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-7 xl:gap-8 2xl:gap-10">
             <a
@@ -42,18 +42,18 @@ function FooterContent() {
               <CgFacebook className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-white cursor-pointer hover:scale-110 transition-transform" />
             </a>
           </div>
-
-          {/* EURIKA & PUZZLELAB */}
-          <h1 className="font-inter text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[7rem] xl:text-[9rem] 2xl:text-[15rem] -ml-1 leading-[0.9]">
-            <span className="block text-white font-normal">EURIKA</span>
-            <span className="block text-yellow-400 font-drabina-solid">
-              PUZZLELAB
-            </span>
-          </h1>
         </div>
 
+        {/* EURIKA & PUZZLELAB */}
+        <h1 className="order-last col-start-1 md:row-start-2 md:col-start-1 font-inter text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[7rem] xl:text-[9rem] 2xl:text-[15rem] leading-[0.9]">
+          <span className="block text-white font-normal">EURIKA</span>
+          <span className="block text-yellow-400 font-drabina-solid">
+            PUZZLELAB
+          </span>
+        </h1>
+
         {/* navbar */}
-        <div className="md:flex md:items-start md:justify-start md:col-start-2 md:pt-2 md:justify-self-center">
+        <div className="md:flex mt-4 justify-self-start col-start-1 md:col-start-2 md:justify-self-center">
           <Navbar
             variant="vertical"
             navClassName="flex flex-col gap-1 sm:gap-1.5 md:gap-2 lg:gap-1.5 xl:gap-1.5 2xl:gap-2"
@@ -62,16 +62,13 @@ function FooterContent() {
           />
         </div>
 
-        <div className="grid:col-span-3">
-          <ResponsiveImage
-              image={puzzle}
-              alt="Puzzle image"
-          />
+        <div className="col-start-2 row-span-3 md:col-start-3 md:row-span-3">
+          <ResponsiveImage image={puzzle} alt="Puzzle image" />
         </div>
       </div>
 
       {/* Copyright */}
-      <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-10 xl:bottom-10 2xl:bottom-10 left-0 right-0 text-center text-gray-300 text-xs sm:text-sm md:text-base lg:text-sm xl:text-base 2xl:text-xl">
+      <div className="absolute bottom-2 left-0 right-0 text-center text-gray-300 text-xs sm:text-sm md:text-base lg:text-sm xl:text-base 2xl:text-xl">
         <p>© 2026 Margarita Kattsyna</p>
       </div>
     </div>
