@@ -16,7 +16,7 @@ function Link({ to, children, className, activeClassName }: LinkProps) {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        classNames('text-black', className, isActive && activeClassName)
+        classNames( className, isActive && activeClassName)
       }
       onClick={(e) => {
         if (

@@ -27,8 +27,8 @@ interface NavbarProps {
 
 function Navbar({
   links,
-  linkClassName = 'gap-2 my-2 md:mx-4 text-xl text-white flex items-center gap-1 whitespace-nowrap',
-  activeLinkClassName = 'font-bold text-yellow-300',
+  linkClassName = 'gap-2 my-2 md:mx-4 text-2xl text-white flex items-center gap-1 whitespace-nowrap',
+  activeLinkClassName = 'font-bold text-yellow-400',
   variant = 'horizontal',
 }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
