@@ -7,9 +7,12 @@ import { cloudflare } from "@cloudflare/vite-plugin";
 
 export default defineConfig({
   plugins: [tailwindcss(), react(), cloudflare()],
-    resolve: {
-        alias: {
-            '@': path.resolve(__dirname, './src'),
-        },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
     },
-})
+  },
+  build: {
+    cssCodeSplit: true,
+  },
+});
