@@ -31,7 +31,7 @@ function FeaturesSection() {
         >
           Download Demo for MacOS
         </Button>
-        <p className="font-inter text-gwhite">If macOS blocks the app, go to System Settings → Privacy & Security → Open Anyway</p>
+        <p className="font-inter text-white max-w-md leading-relaxed p-5">MacOS: if MacOs blocks the app, go to System Settings → Privacy & Security → Open Anyway</p>
 
         <Button
           variant="primary"
@@ -39,6 +39,10 @@ function FeaturesSection() {
         >
           Download Demo for Windows
         </Button>
+
+        <p className="font-inter text-white max-w-md leading-relaxed p-5">
+          Windows: If SmartScreen appears, click More info → Run anyway, and extract the ZIP before running Eureka.exe.</p>
+
       </div>
       <FeatureSectionContent />
     </Section>
