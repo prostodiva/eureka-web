@@ -5,7 +5,16 @@ import { useMediaQuery } from '@/hooks/useMediaQuery.tsx';
 import FeatureSectionContent from './FeaturesSectionContent.tsx';
 
 function FeaturesSection() {
-  const handleDemoClick = () => console.log('demo clicked');
+
+  const handleMacOsClick = () => {
+    window.location.href = "https://github.com/prostodiva/eurika-game/releases/latest/download/Eurika.dmg"
+  }
+
+  const handleWindowsClick = () => {
+    window.location.href = "https://github.com/prostodiva/eurika-game/releases/latest/download/Eureka-Windows.zip"
+  }
+
+
   const isMobile = useMediaQuery('(max-width: 640px)');
 
   return (
@@ -14,13 +23,21 @@ function FeaturesSection() {
       className='flex-col-reverse md:flex-row'
       style={isMobile ? { backgroundColor: '#FFD743' } : undefined}
     >
-      <div className="z-20 flex w-full justify-center items-center"
+      <div className="z-20 flex flex-col w-full justify-center items-center"
       >
         <Button
           variant="primary"
-          onClick={handleDemoClick}
+          onClick={handleMacOsClick}
         >
-          Download Demo
+          Download Demo for MacOS
+        </Button>
+        <p className="font-inter text-gwhite">If macOS blocks the app, go to System Settings → Privacy & Security → Open Anyway</p>
+
+        <Button
+          variant="primary"
+          onClick={handleWindowsClick}
+        >
+          Download Demo for Windows
         </Button>
       </div>
       <FeatureSectionContent />
