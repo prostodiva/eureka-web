@@ -4,6 +4,7 @@ import Button from '@/components/ui/Button.tsx';
 import { useMediaQuery } from '@/hooks/useMediaQuery.tsx';
 import FeatureSectionContent from './FeaturesSectionContent.tsx';
 import { useState } from 'react';
+import LegalNotice from '@/components/ui/LegalNotice.tsx';
 
 function FeaturesSection() {
   const [agreed, setAgreed] = useState(false);
@@ -55,14 +56,13 @@ function FeaturesSection() {
           onChange={(e) => setAgreed(e.target.checked)}
         />
 
-        I agree to the terms and disclaimer
+        I have read and agree to the Terms and Legal Notice.
 
       </label>
-        {/* Legal Notice */}
-          <p className="text-xs text-gray-300 max-w-md leading-relaxed mt-4">
-            This game is provided "as is" without warranties. The developer is not liable <br></br>
-          for any damages, data loss, or system issues resulting from its use.
-          </p>
+      <div className="flex justify-center">
+        <LegalNotice />
+      </div>
+          
       </div>
       <FeatureSectionContent />
     </Section>
