@@ -66,9 +66,8 @@ out/
 .nuxt/
 dist/
 
-# Gatsby (if using Gatsby)
+# Gatsby 
 .cache/
-public/
 
 # Storybook
 storybook-static/
