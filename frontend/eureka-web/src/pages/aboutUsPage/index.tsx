@@ -42,10 +42,5 @@ function AboutUsPage() {
     </>
   );
 }
-// https://validator.schema.org/
-// https://validator.w3.org/
-//https://www.robotstxt.org/robotstxt.html
-// https://www.xml-sitemaps.com/
+
 export default AboutUsPage;
-//npm install --save react-helmet
-// npm i --save-dev @types/react-helmet

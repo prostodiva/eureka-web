@@ -59,7 +59,7 @@ function FeaturesSection() {
 
       </label>
         {/* Legal Notice */}
-          <p className="text-xs text-gray-400 max-w-md leading-relaxed mt-4">
+          <p className="text-xs text-gray-300 max-w-md leading-relaxed mt-4">
             This game is provided "as is" without warranties. The developer is not liable <br></br>
           for any damages, data loss, or system issues resulting from its use.
           </p>
