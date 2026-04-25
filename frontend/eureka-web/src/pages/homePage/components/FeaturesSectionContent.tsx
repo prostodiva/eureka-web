@@ -16,6 +16,7 @@ function FeatureSectionContent() {
 
         <Link
           to="/gameplay"
+          aria-label="Learn more about Eurika PuzzleLab gameplay"
           className="font-inter text-[#8658F1] text-sm sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold underline uppercase tracking-wider"
         >
           Learn More
