@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function FeatureSectionContent() {
   return (
-    <div className="relative sm:pt-8 md:pt-20 xl:pt-20 z-10 px-10 w-full">
+    <div className="relative sm:pt-8 md:pt-20 xl:pt-20 z-10 px-10 w-full mt-10">
         <h2 className="font-kingfink text-[#8658F1] text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-8xl leading-none mb-4 md:mb-6">
           Interactive Learning
         </h2>

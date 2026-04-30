@@ -9,7 +9,7 @@ function Header() {
       <div className="mx-auto px-4 md:px-8 lg:px-16 py-2 flex items-center justify-between">
         <Link
           to="/"
-          className="flex items-center hover:opacity-90 transition-opacity justify-self-start"
+          className="flex items-center hover:opacity-90 transition-opacity justify-self-start z-10"
           aria-label="Home"
         >
           <ResponsiveImage

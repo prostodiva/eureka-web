@@ -1,12 +1,7 @@
-import Button from '../../../components/ui/Button.tsx';
 import { val } from '@/assets/images';
 import ResponsiveImageEl from '@/components/ui/ResponsiveImage.tsx';
 
 function GameplayFeaturesContent() {
-  const handleDemoCLick = () => {
-    console.log('demo clicked');
-  };
-
   return (
     <>
       <div className="relative min-h-dvh z-10 text-center py-20 md:py-20">
@@ -37,15 +32,13 @@ function GameplayFeaturesContent() {
           AN EXPERIENCE TO PLAY & REPLAY
         </div>
 
-        {/* Button */}
-
-        <Button
+        {/* <Button
           variant="primary"
           onClick={handleDemoCLick}
           className="mx-auto "
         >
           Download Free Demo
-        </Button>
+        </Button> */}
       </div>
     </>
   );
