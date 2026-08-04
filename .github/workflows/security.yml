@@ -20,6 +20,9 @@ jobs:
       - name: Install
         working-directory: backend
         run: npm ci
+      # The backend currently audits clean at `high`, so this stays strict.
+      # If it starts failing on an advisory with no forward fix, demote it to
+      # the frontend's split-gate pattern rather than pinning a downgrade.
       - name: Audit
         working-directory: backend
         run: npm audit --audit-level=high
@@ -36,9 +39,24 @@ jobs:
       - name: Install
         working-directory: frontend/eureka-web
         run: npm ci
-      - name: Audit
+      # Blocking gate. Criticals are rare and effectively always have a fix,
+      # so a red build here means "act now".
+      - name: Audit (blocking)
+        working-directory: frontend/eureka-web
+        run: npm audit --audit-level=critical
+      # Informational. Several standing highs have no forward fix at any
+      # version -- npm's only "fix" is downgrading:
+      #   react-router  GHSA-qwww-vcr4-c8h2  RSC-mode CSRF; this app is a
+      #                 plain SPA (createBrowserRouter), no RSC. Not applicable.
+      #   undici        via miniflare <- wrangler/@cloudflare/vite-plugin.
+      #                 Dev tooling only, never shipped to the browser.
+      #   sharp         build-time image script only (devDependency).
+      # Failing PRs on these teaches everyone to ignore the job, so surface
+      # them without blocking. Revisit when upstream ships real fixes.
+      - name: Audit (informational)
         working-directory: frontend/eureka-web
         run: npm audit --audit-level=high
+        continue-on-error: true
 
   secret-scan:
     runs-on: ubuntu-latest
