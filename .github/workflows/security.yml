@@ -20,12 +20,19 @@ jobs:
       - name: Install
         working-directory: backend
         run: npm ci
-      # The backend currently audits clean at `high`, so this stays strict.
-      # If it starts failing on an advisory with no forward fix, demote it to
-      # the frontend's split-gate pattern rather than pinning a downgrade.
-      - name: Audit
+      # Blocking gate. Only what ships to production: a high here is reachable
+      # by real traffic and has always had a forward fix so far.
+      - name: Audit (blocking)
+        working-directory: backend
+        run: npm audit --omit=dev --audit-level=high
+      # Informational. devDependencies never run in production, and their
+      # advisories often have no forward fix (nodemon's braces/chokidar chain
+      # was the last one; it was dropped for `node --watch`). Surface them
+      # without blocking.
+      - name: Audit (informational, incl. dev)
         working-directory: backend
         run: npm audit --audit-level=high
+        continue-on-error: true
 
   npm-audit-frontend:
     runs-on: ubuntu-latest
@@ -66,4 +73,7 @@ jobs:
           fetch-depth: 0
       - name: Gitleaks
         uses: gitleaks/gitleaks-action@v2
+        # Required by the action to scan pull_request events.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
